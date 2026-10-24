@@ -20,6 +20,8 @@ def main():
     parser.add_argument('--output',type=Path,required=True)
     args=parser.parse_args();args.engine=args.engine.resolve();args.output=args.output.resolve()
     args.output.mkdir(parents=True,exist_ok=False)
+    bootstrap=args.engine/'engine/source_runtime.py'
+    exec(compile(bootstrap.read_bytes(),str(bootstrap),'exec'),{'__name__':'_publication_source_runtime'})
     sys.path.insert(0,str(args.engine/'engine'))
     import evidence, candidate, pub, source_model
     from pypdf import PdfReader

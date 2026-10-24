@@ -1,0 +1,68 @@
+[
+  {
+    "profile": "cpp-handbook",
+    "page": 2,
+    "path": "pages/cpp-handbook-002.png",
+    "sha256": "080a8d3cf288b89aa0e713901e992450de6fd609cacbd74f3df40dce1e6b484e"
+  },
+  {
+    "profile": "cpp-handbook",
+    "page": 40,
+    "path": "pages/cpp-handbook-040.png",
+    "sha256": "ac3667bf0d1a9291a8466ca8766b38f76e0e127645b698b0eb91fe36a2946d9d"
+  },
+  {
+    "profile": "cpp-handbook",
+    "page": 41,
+    "path": "pages/cpp-handbook-041.png",
+    "sha256": "18ae13d781a0875748e67c27b63e57dce1508afcd5f3536a45f03497b122234a"
+  },
+  {
+    "profile": "esd",
+    "page": 2,
+    "path": "pages/esd-002.png",
+    "sha256": "ecdb0af7c069e906d1d5b9ee152e1e773280253988a9ccf1321dbfbc56cdae58"
+  },
+  {
+    "profile": "esd",
+    "page": 26,
+    "path": "pages/esd-026.png",
+    "sha256": "973e45e10dcfbd071afdd3ccebe0dedc913e849a2d34776d6ac2540aa605c423"
+  },
+  {
+    "profile": "esd",
+    "page": 27,
+    "path": "pages/esd-027.png",
+    "sha256": "2c118d470e3be0b0670b7714c5c9ce26e4aa60978a0fdad39e95a2955db46190"
+  },
+  {
+    "profile": "cpp-failure-model",
+    "page": 2,
+    "path": "pages/cpp-failure-model-002.png",
+    "sha256": "f1eaa5f34ec897fd373834725db450402a956367d61eb69de580e0bc75488196"
+  },
+  {
+    "profile": "cpp-failure-model",
+    "page": 108,
+    "path": "pages/cpp-failure-model-108.png",
+    "sha256": "ec21412bcb01edaf995831618ec30a3744a9afa117e49d3405c338801f55526c"
+  },
+  {
+    "profile": "cpp-failure-model",
+    "page": 109,
+    "path": "pages/cpp-failure-model-109.png",
+    "sha256": "efdded00fd79136fcb8fead943a5b934e04dd8aacc4127dfc295de10873073c4"
+  },
+  {
+    "profile": "cpp-failure-model",
+    "page": 153,
+    "path": "pages/cpp-failure-model-153.png",
+    "sha256": "c95172e87280949950bff67c8dcf560f3bb5047b01b6f467b7bf251e8c664514"
+  },
+  {
+    "profile": "cpp-failure-model",
+    "page": 154,
+    "path": "pages/cpp-failure-model-154.png",
+    "sha256": "c3f6d4614f01e439ed7f495045838cb067ad0f0bde061291219292bb910ce3ef"
+  }
+]

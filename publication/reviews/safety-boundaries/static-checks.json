@@ -1,0 +1,12 @@
+{
+  "python": 23,
+  "json": 34,
+  "markdown": 4,
+  "local_links": 40,
+  "external_links_not_checked": 4,
+  "status": "PASS",
+  "engine_pin": "df3fcc238f03a3832de55bc128049adebe323969",
+  "protected_files_unchanged": 1696,
+  "existing_pdfs_unchanged": 493,
+  "scope": "Local syntax/links/pin/protection, not CI or C++ validation"
+}

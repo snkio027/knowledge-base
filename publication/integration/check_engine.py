@@ -20,6 +20,8 @@ def main():
     parser.add_argument('--engine',type=Path,required=True)
     parser.add_argument('--output',type=Path,required=True)
     args=parser.parse_args()
+    bootstrap=args.engine/'engine/source_runtime.py'
+    exec(compile(bootstrap.read_bytes(),str(bootstrap),'exec'),{'__name__':'_publication_source_runtime'})
     sys.path.insert(0,str(args.engine/'engine'))
     import fidelity, preview, pub, source_model, project
     selected=project.load(args.engine.resolve(),ROOT/'publication/standalone.json','cpp-handbook',pub)

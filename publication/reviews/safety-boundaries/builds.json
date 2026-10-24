@@ -1,0 +1,288 @@
+[
+  {
+    "profile": "cpp-handbook",
+    "attempt": "publication/build/standalone/preview/1fa26e23912d69a68f4e3073fd55b730715b07419e8060412cf79ccbcf46991a/b54cef18c4054b74832d6b242f3a10ef",
+    "preview_command": {
+      "argv": [
+        "sh",
+        "/Users/nekoreb/Workspace/03_Projects/kb/publication/run.sh",
+        "--engine",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine",
+        "preview",
+        "--profile",
+        "cpp-handbook",
+        "--view",
+        "G6"
+      ],
+      "exit_code": 0,
+      "seconds": 38.589
+    },
+    "candidate": {
+      "status": "CANDIDATE_PREPARED_FOR_REVIEW",
+      "candidate_id": "4ca1ad4110f4a616ba3986e680671550f4808ba99f5301a41683a4a44f0a4de4",
+      "path": "/Users/nekoreb/Workspace/03_Projects/kb/publication/build/standalone/candidate/4ca1ad4110f4a616ba3986e680671550f4808ba99f5301a41683a4a44f0a4de4/838fa33234184a4a8281599e837a4756"
+    },
+    "candidate_command": {
+      "argv": [
+        "sh",
+        "/Users/nekoreb/Workspace/03_Projects/kb/publication/run.sh",
+        "--engine",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine",
+        "candidate",
+        "--profile",
+        "cpp-handbook",
+        "--from-preview",
+        "preview/1fa26e23912d69a68f4e3073fd55b730715b07419e8060412cf79ccbcf46991a/b54cef18c4054b74832d6b242f3a10ef"
+      ],
+      "exit_code": 0,
+      "seconds": 0.671
+    },
+    "ready": {
+      "artifact_manifest_sha256": "1023efaf36e9a9dffc832eff3b5d3fe53a4ea2419f5a179e22db3765e990f54b",
+      "artifacts": {
+        "output/pdf/G6-draft.pdf": "a5c0568f3bc55e8e0fe308679eb7d7dfafad64b3a9059639079fea651ac19b9d"
+      },
+      "audit_sha256": "1e56fe674660332accbdb6471fca966cb2238c89873803619e5f197d8ebd266a",
+      "checks": "See work/preview-audit.json",
+      "commit_protocol": "file-fsync-then-no-replace-link-v1",
+      "evidence_schema": 1,
+      "execution_id": "b5a611fce674710f1898cb3c770bc560639f5eff7341497c73116c9e23d35d94",
+      "meaning": "Draft reading artifacts; not formal publication or visual approval",
+      "mode": "FULL_PREVIEW",
+      "schema_version": 2,
+      "status": "PREVIEW_READY"
+    },
+    "pages": 48,
+    "artifact_files": 84,
+    "reading": {
+      "path": "/Users/nekoreb/Workspace/03_Projects/kb/publication/build/standalone/preview/1fa26e23912d69a68f4e3073fd55b730715b07419e8060412cf79ccbcf46991a/b54cef18c4054b74832d6b242f3a10ef/work/reading-regression",
+      "status": "STRUCTURAL_PASS",
+      "fixtures": 3,
+      "issues": []
+    },
+    "reading_command": {
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tools/reading-review.py",
+        "/Users/nekoreb/Workspace/03_Projects/kb/publication/build/standalone/preview/1fa26e23912d69a68f4e3073fd55b730715b07419e8060412cf79ccbcf46991a/b54cef18c4054b74832d6b242f3a10ef",
+        "--corpus",
+        "/Users/nekoreb/Workspace/03_Projects/kb/publication/tools/reading-corpus.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.161
+    },
+    "sheets_command": {
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tools/inspect-pages.py",
+        "/Users/nekoreb/Workspace/03_Projects/kb/publication/build/standalone/preview/1fa26e23912d69a68f4e3073fd55b730715b07419e8060412cf79ccbcf46991a/b54cef18c4054b74832d6b242f3a10ef"
+      ],
+      "exit_code": 0,
+      "seconds": 0.478
+    },
+    "comparison": {
+      "baseline_attempt": "publication/build/preview/4e80ae418082e396dd960e54f53310f3733fb2b2a5872af69bfc5677a853c0eb/5153e3a3929c49b1affa36d0dfa4e0e8",
+      "source_ast_files_identical": 6,
+      "page_count_identical": 48,
+      "destination_positions_identical": 932,
+      "text_identical_except_generated_identity": true,
+      "png_changed_pages": [
+        2
+      ],
+      "png_unchanged_pages": 47,
+      "meaning": "Image changes are review signals, not automatic failures or visual approval."
+    }
+  },
+  {
+    "profile": "esd",
+    "attempt": "publication/build/standalone/preview/c0f20a31bb8b137e5658f381e0d3070ecb8bd957c36299565b3010cc1bc8885d/e53b86634cbe4429b10c8aba75e99ef7",
+    "preview_command": {
+      "argv": [
+        "sh",
+        "/Users/nekoreb/Workspace/03_Projects/kb/publication/run.sh",
+        "--engine",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine",
+        "preview",
+        "--profile",
+        "esd",
+        "--view",
+        "ESD-REFERENCE-001"
+      ],
+      "exit_code": 0,
+      "seconds": 44.317
+    },
+    "candidate": {
+      "status": "CANDIDATE_PREPARED_FOR_REVIEW",
+      "candidate_id": "3cfb53f02089fda1dc00a95537221d5acb0f7849874513556808d7fa68fbfc42",
+      "path": "/Users/nekoreb/Workspace/03_Projects/kb/publication/build/standalone/candidate/3cfb53f02089fda1dc00a95537221d5acb0f7849874513556808d7fa68fbfc42/6cae3d278a6c48a18417d3a5b7a6f277"
+    },
+    "candidate_command": {
+      "argv": [
+        "sh",
+        "/Users/nekoreb/Workspace/03_Projects/kb/publication/run.sh",
+        "--engine",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine",
+        "candidate",
+        "--profile",
+        "esd",
+        "--from-preview",
+        "preview/c0f20a31bb8b137e5658f381e0d3070ecb8bd957c36299565b3010cc1bc8885d/e53b86634cbe4429b10c8aba75e99ef7"
+      ],
+      "exit_code": 0,
+      "seconds": 0.999
+    },
+    "ready": {
+      "artifact_manifest_sha256": "dd1bd032347de56fd0c75476714000a7d3087358f4e6bffe6cd7e00e42e3d2a2",
+      "artifacts": {
+        "output/pdf/ESD-REFERENCE-001-draft.pdf": "8f939349cc6019d07e5abfc8a82ebc730e1c75f40cf8688ea29f68d9c772b5c1"
+      },
+      "audit_sha256": "db953158a0dc3c468566876e1ba4d8b5e38cf978acd46194376f83e84fb49018",
+      "checks": "See work/preview-audit.json",
+      "commit_protocol": "file-fsync-then-no-replace-link-v1",
+      "evidence_schema": 1,
+      "execution_id": "d88d5d11f5d73770def5b84786a8cabe976ec0a0cac7ae9285c90bf716536ff7",
+      "meaning": "Draft reading artifacts; not formal publication or visual approval",
+      "mode": "FULL_PREVIEW",
+      "schema_version": 2,
+      "status": "PREVIEW_READY"
+    },
+    "pages": 58,
+    "artifact_files": 110,
+    "reading": {
+      "path": "/Users/nekoreb/Workspace/03_Projects/kb/publication/build/standalone/preview/c0f20a31bb8b137e5658f381e0d3070ecb8bd957c36299565b3010cc1bc8885d/e53b86634cbe4429b10c8aba75e99ef7/work/reading-regression",
+      "status": "STRUCTURAL_PASS",
+      "fixtures": 3,
+      "issues": []
+    },
+    "reading_command": {
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tools/reading-review.py",
+        "/Users/nekoreb/Workspace/03_Projects/kb/publication/build/standalone/preview/c0f20a31bb8b137e5658f381e0d3070ecb8bd957c36299565b3010cc1bc8885d/e53b86634cbe4429b10c8aba75e99ef7",
+        "--corpus",
+        "/Users/nekoreb/Workspace/03_Projects/kb/publication/tools/reading-corpus.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.625
+    },
+    "sheets_command": {
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tools/inspect-pages.py",
+        "/Users/nekoreb/Workspace/03_Projects/kb/publication/build/standalone/preview/c0f20a31bb8b137e5658f381e0d3070ecb8bd957c36299565b3010cc1bc8885d/e53b86634cbe4429b10c8aba75e99ef7"
+      ],
+      "exit_code": 0,
+      "seconds": 0.767
+    },
+    "comparison": {
+      "baseline_attempt": "publication/build/preview/4421f9515b759671126bab7c604d16e1bc77e43a7fe96e1a7085dea224929ca8/c6455634530143c3bb4f0bb6b2363e3f",
+      "source_ast_files_identical": 18,
+      "page_count_identical": 58,
+      "destination_positions_identical": 1360,
+      "text_identical_except_generated_identity": true,
+      "png_changed_pages": [
+        2
+      ],
+      "png_unchanged_pages": 57,
+      "meaning": "Image changes are review signals, not automatic failures or visual approval."
+    }
+  },
+  {
+    "profile": "cpp-failure-model",
+    "attempt": "publication/build/standalone/preview/281e2ff3c7c7659d36df53e6a705007964ad0d5edda8e8b3b973619fd0a87203/224d6074b1964786891c4522e0072217",
+    "preview_command": {
+      "argv": [
+        "sh",
+        "/Users/nekoreb/Workspace/03_Projects/kb/publication/run.sh",
+        "--engine",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine",
+        "preview",
+        "--profile",
+        "cpp-failure-model"
+      ],
+      "exit_code": 0,
+      "seconds": 103.391
+    },
+    "candidate": {
+      "status": "CANDIDATE_PREPARED_FOR_REVIEW",
+      "candidate_id": "0ba1a9bcf9cdbf7ec54ecae1c734b26391a1ad353e47052a9d1d7f82a62bbad9",
+      "path": "/Users/nekoreb/Workspace/03_Projects/kb/publication/build/standalone/candidate/0ba1a9bcf9cdbf7ec54ecae1c734b26391a1ad353e47052a9d1d7f82a62bbad9/4155107ea8a64b18b7a7c6a64a7c764c"
+    },
+    "candidate_command": {
+      "argv": [
+        "sh",
+        "/Users/nekoreb/Workspace/03_Projects/kb/publication/run.sh",
+        "--engine",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine",
+        "candidate",
+        "--profile",
+        "cpp-failure-model",
+        "--from-preview",
+        "preview/281e2ff3c7c7659d36df53e6a705007964ad0d5edda8e8b3b973619fd0a87203/224d6074b1964786891c4522e0072217"
+      ],
+      "exit_code": 0,
+      "seconds": 1.073
+    },
+    "ready": {
+      "artifact_manifest_sha256": "bdb319a0835032641076dae032b5e5b29a6f359b2153944e9e62ffc959991d1d",
+      "artifacts": {
+        "output/pdf/Modern-Cpp-Failure-Semantics-Handbook-v1.0.0.pdf": "3369c28bc68786d0652a177ecf947802f915cd37b57d6b8c372fd1d14c0e6f17"
+      },
+      "audit_sha256": "499a7698557cdc35c604ca8ae63837b846caf36cd01f82182b95386499850f62",
+      "checks": "See work/preview-audit.json",
+      "commit_protocol": "file-fsync-then-no-replace-link-v1",
+      "evidence_schema": 1,
+      "execution_id": "a3848f166991e41190a9fe409f77cc3d9fa93919f4a7e80f328f68022958758a",
+      "meaning": "Draft reading artifacts; not formal publication or visual approval",
+      "mode": "FULL_PREVIEW",
+      "schema_version": 2,
+      "status": "PREVIEW_READY"
+    },
+    "pages": 158,
+    "artifact_files": 230,
+    "reading": {
+      "path": "/Users/nekoreb/Workspace/03_Projects/kb/publication/build/standalone/preview/281e2ff3c7c7659d36df53e6a705007964ad0d5edda8e8b3b973619fd0a87203/224d6074b1964786891c4522e0072217/work/reading-regression",
+      "status": "NOT_COVERED",
+      "fixtures": 0,
+      "issues": []
+    },
+    "reading_command": {
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tools/reading-review.py",
+        "/Users/nekoreb/Workspace/03_Projects/kb/publication/build/standalone/preview/281e2ff3c7c7659d36df53e6a705007964ad0d5edda8e8b3b973619fd0a87203/224d6074b1964786891c4522e0072217",
+        "--corpus",
+        "/Users/nekoreb/Workspace/03_Projects/kb/publication/tools/reading-corpus.json"
+      ],
+      "exit_code": 0,
+      "seconds": 2.857
+    },
+    "sheets_command": {
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tools/inspect-pages.py",
+        "/Users/nekoreb/Workspace/03_Projects/kb/publication/build/standalone/preview/281e2ff3c7c7659d36df53e6a705007964ad0d5edda8e8b3b973619fd0a87203/224d6074b1964786891c4522e0072217"
+      ],
+      "exit_code": 0,
+      "seconds": 1.393
+    },
+    "comparison": {
+      "baseline_attempt": "publication/build/preview/d6f75828392ed72e73b09953e0e8c6060f60e6eec57d2d3b923058f52eacf525/fc83a249ee8e43029c9db75b4d34d7c0",
+      "source_ast_files_identical": 33,
+      "page_count_identical": 158,
+      "destination_positions_identical": 3239,
+      "text_identical_except_generated_identity": true,
+      "png_changed_pages": [
+        2
+      ],
+      "png_unchanged_pages": 157,
+      "meaning": "Image changes are review signals, not automatic failures or visual approval."
+    }
+  }
+]

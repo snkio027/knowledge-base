@@ -2,7 +2,7 @@
   "schema_version": 1,
   "engine": {
     "repository": "https://github.com/snkio027/publication-engine",
-    "commit": "e740367ac9c382f245bf29a0b86f019982622154"
+    "commit": "df3fcc238f03a3832de55bc128049adebe323969"
   },
   "source_repository": "https://github.com/snkio027/kb",
   "content_root": "..",

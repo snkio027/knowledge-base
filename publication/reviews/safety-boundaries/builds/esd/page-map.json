@@ -1,0 +1,371 @@
+{
+  "status": "STRUCTURAL_PASS",
+  "visual_status": "NOT_REVIEWED",
+  "scope": "Reading-quality signals, not a visual or technical proof",
+  "attempt": "/Users/nekoreb/Workspace/03_Projects/kb/publication/build/standalone/preview/c0f20a31bb8b137e5658f381e0d3070ecb8bd957c36299565b3010cc1bc8885d/e53b86634cbe4429b10c8aba75e99ef7",
+  "audit_sha256": "db953158a0dc3c468566876e1ba4d8b5e38cf978acd46194376f83e84fb49018",
+  "artifact_manifest_sha256": "dd1bd032347de56fd0c75476714000a7d3087358f4e6bffe6cd7e00e42e3d2a2",
+  "corpus_sha256": "7e1c6f42eab77d6878d370028dce80ee770f2ef38022a7d11f823928134acd3c",
+  "views": [
+    {
+      "view": "ESD-REFERENCE-001",
+      "pdf": "output/pdf/ESD-REFERENCE-001-draft.pdf",
+      "sha256": "8f939349cc6019d07e5abfc8a82ebc730e1c75f40cf8688ea29f68d9c772b5c1",
+      "pages": 58,
+      "components": {
+        "ESD-REFERENCE-001-T01": [
+          4
+        ],
+        "ESD-REFERENCE-001-C01": [
+          4
+        ],
+        "ESD-REFERENCE-001-T02": [
+          5
+        ],
+        "ESD-REFERENCE-001-T03": [
+          5
+        ],
+        "ESD-REFERENCE-001-C02": [
+          5
+        ],
+        "ESD-REFERENCE-001-T04": [
+          6
+        ],
+        "ESD-REFERENCE-001-C03": [
+          6
+        ],
+        "ESD-REFERENCE-001-C04": [
+          7
+        ],
+        "ESD-REFERENCE-001-C05": [
+          7
+        ],
+        "ESD-REFERENCE-001-C06": [
+          7
+        ],
+        "ESD-REFERENCE-001-C07": [
+          7
+        ],
+        "ESD-REFERENCE-001-C08": [
+          8
+        ],
+        "ESD-REFERENCE-001-T05": [
+          9
+        ],
+        "ESD-REFERENCE-001-C09": [
+          9
+        ],
+        "ESD-REFERENCE-001-C10": [
+          10
+        ],
+        "ESD-REFERENCE-001-C11": [
+          10
+        ],
+        "ESD-REFERENCE-001-C12": [
+          11
+        ],
+        "ESD-REFERENCE-001-C13": [
+          11
+        ],
+        "ESD-REFERENCE-001-C14": [
+          12
+        ],
+        "ESD-REFERENCE-001-C15": [
+          13
+        ],
+        "ESD-REFERENCE-001-T06": [
+          13
+        ],
+        "ESD-REFERENCE-001-C16": [
+          14
+        ],
+        "ESD-REFERENCE-001-C17": [
+          17
+        ],
+        "ESD-REFERENCE-001-C18": [
+          17
+        ],
+        "ESD-REFERENCE-001-C19": [
+          18
+        ],
+        "ESD-REFERENCE-001-T08": [
+          18
+        ],
+        "ESD-REFERENCE-001-C20": [
+          21
+        ],
+        "ESD-REFERENCE-001-C21": [
+          21
+        ],
+        "ESD-REFERENCE-001-C22": [
+          22
+        ],
+        "ESD-REFERENCE-001-C23": [
+          23
+        ],
+        "ESD-REFERENCE-001-C24": [
+          23
+        ],
+        "ESD-REFERENCE-001-C25": [
+          23,
+          24
+        ],
+        "ESD-REFERENCE-001-C26": [
+          25
+        ],
+        "ESD-REFERENCE-001-C27": [
+          25
+        ],
+        "ESD-REFERENCE-001-C28": [
+          28
+        ],
+        "ESD-REFERENCE-001-C29": [
+          28,
+          29
+        ],
+        "ESD-REFERENCE-001-C30": [
+          30
+        ],
+        "ESD-REFERENCE-001-C31": [
+          30
+        ],
+        "ESD-REFERENCE-001-C32": [
+          31
+        ],
+        "ESD-REFERENCE-001-C33": [
+          32
+        ],
+        "ESD-REFERENCE-001-C34": [
+          33
+        ],
+        "ESD-REFERENCE-001-C35": [
+          34
+        ],
+        "ESD-REFERENCE-001-T18": [
+          37
+        ],
+        "ESD-REFERENCE-001-C36": [
+          38
+        ],
+        "ESD-REFERENCE-001-T19": [
+          38
+        ],
+        "ESD-REFERENCE-001-C37": [
+          40
+        ],
+        "ESD-REFERENCE-001-C38": [
+          41
+        ],
+        "ESD-REFERENCE-001-C39": [
+          41
+        ],
+        "ESD-REFERENCE-001-C40": [
+          41
+        ],
+        "ESD-REFERENCE-001-C41": [
+          41
+        ],
+        "ESD-REFERENCE-001-C42": [
+          44
+        ],
+        "ESD-REFERENCE-001-C43": [
+          44
+        ],
+        "ESD-REFERENCE-001-C44": [
+          45
+        ],
+        "ESD-REFERENCE-001-C45": [
+          45
+        ],
+        "ESD-REFERENCE-001-C46": [
+          46
+        ],
+        "ESD-REFERENCE-001-C47": [
+          46
+        ],
+        "ESD-REFERENCE-001-C48": [
+          49
+        ],
+        "ESD-REFERENCE-001-C49": [
+          49
+        ],
+        "ESD-REFERENCE-001-C50": [
+          49
+        ],
+        "ESD-REFERENCE-001-C51": [
+          50
+        ],
+        "ESD-REFERENCE-001-C52": [
+          50
+        ],
+        "ESD-REFERENCE-001-C53": [
+          50
+        ],
+        "ESD-REFERENCE-001-T22": [
+          51
+        ],
+        "ESD-REFERENCE-001-C54": [
+          52
+        ],
+        "ESD-REFERENCE-001-T23": [
+          52
+        ],
+        "ESD-REFERENCE-001-T24": [
+          52,
+          53
+        ],
+        "ESD-REFERENCE-001-C55": [
+          53,
+          54
+        ],
+        "ESD-REFERENCE-001-C56": [
+          54
+        ],
+        "ESD-REFERENCE-001-T25": [
+          57
+        ],
+        "ESD-REFERENCE-001-C57": [
+          57
+        ],
+        "ESD-REFERENCE-001-C58": [
+          58
+        ],
+        "ESD-REFERENCE-001-C59": [
+          58
+        ],
+        "ESD-REFERENCE-001-T07": [
+          15,
+          16
+        ],
+        "ESD-REFERENCE-001-T09": [
+          20
+        ],
+        "ESD-REFERENCE-001-T10": [
+          24
+        ],
+        "ESD-REFERENCE-001-T11": [
+          25
+        ],
+        "ESD-REFERENCE-001-T12": [
+          26
+        ],
+        "ESD-REFERENCE-001-T13": [
+          26
+        ],
+        "ESD-REFERENCE-001-T14": [
+          27
+        ],
+        "ESD-REFERENCE-001-T15": [
+          27
+        ],
+        "ESD-REFERENCE-001-T16": [
+          29
+        ],
+        "ESD-REFERENCE-001-T17": [
+          29
+        ],
+        "ESD-REFERENCE-001-T20": [
+          39,
+          40
+        ],
+        "ESD-REFERENCE-001-T21": [
+          42,
+          43
+        ]
+      },
+      "line_position_checks": 613,
+      "wrap_observations": [],
+      "issues": []
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "esd-reference-toc",
+      "purpose": "chapter-navigation",
+      "view": "ESD-REFERENCE-001",
+      "object": "generated-toc",
+      "pages": [
+        3
+      ],
+      "pdf_sha256": "8f939349cc6019d07e5abfc8a82ebc730e1c75f40cf8688ea29f68d9c772b5c1",
+      "sources": [
+        {
+          "bytes": 78329,
+          "commit": "ffd2db9999a79bb237954ad45a6c59117baa38e6",
+          "id": "ESD-REFERENCE-001",
+          "matches_commit": true,
+          "path": "design/02-优秀系统设计-从约束不变量到证据-v1.1.0.md",
+          "revision": "WORKTREE",
+          "sha256": "9b47739f578d867c7e3bc899de79ac4fe65684e67e4a081aa80a6ecfb1f1d2f3",
+          "snapshot_path": "sources/design/02-优秀系统设计-从约束不变量到证据-v1.1.0.md"
+        }
+      ],
+      "renders": [
+        {
+          "path": "ESD-REFERENCE-001-003.png",
+          "sha256": "d98fece09abd65e5d925c7bce8c7e6ecd47280eb7dd6258508ab0dc5954b1296"
+        }
+      ]
+    },
+    {
+      "id": "esd-empty-state",
+      "purpose": "empty-template-continuation",
+      "view": "ESD-REFERENCE-001",
+      "object": "ESD-REFERENCE-001-T12",
+      "pages": [
+        26
+      ],
+      "pdf_sha256": "8f939349cc6019d07e5abfc8a82ebc730e1c75f40cf8688ea29f68d9c772b5c1",
+      "sources": [
+        {
+          "bytes": 78329,
+          "commit": "ffd2db9999a79bb237954ad45a6c59117baa38e6",
+          "id": "ESD-REFERENCE-001",
+          "matches_commit": true,
+          "path": "design/02-优秀系统设计-从约束不变量到证据-v1.1.0.md",
+          "revision": "WORKTREE",
+          "sha256": "9b47739f578d867c7e3bc899de79ac4fe65684e67e4a081aa80a6ecfb1f1d2f3",
+          "snapshot_path": "sources/design/02-优秀系统设计-从约束不变量到证据-v1.1.0.md"
+        }
+      ],
+      "renders": [
+        {
+          "path": "ESD-REFERENCE-001-026.png",
+          "sha256": "bf99c6571e291d513df7c6d25f4ab5da4ffb0daa24ab6851e396463514dbcab7"
+        }
+      ]
+    },
+    {
+      "id": "esd-empty-mode",
+      "purpose": "empty-template-continuation",
+      "view": "ESD-REFERENCE-001",
+      "object": "ESD-REFERENCE-001-T15",
+      "pages": [
+        27
+      ],
+      "pdf_sha256": "8f939349cc6019d07e5abfc8a82ebc730e1c75f40cf8688ea29f68d9c772b5c1",
+      "sources": [
+        {
+          "bytes": 78329,
+          "commit": "ffd2db9999a79bb237954ad45a6c59117baa38e6",
+          "id": "ESD-REFERENCE-001",
+          "matches_commit": true,
+          "path": "design/02-优秀系统设计-从约束不变量到证据-v1.1.0.md",
+          "revision": "WORKTREE",
+          "sha256": "9b47739f578d867c7e3bc899de79ac4fe65684e67e4a081aa80a6ecfb1f1d2f3",
+          "snapshot_path": "sources/design/02-优秀系统设计-从约束不变量到证据-v1.1.0.md"
+        }
+      ],
+      "renders": [
+        {
+          "path": "ESD-REFERENCE-001-027.png",
+          "sha256": "b3fbc902c5cadb4db34b7ea1e88990a09c3443deb671853fb692ca6389b4af05"
+        }
+      ]
+    }
+  ],
+  "issues": [],
+  "coverage": {
+    "ESD-REFERENCE-001": 3
+  }
+}

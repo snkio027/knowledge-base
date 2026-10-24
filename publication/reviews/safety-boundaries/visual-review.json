@@ -1,0 +1,15 @@
+{
+  "status": "SELF_REVIEWED_NO_NEW_BLOCKER",
+  "method": "Full-page Poppler PNG inspection by assistant; not independent acceptance or reader smoke",
+  "samples": "visual-samples.json",
+  "sample_count": 11,
+  "changed_pages_inspected": {"cpp-handbook": [2], "esd": [2], "cpp-failure-model": [2]},
+  "observations": [
+    "Three generated identity pages remain legible with no clipping or overlap observed.",
+    "G6 40/41 preserve experiment/file identity across code continuation; existing short-tail whitespace retained.",
+    "ESD 26/27 preserve empty-template identities and aligned writable fields.",
+    "FM 108/109 preserve T17 code identity, continuation and complete-range assertions.",
+    "FM 153/154 preserve literal-template identity and continuation."
+  ],
+  "limits": "No typography changes. Historical whitespace, wrapping and profile-state wording retained. FM semantic corpus remains NOT_COVERED. No external reader retest."
+}

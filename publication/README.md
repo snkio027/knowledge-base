@@ -1,5 +1,7 @@
 # KB Publication System v2
 
+**2026-10-24：独立引擎安全边界修复，待集中审核。** 当前 pin 更新为 `df3fcc238f03a3832de55bc128049adebe323969`：源码导入不再消费 `.pyc`，候选输出拒绝任一级父目录链接。消费者检查入口同步启用源码策略；本批证据见[安全边界回归](reviews/safety-boundaries/README.md)。下列独立化结果保持其原始执行身份，不回写成新一轮验证。
+
 **2026-10-24：出版引擎独立化，待集中审核。** 通用实现转入 [publication-engine](https://github.com/snkio027/publication-engine)，本仓库通过 [standalone.json](standalone.json) 锁定精确引擎提交。正文、产品 adapter/profile、历史证据和发布资产仍由 KB 管理。旧 `engine/`、`latex/`、Python 环境和测试保留为 `7fb0ad0` 的冻结历史入口，不再双线开发。后续构建使用下述独立入口；本批记录见[独立化集成验收](reviews/standalone/README.md)。
 
 ```sh
