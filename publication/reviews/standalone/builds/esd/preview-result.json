@@ -1,0 +1,15 @@
+{
+  "artifact_manifest_sha256": "5bfc02efcb49124d87f02175bb0736440546b81b92307c446ae0e1452c374bba",
+  "artifacts": {
+    "output/pdf/ESD-REFERENCE-001-draft.pdf": "5e6ca350eee4e9ac33b38a6987604d976a7e18b114875c31f1c4e833d3d7a581"
+  },
+  "audit_sha256": "f334bd1ca801463d63bb61325e6e47f2048feedf8b4f9cb7059b36df1319c9e0",
+  "checks": "See work/preview-audit.json",
+  "commit_protocol": "file-fsync-then-no-replace-link-v1",
+  "evidence_schema": 1,
+  "execution_id": "09b03b4d819f36f68182cc32d6770f36da964c7f35841948fd57b4adb49b46b8",
+  "meaning": "Draft reading artifacts; not formal publication or visual approval",
+  "mode": "FULL_PREVIEW",
+  "schema_version": 2,
+  "status": "PREVIEW_READY"
+}

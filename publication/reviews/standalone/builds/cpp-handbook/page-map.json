@@ -1,0 +1,353 @@
+{
+  "status": "STRUCTURAL_PASS",
+  "visual_status": "NOT_REVIEWED",
+  "scope": "Reading-quality signals, not a visual or technical proof",
+  "attempt": "/Users/nekoreb/Workspace/03_Projects/kb/publication/build/standalone/preview/93a7967c49c902b713f1856ec602a5a478ed9f2df43680101db311e2ef8644b1/925ff0190a1f49529f8362612515b995",
+  "audit_sha256": "75eac237be057ac5df13113b1b9d85bc53d3462cd42d5be7cf52ea64177fc4d7",
+  "artifact_manifest_sha256": "50814007526263ddb0c799c05417450f82f54eaf7da5c9e6a3411916f7e01a3f",
+  "corpus_sha256": "7e1c6f42eab77d6878d370028dce80ee770f2ef38022a7d11f823928134acd3c",
+  "views": [
+    {
+      "view": "G6",
+      "pdf": "output/pdf/G6-draft.pdf",
+      "sha256": "35b86701c42e6fad223c14961aa279c42acf5a18ee4056f3ca814ada4e6c5f41",
+      "pages": 48,
+      "components": {
+        "G6-C01": [
+          5
+        ],
+        "G6-C02": [
+          5,
+          6
+        ],
+        "G6-C03": [
+          6
+        ],
+        "G6-C04": [
+          6
+        ],
+        "G6-C05": [
+          7
+        ],
+        "G6-C06": [
+          7
+        ],
+        "G6-C07": [
+          7
+        ],
+        "G6-C08": [
+          8
+        ],
+        "G6-C09": [
+          8
+        ],
+        "G6-C10": [
+          9
+        ],
+        "G6-C11": [
+          9
+        ],
+        "G6-C12": [
+          10
+        ],
+        "G6-C13": [
+          10
+        ],
+        "G6-C14": [
+          10
+        ],
+        "G6-C15": [
+          10
+        ],
+        "G6-C16": [
+          11
+        ],
+        "G6-C17": [
+          11
+        ],
+        "G6-C18": [
+          11
+        ],
+        "G6-C19": [
+          11
+        ],
+        "G6-C20": [
+          12
+        ],
+        "G6-C21": [
+          12
+        ],
+        "G6-C22": [
+          12
+        ],
+        "G6-C23": [
+          12
+        ],
+        "G6-C24": [
+          13
+        ],
+        "G6-C25": [
+          13
+        ],
+        "G6-C26": [
+          14
+        ],
+        "G6-C27": [
+          15
+        ],
+        "G6-C28": [
+          15
+        ],
+        "G6-C29": [
+          15
+        ],
+        "G6-C30": [
+          16
+        ],
+        "G6-C31": [
+          17
+        ],
+        "G6-C32": [
+          17
+        ],
+        "G6-C33": [
+          18
+        ],
+        "G6-C34": [
+          18
+        ],
+        "G6-C35": [
+          19
+        ],
+        "G6-C36": [
+          19
+        ],
+        "G6-C37": [
+          19
+        ],
+        "G6-C38": [
+          19
+        ],
+        "G6-C39": [
+          20
+        ],
+        "G6-C40": [
+          21
+        ],
+        "G6-C41": [
+          21
+        ],
+        "G6-C42": [
+          21
+        ],
+        "G6-C43": [
+          22
+        ],
+        "G6-C44": [
+          22
+        ],
+        "G6-C45": [
+          23
+        ],
+        "G6-C46": [
+          23
+        ],
+        "G6-C47": [
+          23
+        ],
+        "G6-C48": [
+          23
+        ],
+        "G6-C49": [
+          24
+        ],
+        "G6-C50": [
+          24
+        ],
+        "G6-C51": [
+          24
+        ],
+        "G6-C52": [
+          26
+        ],
+        "G6-C53": [
+          26
+        ],
+        "G6-C54": [
+          26
+        ],
+        "G6-C55": [
+          27
+        ],
+        "G6-C56": [
+          27
+        ],
+        "G6-C57": [
+          27
+        ],
+        "G6-C58": [
+          27
+        ],
+        "G6-C59": [
+          28
+        ],
+        "G6-C60": [
+          28
+        ],
+        "G6-C61": [
+          30
+        ],
+        "G6-C62": [
+          30
+        ],
+        "G6-C63": [
+          31
+        ],
+        "G6-C64": [
+          31
+        ],
+        "G6-C65": [
+          31
+        ],
+        "G6-C66": [
+          34
+        ],
+        "G6-C67": [
+          34
+        ],
+        "G6-C68": [
+          35
+        ],
+        "G6-T01": [
+          36,
+          37
+        ],
+        "G6-C69": [
+          37
+        ],
+        "G6-C70": [
+          37,
+          38
+        ],
+        "G6-C71": [
+          38,
+          39
+        ],
+        "G6-C72": [
+          39
+        ],
+        "G6-C73": [
+          40
+        ],
+        "G6-C74": [
+          40,
+          41
+        ],
+        "G6-C75": [
+          47
+        ]
+      },
+      "line_position_checks": 511,
+      "wrap_observations": [],
+      "issues": []
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "cpp-g6-code-tail",
+      "purpose": "experiment-continuation",
+      "view": "G6",
+      "object": "G6-C74",
+      "pages": [
+        40,
+        41
+      ],
+      "pdf_sha256": "35b86701c42e6fad223c14961aa279c42acf5a18ee4056f3ca814ada4e6c5f41",
+      "sources": [
+        {
+          "bytes": 67250,
+          "commit": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+          "id": "G6",
+          "matches_commit": true,
+          "path": "c++/g06-memory-and-performance.md",
+          "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+          "sha256": "adcf479bb9e41ee6d87d2fcd94325c8399f142b1ae8221e21e0870a991105d66",
+          "snapshot_path": "sources/c++/g06-memory-and-performance.md",
+          "version": "1.1.1"
+        }
+      ],
+      "renders": [
+        {
+          "path": "G6-040.png",
+          "sha256": "41c201a1e74bc551e6783a192e292fbaa9d5472cc4eb1856b56b55e29fb4f0c6"
+        },
+        {
+          "path": "G6-041.png",
+          "sha256": "2bfbe054375d08a23535d115da30299d3213e968fc7c75c6a8292d089d2a705a"
+        }
+      ]
+    },
+    {
+      "id": "cpp-g6-experiment-identity",
+      "purpose": "reader-facing-code-identity",
+      "view": "G6",
+      "object": "G6-C73",
+      "pages": [
+        40
+      ],
+      "pdf_sha256": "35b86701c42e6fad223c14961aa279c42acf5a18ee4056f3ca814ada4e6c5f41",
+      "sources": [
+        {
+          "bytes": 67250,
+          "commit": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+          "id": "G6",
+          "matches_commit": true,
+          "path": "c++/g06-memory-and-performance.md",
+          "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+          "sha256": "adcf479bb9e41ee6d87d2fcd94325c8399f142b1ae8221e21e0870a991105d66",
+          "snapshot_path": "sources/c++/g06-memory-and-performance.md",
+          "version": "1.1.1"
+        }
+      ],
+      "renders": [
+        {
+          "path": "G6-040.png",
+          "sha256": "41c201a1e74bc551e6783a192e292fbaa9d5472cc4eb1856b56b55e29fb4f0c6"
+        }
+      ]
+    },
+    {
+      "id": "cpp-g6-final",
+      "purpose": "short-tail-page",
+      "view": "G6",
+      "object": "G6-1769cea85d5b5d9c",
+      "pages": [
+        48
+      ],
+      "pdf_sha256": "35b86701c42e6fad223c14961aa279c42acf5a18ee4056f3ca814ada4e6c5f41",
+      "sources": [
+        {
+          "bytes": 67250,
+          "commit": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+          "id": "G6",
+          "matches_commit": true,
+          "path": "c++/g06-memory-and-performance.md",
+          "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+          "sha256": "adcf479bb9e41ee6d87d2fcd94325c8399f142b1ae8221e21e0870a991105d66",
+          "snapshot_path": "sources/c++/g06-memory-and-performance.md",
+          "version": "1.1.1"
+        }
+      ],
+      "renders": [
+        {
+          "path": "G6-048.png",
+          "sha256": "6ae5c2f85b0bbeb629a8a903e6beeeb8053e065b689fe710f4bbd0c444fcc672"
+        }
+      ]
+    }
+  ],
+  "issues": [],
+  "coverage": {
+    "G6": 3
+  }
+}

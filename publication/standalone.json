@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "engine": {
+    "repository": "https://github.com/snkio027/publication-engine",
+    "commit": "e740367ac9c382f245bf29a0b86f019982622154"
+  },
+  "source_repository": "https://github.com/snkio027/kb",
+  "content_root": "..",
+  "product_root": "..",
+  "output_root": "build/standalone",
+  "profiles": {
+    "esd": "publication/profiles/esd/profile.json",
+    "cpp-handbook": "publication/profiles/cpp-handbook/profile.json",
+    "cpp-handbook-full": "publication/profiles/cpp-handbook-full/profile.json",
+    "cpp-handbook-rc1": "publication/profiles/cpp-handbook-rc1/profile.json",
+    "cpp-handbook-v1": "publication/profiles/cpp-handbook-v1/profile.json",
+    "cpp-failure-model": "publication/profiles/cpp-failure-model/profile.json"
+  }
+}

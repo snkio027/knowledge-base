@@ -1,0 +1,127 @@
+{
+  "kind": "Local assistant visual self-review, not independent acceptance or reader smoke",
+  "samples": [
+    {
+      "profile": "cpp-handbook",
+      "page": 1,
+      "path": "pages/cpp-handbook-001.png",
+      "sha256": "17083143191ca6983d9eb93306a5cf6f9aa04e7336d6f374c9190f874dd020f8",
+      "status": "SELF_REVIEWED_NO_NEW_BLOCKER"
+    },
+    {
+      "profile": "cpp-handbook",
+      "page": 2,
+      "path": "pages/cpp-handbook-002.png",
+      "sha256": "92a795143b7d08d32f43cad655cf6fe24867f930619b22df62ffcd5c997b4107",
+      "status": "SELF_REVIEWED_NO_NEW_BLOCKER"
+    },
+    {
+      "profile": "cpp-handbook",
+      "page": 40,
+      "path": "pages/cpp-handbook-040.png",
+      "sha256": "ac3667bf0d1a9291a8466ca8766b38f76e0e127645b698b0eb91fe36a2946d9d",
+      "status": "SELF_REVIEWED_NO_NEW_BLOCKER"
+    },
+    {
+      "profile": "cpp-handbook",
+      "page": 41,
+      "path": "pages/cpp-handbook-041.png",
+      "sha256": "18ae13d781a0875748e67c27b63e57dce1508afcd5f3536a45f03497b122234a",
+      "status": "SELF_REVIEWED_NO_NEW_BLOCKER"
+    },
+    {
+      "profile": "cpp-handbook",
+      "page": 48,
+      "path": "pages/cpp-handbook-048.png",
+      "sha256": "1c222e296ba4cfee36c251c5b83aa5fcab34d2729f6ea6047074ff99bc314ba5",
+      "status": "SELF_REVIEWED_NO_NEW_BLOCKER"
+    },
+    {
+      "profile": "esd",
+      "page": 2,
+      "path": "pages/esd-002.png",
+      "sha256": "60f5942f776784e057797825dcb5b6f80b43840cc569a30515c91e43165f0fdd",
+      "status": "SELF_REVIEWED_NO_NEW_BLOCKER"
+    },
+    {
+      "profile": "esd",
+      "page": 3,
+      "path": "pages/esd-003.png",
+      "sha256": "f4383fed04256e18fff95b03872f5e3e586c7aa361ccf29e836d4dff6b4cdad9",
+      "status": "SELF_REVIEWED_NO_NEW_BLOCKER"
+    },
+    {
+      "profile": "esd",
+      "page": 26,
+      "path": "pages/esd-026.png",
+      "sha256": "973e45e10dcfbd071afdd3ccebe0dedc913e849a2d34776d6ac2540aa605c423",
+      "status": "SELF_REVIEWED_NO_NEW_BLOCKER"
+    },
+    {
+      "profile": "esd",
+      "page": 27,
+      "path": "pages/esd-027.png",
+      "sha256": "2c118d470e3be0b0670b7714c5c9ce26e4aa60978a0fdad39e95a2955db46190",
+      "status": "SELF_REVIEWED_NO_NEW_BLOCKER"
+    },
+    {
+      "profile": "esd",
+      "page": 58,
+      "path": "pages/esd-058.png",
+      "sha256": "6702f87029bd2fb66206e18c92eb6a98062c11222e5a84b7c0ad58ac2fa71994",
+      "status": "SELF_REVIEWED_NO_NEW_BLOCKER"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "page": 1,
+      "path": "pages/cpp-failure-model-001.png",
+      "sha256": "776a080dced559f901e2335e8bcba66c37fabd66fa1942ea7e0a3cf4e103fe99",
+      "status": "SELF_REVIEWED_NO_NEW_BLOCKER"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "page": 2,
+      "path": "pages/cpp-failure-model-002.png",
+      "sha256": "21a6ff3eb4124fcdf4a15ed3516ca560acde5b0a7cf1a0b22c43bb87e0707077",
+      "status": "SELF_REVIEWED_NO_NEW_BLOCKER"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "page": 108,
+      "path": "pages/cpp-failure-model-108.png",
+      "sha256": "ec21412bcb01edaf995831618ec30a3744a9afa117e49d3405c338801f55526c",
+      "status": "SELF_REVIEWED_NO_NEW_BLOCKER"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "page": 109,
+      "path": "pages/cpp-failure-model-109.png",
+      "sha256": "efdded00fd79136fcb8fead943a5b934e04dd8aacc4127dfc295de10873073c4",
+      "status": "SELF_REVIEWED_NO_NEW_BLOCKER"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "page": 153,
+      "path": "pages/cpp-failure-model-153.png",
+      "sha256": "c95172e87280949950bff67c8dcf560f3bb5047b01b6f467b7bf251e8c664514",
+      "status": "SELF_REVIEWED_NO_NEW_BLOCKER"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "page": 154,
+      "path": "pages/cpp-failure-model-154.png",
+      "sha256": "c3f6d4614f01e439ed7f495045838cb067ad0f0bde061291219292bb910ce3ef",
+      "status": "SELF_REVIEWED_NO_NEW_BLOCKER"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "page": 158,
+      "path": "pages/cpp-failure-model-158.png",
+      "sha256": "ebaa19101e60bc23ea5afd8b1b713f530cdcd0cf53717d8fe03a302319e6c5f8",
+      "status": "SELF_REVIEWED_NO_NEW_BLOCKER"
+    }
+  ],
+  "scope": "Cover/identity, TOC, long code continuation, empty templates, FM literal templates, ending pages",
+  "known_limits": "Historical short tails and whitespace retained; no typography redesign. FM semantic corpus has zero fixtures: NOT_COVERED.",
+  "pixel_comparison": "261/264 full-page PNG hashes unchanged; only identity page 2 differs in each PDF and was inspected."
+}

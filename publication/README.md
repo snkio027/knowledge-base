@@ -1,5 +1,19 @@
 # KB Publication System v2
 
+**2026-10-24：出版引擎独立化，待集中审核。** 通用实现转入 [publication-engine](https://github.com/snkio027/publication-engine)，本仓库通过 [standalone.json](standalone.json) 锁定精确引擎提交。正文、产品 adapter/profile、历史证据和发布资产仍由 KB 管理。旧 `engine/`、`latex/`、Python 环境和测试保留为 `7fb0ad0` 的冻结历史入口，不再双线开发。后续构建使用下述独立入口；本批记录见[独立化集成验收](reviews/standalone/README.md)。
+
+```sh
+# engine 路径由你显式指定，不要求两个仓库相邻。
+sh publication/run.sh --engine /path/to/publication-engine doctor
+sh publication/run.sh --engine /path/to/publication-engine preview --profile cpp-handbook --view G6
+sh publication/run.sh --engine /path/to/publication-engine preview --profile esd --view ESD-REFERENCE-001
+sh publication/run.sh --engine /path/to/publication-engine preview --profile cpp-failure-model
+sh publication/run.sh --engine /path/to/publication-engine candidate --profile cpp-handbook \
+  --from-preview preview/<build-id>/<attempt-id>
+```
+
+先 clone 独立引擎并 checkout `standalone.json` 中的 commit，再运行入口；锁定提交的选定实现字节不匹配时拒绝构建，不自动拉取或跟随 main。`run.sh` 仅启动独立项目的 uv 环境，无第二套构建逻辑。新输出为 `publication/build/standalone/`，与历史 `build/preview`、候选和 release/dist 隔离。正式身份 profile 的回归重建不是重新发布。
+
 **2026-10-24：Mac + uv 运行基线与证据闭环修订，待集中审核。** 新入口使用 uv 管理的 Python 3.14.8；成功预览必须绑定完整机器证据和全页渲染。详情与实际验证范围见[本批实施记录](reviews/runtime-evidence/README.md)。不改正文、历史 profile、视觉规则或已发布资产；不实现新布局、缓存或正式发布入口。
 
 状态：**STABLE / READING EDITION ACCEPTED / VISUAL_PROFILE_FROZEN v1.0**。用户于 2026-09-27 确认冻结最新视觉实现 `1c11c5940c05fe29c46c4500935d5efb673d46a7`；ESD 与 C++ Handbook Visual Profile 同步冻结，语义视觉回归 corpus 成为基线。通用 `publish` 命令保持关闭；已明确授权的 C++ v1.0.0 通过 GitHub Releases 发布，见下文。
@@ -30,7 +44,9 @@
 
 当前 ESD profile 读取六篇工作树 Markdown 的 Front Matter。C++ Pilot `cpp-handbook` 固定读取 `8f479deaf660533b2ad82e1f721eb41a363112b6` 下 G6/G7；`cpp-handbook-full` 读取同一冻结提交的 G0–G12，解析书名式 H1、正文版本与稳定锚点。不把当前 HEAD 当作 C++ 内容版本，不把 C++ 文件复制到 `design/` 充当新来源。
 
-## 运行
+## 历史单仓运行方式（冻结）
+
+以下命令与机制说明保留 `7fb0ad0` 单仓实现的使用语境，用于历史回查；新构建应使用页首独立入口。历史尝试不能被新入口自动升级或补写证据。
 
 依赖：macOS `sandbox-exec`、Git、uv、Pandoc、LuaLaTeX、Poppler `pdftoppm`、`kpsewhich` 和 TeX 字体。Python 及 Python 包由独立的 [uv 项目](pyproject.toml)、[锁文件](uv.lock)与 `.python-version` 固定，不使用系统 Python。原 [requirements.txt](requirements.txt)仅保留历史依赖说明，不是当前安装入口。缺少隔离后端时失败，不回退到无沙箱编译。不提供 Linux/CI 或 PDF/UA 保证。
 

@@ -1,0 +1,15 @@
+{
+  "artifact_manifest_sha256": "50814007526263ddb0c799c05417450f82f54eaf7da5c9e6a3411916f7e01a3f",
+  "artifacts": {
+    "output/pdf/G6-draft.pdf": "35b86701c42e6fad223c14961aa279c42acf5a18ee4056f3ca814ada4e6c5f41"
+  },
+  "audit_sha256": "75eac237be057ac5df13113b1b9d85bc53d3462cd42d5be7cf52ea64177fc4d7",
+  "checks": "See work/preview-audit.json",
+  "commit_protocol": "file-fsync-then-no-replace-link-v1",
+  "evidence_schema": 1,
+  "execution_id": "7c25034fe8c3dd2ffe609035e484f3d4c029a455a4a3237145e0451035ba8405",
+  "meaning": "Draft reading artifacts; not formal publication or visual approval",
+  "mode": "FULL_PREVIEW",
+  "schema_version": 2,
+  "status": "PREVIEW_READY"
+}

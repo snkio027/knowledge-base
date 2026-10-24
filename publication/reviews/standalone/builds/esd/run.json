@@ -1,0 +1,312 @@
+{
+  "attempt_id": "280bceca50e44bf88966e3e22fe92c4d",
+  "build_id": "0d15526a54315ffe64d11581d8bd54e01db602920cf12fbcc5ff3b049859159a",
+  "channel": "PREVIEW",
+  "descriptor_path": "/Users/nekoreb/Workspace/03_Projects/kb/publication/standalone.json",
+  "identity": {
+    "descriptor_path": "/Users/nekoreb/Workspace/03_Projects/kb/publication/standalone.json",
+    "inputs": [
+      {
+        "bytes": 822,
+        "path": "design/fonts.lock",
+        "sha256": "5746422ca85f2fdb922165b0b3f1904b62a813efced630fdc38756e411df9eba"
+      },
+      {
+        "bytes": 217,
+        "path": "design/package-lock.txt",
+        "sha256": "8bb659ac486663c135c7af60f581bdc207f0ad8164b5168f73526f5473d77dff"
+      },
+      {
+        "bytes": 185,
+        "path": "design/texlive.profile",
+        "sha256": "6b659591a5d429d301d3a053a3cdad2a268a8aa393049288ed5b66bdfd227bc7"
+      },
+      {
+        "bytes": 3340,
+        "path": "input-bindings.json",
+        "sha256": "8d8ac117f074f29da55ea7500fff52d42fb6189b1f11bf58652eaa4a3994c074"
+      },
+      {
+        "bytes": 768,
+        "path": "project.json",
+        "sha256": "18c58f57de4303d9a350771d3c7d3dc1c596adfdabc3dcb58f156c7d3b53da89"
+      },
+      {
+        "bytes": 7,
+        "path": "publication/.python-version",
+        "sha256": "5abd4dc1efa09469b88916c8e4e027a8c266a9b6d06f43ac9da3e30cd00b4ab5"
+      },
+      {
+        "bytes": 9633,
+        "path": "publication/engine/candidate.py",
+        "sha256": "2fbddb5f7ecf3c9f8957ce473ec40349a165a4ad8edaa9bb1e415c2048adcb31"
+      },
+      {
+        "bytes": 4653,
+        "path": "publication/engine/environment.py",
+        "sha256": "056fe19c7c432a4b05dd2d68c9651f2044aba1e83c3af2d835afdcdccb769a53"
+      },
+      {
+        "bytes": 9534,
+        "path": "publication/engine/evidence.py",
+        "sha256": "9c0d712a9756087cff3c1bbc57fd4013f2947ccc4147c2c06ce47a206b9afb6f"
+      },
+      {
+        "bytes": 8896,
+        "path": "publication/engine/fidelity.py",
+        "sha256": "dabe55051ad8b6d46c1a5fd6bdde73811ea84289b606a13d75f1b13b780c1b08"
+      },
+      {
+        "bytes": 12305,
+        "path": "publication/engine/filters/blocks.lua",
+        "sha256": "980cb1b5cf5ef95988f705302e1fe1a286a1a4719cb0c3d785d3c9a9f79d1270"
+      },
+      {
+        "bytes": 3488,
+        "path": "publication/engine/links.py",
+        "sha256": "682649e929cb396fca6d739e9bad05d3c0f6f3096772d5cbc49d59d576513bb0"
+      },
+      {
+        "bytes": 41506,
+        "path": "publication/engine/preview.py",
+        "sha256": "79d27e1b5222270783ed83f930113549319a10bb9792fe099dcb3fad0bfc4e4b"
+      },
+      {
+        "bytes": 11331,
+        "path": "publication/engine/preview_audit.py",
+        "sha256": "61582fdd43af61316eafb2fd53dc50a18b63947143e06eec76047dd22e191d86"
+      },
+      {
+        "bytes": 5023,
+        "path": "publication/engine/project.py",
+        "sha256": "bff5e732067d2665c51ce3316969dbcb63c2ba06884fcbbe19d822146edd8c14"
+      },
+      {
+        "bytes": 14600,
+        "path": "publication/engine/pub.py",
+        "sha256": "b990c9d3579d507d3e451ea9d355d6767abb601a4d1e16c14f6bd007906db0a5"
+      },
+      {
+        "bytes": 8561,
+        "path": "publication/engine/source_model.py",
+        "sha256": "53a722ace2054169254043b734e9064534a49b3c17f31da1d3c337ed3c8b4ea0"
+      },
+      {
+        "bytes": 11869,
+        "path": "publication/latex/kb-base.sty",
+        "sha256": "99bff87a3741f7471d6823eca6656197469f956cfe20e3afbe9c959819373c38"
+      },
+      {
+        "bytes": 191,
+        "path": "publication/latex/kbbook.cls",
+        "sha256": "6ecd675120e75aba1ed30ebd0bb8f783d63a3586d64e1e250f9a0d18e6160d29"
+      },
+      {
+        "bytes": 512,
+        "path": "publication/profiles/esd/adapter.py",
+        "sha256": "097b51eb7dd70448831838c35c8ebc17526ba357442081424aab23fa66205c09"
+      },
+      {
+        "bytes": 2947,
+        "path": "publication/profiles/esd/profile.json",
+        "sha256": "3f84de44fc67faff52d0c503c78660b9cc74d402ed4a1c4eb246d87181f523ed"
+      },
+      {
+        "bytes": 2498,
+        "path": "publication/profiles/esd/table-layouts.json",
+        "sha256": "c4e48530125e4ef3160ba317dfa8905bb03078dc69971cb570506d3711d610a7"
+      },
+      {
+        "bytes": 2398,
+        "path": "publication/profiles/esd/template.tex",
+        "sha256": "e78beb22d0c52c36297d2e23533641305385670fc8a1479ddff48c4e7fce46e4"
+      },
+      {
+        "bytes": 116,
+        "path": "publication/profiles/esd/theme.sty",
+        "sha256": "648ccceeb02e800c832b7667b6fceafb691037ea4b80675e9839b98e201cd1b0"
+      },
+      {
+        "bytes": 229,
+        "path": "publication/pyproject.toml",
+        "sha256": "4d5fbc989bec0768ddc58d145f35715489434b3290a566402dd86dbc2257ed58"
+      },
+      {
+        "bytes": 2080,
+        "path": "publication/tools/inspect-pages.py",
+        "sha256": "45144599ad3ad750e66b1fb5e8a069c24f410f239a1cf956e84d624be99c0098"
+      },
+      {
+        "bytes": 14563,
+        "path": "publication/tools/reading-review.py",
+        "sha256": "d5b91d5aa90199b61de07b8b8dc4d3b4da8b50484b0e6cda85ddfc90de3cdb9c"
+      },
+      {
+        "bytes": 9522,
+        "path": "publication/uv.lock",
+        "sha256": "7cf335d932d63ba24aa0eb01eb76c19f60e744a66590973f971dee127838075a"
+      },
+      {
+        "bytes": 2444,
+        "path": "source-set.json",
+        "sha256": "9a73e1a41a89af46a1da6bd9c347f3ac0c00fc5398954b3a4e06ed96ffa005fc"
+      },
+      {
+        "bytes": 21532,
+        "path": "sources/design/00-优秀系统设计与工程保证标准-文档体系与规范关系-v1.0.0.md",
+        "sha256": "6f86cdf53579f90f03f3cffad50d11caa76ac698ca6e379d5d6871b8b8629f5f"
+      },
+      {
+        "bytes": 48829,
+        "path": "sources/design/01-优秀系统设计与工程保证方法论-v1.1.0.md",
+        "sha256": "2351864741fe50b0a6a16999f48ea7d798d3b9ad603d5612b0ab8ef5ca08b3e2"
+      },
+      {
+        "bytes": 78329,
+        "path": "sources/design/02-优秀系统设计-从约束不变量到证据-v1.1.0.md",
+        "sha256": "9b47739f578d867c7e3bc899de79ac4fe65684e67e4a081aa80a6ecfb1f1d2f3"
+      },
+      {
+        "bytes": 45539,
+        "path": "sources/design/03-系统设计与工程保证治理及符合性规范-v1.0.0.md",
+        "sha256": "75217cef57cccc01258967c3ed9075f9f4f33257f67aa2a1409019d8f9a11a09"
+      },
+      {
+        "bytes": 52815,
+        "path": "sources/design/04-工程保证论证证据与裁决规范-v1.0.0.md",
+        "sha256": "0b2273747bff2150c23da1509d137d68889e75a3ec917f972010afd927026f4d"
+      },
+      {
+        "bytes": 44522,
+        "path": "sources/design/05-生产就绪与运行韧性标准-v1.0.0.md",
+        "sha256": "710b0c1d268ffddce2a960b5900b1bcb397d4d32dc36370169d38c70efdfcc1a"
+      }
+    ],
+    "mounts": {
+      "content": "/Users/nekoreb/Workspace/03_Projects/kb",
+      "engine": "/Users/nekoreb/Workspace/03_Projects/publication-engine",
+      "output": "/Users/nekoreb/Workspace/03_Projects/kb/publication/build/standalone",
+      "product": "/Users/nekoreb/Workspace/03_Projects/kb"
+    },
+    "policy": {
+      "candidate": "FREEZE_EXISTING_PREVIEW_FOR_REVIEW_ONLY",
+      "git_probe_policy": "reject-content-filters-and-gitlinks-v1",
+      "operation": "PREVIEW_INPUT_PREPARATION",
+      "output_policy": "dedicated-output-root/preview/<build-id>/<attempt-id>",
+      "pdf_build": "SANDBOXED_DRAFT_PREVIEW_AVAILABLE",
+      "project_schema": 1,
+      "publish": "DISABLED",
+      "result_commit_policy": "file-fsync-then-no-replace-link-v1",
+      "schema_version": 3
+    },
+    "publication": {
+      "profile": "esd",
+      "profile_path": "publication/profiles/esd",
+      "repository": "https://github.com/snkio027/kb",
+      "schema_version": 3,
+      "sources": [
+        {
+          "bytes": 21532,
+          "commit": "7fb0ad0c85a4835fabe6482a9e73828d81f25b6a",
+          "id": "ESD-SUITE-000",
+          "matches_commit": true,
+          "path": "design/00-优秀系统设计与工程保证标准-文档体系与规范关系-v1.0.0.md",
+          "revision": "WORKTREE",
+          "sha256": "6f86cdf53579f90f03f3cffad50d11caa76ac698ca6e379d5d6871b8b8629f5f",
+          "snapshot_path": "sources/design/00-优秀系统设计与工程保证标准-文档体系与规范关系-v1.0.0.md"
+        },
+        {
+          "bytes": 48829,
+          "commit": "7fb0ad0c85a4835fabe6482a9e73828d81f25b6a",
+          "id": "ESD-METHOD-001",
+          "matches_commit": true,
+          "path": "design/01-优秀系统设计与工程保证方法论-v1.1.0.md",
+          "revision": "WORKTREE",
+          "sha256": "2351864741fe50b0a6a16999f48ea7d798d3b9ad603d5612b0ab8ef5ca08b3e2",
+          "snapshot_path": "sources/design/01-优秀系统设计与工程保证方法论-v1.1.0.md"
+        },
+        {
+          "bytes": 78329,
+          "commit": "7fb0ad0c85a4835fabe6482a9e73828d81f25b6a",
+          "id": "ESD-REFERENCE-001",
+          "matches_commit": true,
+          "path": "design/02-优秀系统设计-从约束不变量到证据-v1.1.0.md",
+          "revision": "WORKTREE",
+          "sha256": "9b47739f578d867c7e3bc899de79ac4fe65684e67e4a081aa80a6ecfb1f1d2f3",
+          "snapshot_path": "sources/design/02-优秀系统设计-从约束不变量到证据-v1.1.0.md"
+        },
+        {
+          "bytes": 45539,
+          "commit": "7fb0ad0c85a4835fabe6482a9e73828d81f25b6a",
+          "id": "ESD-GOV-001",
+          "matches_commit": true,
+          "path": "design/03-系统设计与工程保证治理及符合性规范-v1.0.0.md",
+          "revision": "WORKTREE",
+          "sha256": "75217cef57cccc01258967c3ed9075f9f4f33257f67aa2a1409019d8f9a11a09",
+          "snapshot_path": "sources/design/03-系统设计与工程保证治理及符合性规范-v1.0.0.md"
+        },
+        {
+          "bytes": 52815,
+          "commit": "7fb0ad0c85a4835fabe6482a9e73828d81f25b6a",
+          "id": "ESD-ASSURANCE-001",
+          "matches_commit": true,
+          "path": "design/04-工程保证论证证据与裁决规范-v1.0.0.md",
+          "revision": "WORKTREE",
+          "sha256": "0b2273747bff2150c23da1509d137d68889e75a3ec917f972010afd927026f4d",
+          "snapshot_path": "sources/design/04-工程保证论证证据与裁决规范-v1.0.0.md"
+        },
+        {
+          "bytes": 44522,
+          "commit": "7fb0ad0c85a4835fabe6482a9e73828d81f25b6a",
+          "id": "ESD-OPS-001",
+          "matches_commit": true,
+          "path": "design/05-生产就绪与运行韧性标准-v1.0.0.md",
+          "revision": "WORKTREE",
+          "sha256": "710b0c1d268ffddce2a960b5900b1bcb397d4d32dc36370169d38c70efdfcc1a",
+          "snapshot_path": "sources/design/05-生产就绪与运行韧性标准-v1.0.0.md"
+        }
+      ],
+      "views": [
+        "ESD-REFERENCE-001"
+      ]
+    },
+    "runtime": {
+      "actual_fonts": "NOT_RESOLVED",
+      "pdf_toolchain": "NOT_PROBED / NOT_EXECUTED",
+      "python": {
+        "implementation": "CPython",
+        "path": "/Users/nekoreb/.local/share/uv/python/cpython-3.14.8-macos-aarch64-none/bin/python3.14",
+        "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+        "sha256": "69d5d7633be933a8e4df3c1d6ce4a4883233f0b24660ceaeb8720c4e9f368cee",
+        "version": "3.14.8 (main, Oct 14 2026, 00:55:47) [Clang 23.1.3 ]"
+      }
+    },
+    "source": {
+      "content": {
+        "commit": "7fb0ad0c85a4835fabe6482a9e73828d81f25b6a",
+        "dirty": true,
+        "status_policy": "reject-content-filters-and-gitlinks-v1",
+        "worktree_status_sha256": "0cba44120dcd7d925f4e790bc2bc57bb7818edc23bc501cfbc6425d7f64caaf0"
+      },
+      "engine": {
+        "commit": "e740367ac9c382f245bf29a0b86f019982622154",
+        "dirty": true,
+        "status_policy": "reject-content-filters-and-gitlinks-v1",
+        "worktree_status_sha256": "52bd55b43dbdc0888256d482264c34f4bcb3f80c4c311bd52e569cce67340ab5"
+      },
+      "engine_pin": {
+        "commit": "e740367ac9c382f245bf29a0b86f019982622154",
+        "repository": "https://github.com/snkio027/publication-engine"
+      },
+      "project_sha256": "18c58f57de4303d9a350771d3c7d3dc1c596adfdabc3dcb58f156c7d3b53da89"
+    }
+  },
+  "mounts": {
+    "content": "/Users/nekoreb/Workspace/03_Projects/kb",
+    "engine": "/Users/nekoreb/Workspace/03_Projects/publication-engine",
+    "output": "/Users/nekoreb/Workspace/03_Projects/kb/publication/build/standalone",
+    "product": "/Users/nekoreb/Workspace/03_Projects/kb"
+  },
+  "started_at": "2026-10-24T12:56:06.594170+00:00",
+  "status": "PREPARING"
+}

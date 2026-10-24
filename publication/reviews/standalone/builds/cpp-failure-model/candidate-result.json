@@ -1,0 +1,8 @@
+{
+  "candidate_id": "debd535091d0c37aac8f5a91fb9927e6288a21de6951db0b472fdc6b87b2a3cf",
+  "commit_protocol": "file-fsync-then-no-replace-link-v1",
+  "formal_release": false,
+  "manifest_sha256": "2a1a2cf9cf17f88a4e3e2b9a32079996ad0c04c6dbad186991b8f57bd960eef4",
+  "path": "/Users/nekoreb/Workspace/03_Projects/kb/publication/build/standalone/candidate/debd535091d0c37aac8f5a91fb9927e6288a21de6951db0b472fdc6b87b2a3cf/ecd04dd0d126437f9acfeff5d0682680",
+  "status": "CANDIDATE_PREPARED_FOR_REVIEW"
+}

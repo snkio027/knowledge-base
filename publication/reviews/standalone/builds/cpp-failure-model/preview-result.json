@@ -1,0 +1,15 @@
+{
+  "artifact_manifest_sha256": "278c00c52f403af6852bba2a7f3f8393b858b6742709d9b91449a04222c2b927",
+  "artifacts": {
+    "output/pdf/Modern-Cpp-Failure-Semantics-Handbook-v1.0.0.pdf": "321283afc71d0cfa29a69a67d836ba53efe24737bcfa65be8116e3a5b8d0456c"
+  },
+  "audit_sha256": "3ef4d95508cc86724dcc71b14e5e8da4c536edc67bb362e290da475a7c622ab0",
+  "checks": "See work/preview-audit.json",
+  "commit_protocol": "file-fsync-then-no-replace-link-v1",
+  "evidence_schema": 1,
+  "execution_id": "f1d9d9a2f89ce6743c10812f55e53fba1ac51112a37483bcb04511b93d1153a3",
+  "meaning": "Draft reading artifacts; not formal publication or visual approval",
+  "mode": "FULL_PREVIEW",
+  "schema_version": 2,
+  "status": "PREVIEW_READY"
+}
