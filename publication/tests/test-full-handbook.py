@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Full-book integration checks; no C++ compilation or layout redesign."""
 import copy
+import ast as python_ast
 import importlib.util
 import json
 import re
@@ -75,13 +76,22 @@ class FullHandbookTests(unittest.TestCase):
         self.assertEqual((PROFILE/'theme.sty').read_text(),base_theme+'% Full-book glyph coverage: same math-arrow fallback as the frozen Pilot.\n'+r'\newunicodechar{↔}{\ensuremath{\leftrightarrow}}'+'\n')
         template=(ROOT/'publication/profiles/cpp-handbook/template.tex').read_text()
         self.assertEqual((PROFILE/'template.tex').read_text(),template.replace('Visual Profile Candidate，尚未冻结','Visual Profile v1.0，已冻结；全书制品待审核'))
-        for folder in ('publication/engine','publication/latex','publication/profiles/cpp-handbook'):
+        # Protocol hardening may change controller/candidate code, not visuals.
+        for folder in ('publication/latex','publication/profiles/cpp-handbook'):
             names=subprocess.check_output(['git','ls-tree','-r','--name-only',VISUAL,'--',folder],cwd=ROOT).decode().splitlines()
             for name in names:
                 if name in ('publication/engine/preview_audit.py','publication/engine/links.py',
                             'publication/engine/source_model.py','publication/engine/preview.py',
                             'publication/engine/filters/blocks.lua'):continue  # Generic block targets bounded by test-failure-model.py; shared layout remains frozen.
                 self.assertEqual((ROOT/name).read_bytes(),subprocess.check_output(['git','cat-file','blob',VISUAL+':'+name],cwd=ROOT),name)
+        baseline='9e446f62616c959c8b90b762cfe981aa00e0352c'
+        for name in ('publication/engine/filters/blocks.lua','publication/engine/preview_audit.py','publication/engine/links.py'):
+            self.assertEqual((ROOT/name).read_bytes(),subprocess.check_output(['git','--no-replace-objects','show',baseline+':'+name],cwd=ROOT),name)
+        def visual_functions(value):
+            return {n.name:python_ast.dump(n,include_attributes=False) for n in python_ast.parse(value).body
+                    if isinstance(n,python_ast.FunctionDef) and n.name in ('tables_to_records','bind_code_roles','code_labels','compose','build_view')}
+        self.assertEqual(visual_functions((ROOT/'publication/engine/preview.py').read_text()),
+                         visual_functions(subprocess.check_output(['git','--no-replace-objects','show',baseline+':publication/engine/preview.py'],cwd=ROOT)))
 
     def test_destination_cache_preserves_coordinates(self):
         from preview_audit import destination_position

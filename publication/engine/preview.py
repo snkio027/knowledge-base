@@ -89,7 +89,9 @@ def preflight():
     try:
         import pypdf
     except ImportError as error:
-        raise RuntimeError("PDF preview needs pypdf; use a Python environment with publication/requirements-preview.txt installed") from error
+        raise RuntimeError("PDF preview needs pypdf; run uv sync --project publication --locked --group review") from error
+    from environment import require_managed
+    require_managed(Path(__file__).resolve().parents[1])
     missing = [name for name in ("pandoc", "lualatex", "pdftoppm") if not shutil.which(name)]
     if missing:
         raise RuntimeError("missing PDF tools on PATH: " + ", ".join(missing))
@@ -527,14 +529,16 @@ def worker(run, origin):
     if not all(tools.values()):
         raise RuntimeError("pandoc, lualatex and pdftoppm are required")
     tool_identity = {name: {"path": file, "sha256": sha(file), "version": command([file, "-v" if name == "pdftoppm" else "--version"], work).decode(errors="replace").splitlines()[0]} for name, file in tools.items()}
+    from environment import capture
+    environment_before = capture(inputs / 'publication', inputs / 'publication/latex')
     documents = []
     for definition in model["sources"]:
         source = inputs / definition["snapshot_path"]
         ast = json.loads(command([tools["pandoc"], source, "-f", profile.get('source_format', 'markdown-smart'), "-t", "json"], work))
-        original_blocks = [n["c"][1] for n in walk(ast["blocks"]) if n.get("t") == "CodeBlock"]
-        meta, aliases, semantic = adapter.adapt(ast, definition, text)
-        if [n["c"][1] for n in walk(ast["blocks"]) if n.get("t") == "CodeBlock"] != original_blocks:
-            raise RuntimeError("source adapter changed code bytes")
+        from fidelity import adapt_checked
+        ast, meta, aliases, semantic, original, fidelity = adapt_checked(ast, adapter, definition, text)
+        dump(work / 'source-ast' / (definition['id'] + '.original.json'), original)
+        dump(work / 'source-ast' / (definition['id'] + '.fidelity.json'), fidelity)
         headers = [node for node in walk(ast["blocks"]) if node.get("t") == "Header"]
         ids = [h["c"][1][0] for h in headers]
         # Explicit block-local targets are not headings/bookmarks. Keep their
@@ -576,7 +580,10 @@ def worker(run, origin):
     python_library = {"version": pypdf.__version__, "files": {str(p.relative_to(package_root)): sha(p) for p in sorted(package_root.rglob("*.py"))}}
     if any(sha(file) != tool_identity[name]["sha256"] for name, file in tools.items()):
         raise RuntimeError("tool executable changed during preview")
-    execution_identity = {"preparation_id": record["build_id"], "tools": tool_identity, "pypdf": python_library, "tex_input_sha256": dependencies}
+    if capture(inputs / 'publication', inputs / 'publication/latex') != environment_before:
+        raise RuntimeError('selected environment drift during preview')
+    execution_identity = {"preparation_id": record["build_id"], "tools": tool_identity, "pypdf": python_library, "tex_input_sha256": dependencies,
+                          "selected_environment": environment_before, "environment_drift": "NOT_OBSERVED"}
     execution_id = hashlib.sha256(json.dumps(execution_identity, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
     report = {"status": "BUILT_FOR_REVIEW", "source_build_id": record["build_id"], "views": audits,
               "execution_id": execution_id, "execution_identity": execution_identity,
@@ -615,10 +622,13 @@ def run_preview(prepared, origin, pub):
                 raise RuntimeError(f"preview worker exited {code}; see {work / 'worker.log'}")
             verify_live_inputs(run, origin, pub)
             report = json.loads((work / "preview-audit.json").read_text())
+            from evidence import seal, SCHEMA
+            manifest_sha = seal(run, pub)
             for artifact in report["views"]:
                 if sha(work / artifact["pdf"]) != artifact["sha256"]:
                     raise RuntimeError("output digest changed before completion")
-            terminal.commit({"schema_version": 1, "commit_protocol": pub.POLICY["result_commit_policy"], "status": "PREVIEW_READY", "execution_id": report["execution_id"], "audit_sha256": sha(work / "preview-audit.json"), "meaning": "Draft reading artifacts; not formal publication or visual approval",
+            terminal.commit({"schema_version": 2, "evidence_schema": SCHEMA, "mode": "FULL_PREVIEW", "artifact_manifest_sha256": manifest_sha,
+                             "commit_protocol": pub.POLICY["result_commit_policy"], "status": "PREVIEW_READY", "execution_id": report["execution_id"], "audit_sha256": sha(work / "preview-audit.json"), "meaning": "Draft reading artifacts; not formal publication or visual approval",
                              "checks": "See work/preview-audit.json", "artifacts": {a["pdf"]: a["sha256"] for a in report["views"]}})
             return {"status": "PREVIEW_READY", "path": str(work / "output/pdf"), "audit": str(work / "preview-audit.json")}
         except BaseException as error:

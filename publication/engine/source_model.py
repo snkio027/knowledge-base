@@ -11,7 +11,7 @@ def git(root, *args):
     env = {k: v for k, v in os.environ.items()
            if not k.startswith(('GIT_', 'XCRUN_')) and k not in ('TMPDIR', 'TMP', 'TEMP')}
     env['GIT_OPTIONAL_LOCKS'] = '0'
-    return subprocess.check_output(['git', '--no-pager', '-c', 'core.fsmonitor=false',
+    return subprocess.check_output(['git', '--no-replace-objects', '--no-pager', '-c', 'core.fsmonitor=false',
                                     '-C', str(root), *args], env=env, stderr=subprocess.PIPE)
 
 
@@ -92,6 +92,9 @@ def snapshot(root_fd, profile, views, pub):
     for name in config.get('dependencies', []):
         path_parts(name, pub)
         snapshot[name] = read(root_fd, name, pub)
+    for name in ('pyproject.toml', 'uv.lock', '.python-version'):
+        path = 'publication/' + name
+        snapshot[path] = read(root_fd, path, pub)
     for name in (prefix + '/adapter.py', prefix + '/template.tex', prefix + '/theme.sty',
                  'publication/engine/pub.py', 'publication/engine/preview.py'):
         if name not in snapshot:

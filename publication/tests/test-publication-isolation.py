@@ -42,6 +42,8 @@ class IsolationTests(unittest.TestCase):
         shutil.copytree(SCRIPTS, self.root / "publication/engine", ignore=shutil.ignore_patterns("__pycache__"))
         shutil.copytree(SCRIPTS.parent / "latex", self.root / "publication/latex")
         shutil.copytree(SCRIPTS.parent / "profiles/esd", self.root / "publication/profiles/fixture")
+        for name in ('pyproject.toml', 'uv.lock', '.python-version'):
+            shutil.copyfile(SCRIPTS.parent / name, self.root / 'publication' / name)
         (self.root / "scripts").mkdir()
         for name in LEGACY:
             shutil.copyfile(SCRIPTS.parents[1] / "design/scripts" / name, self.root / "scripts" / name)

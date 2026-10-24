@@ -9,8 +9,11 @@ import hashlib
 import json
 import re
 import subprocess
+import sys
 from pathlib import Path
 from pypdf import PdfReader
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'engine'))
+from evidence import verify
 
 
 def sha(path):
@@ -71,22 +74,24 @@ def identity_signals(component, positions, role_position, page_texts):
 
 def inspect(attempt, render=True):
     work = attempt / 'work'
-    ready = load(attempt / 'preview-result.json')
-    assert ready['status'] == 'PREVIEW_READY', 'unfinished/failed preview is not reviewable'
-    assert sha(work / 'preview-audit.json') == ready['audit_sha256']
-    report = load(work / 'preview-audit.json')
-    catalog = load(work / 'source-catalog.json')
+    _, ready, report, manifest, files, _ = verify(attempt)
+    catalog = json.loads(files['source-catalog.json'])
     fixtures = load(Path(__file__).with_name('reading-corpus.json'))['fixtures']
+    if not fixtures or len({f['id'] for f in fixtures})!=len(fixtures):
+        raise RuntimeError('empty/duplicate fixture registry')
     target = work / 'reading-regression'
     target.mkdir(exist_ok=False)
     result = {'status': 'STRUCTURAL_PASS', 'visual_status': 'NOT_REVIEWED',
               'scope': 'Reading-quality signals, not a visual or technical proof',
               'attempt': str(attempt), 'audit_sha256': ready['audit_sha256'],
+              'artifact_manifest_sha256': ready['artifact_manifest_sha256'],
               'corpus_sha256': sha(Path(__file__).with_name('reading-corpus.json')),
               'views': [], 'fixtures': [], 'issues': []}
+    expected_fixtures=[]
     for view in report['views']:
         pdf = work / view['pdf']
-        assert sha(pdf) == view['sha256']
+        if sha(pdf) != view['sha256']:
+            raise RuntimeError('PDF digest changed')
         reader = PdfReader(pdf)
         folder = work / 'typeset' / view['view']
         components = load(folder / 'reading-components.json')
@@ -165,20 +170,21 @@ def inspect(attempt, render=True):
                 continue
             if f.get('view') and view['view'] not in (f['view'], f['view']+'-COMPACT'):
                 continue
+            expected_fixtures.append((f['id'],view['view']))
             pages, bound = [], None
             if f['kind']=='code':
                 matches=[c for c in components if c['kind']!='table' and c['id'].startswith(f['document']+'-')
                          and (c['caption']==f['caption'] if 'caption' in f else f['contains'] in '\n'.join(c['source_lines']))]
-                assert len(matches)==1,(f,matches)
+                if len(matches)!=1: raise RuntimeError('fixture code binding mismatch: '+f['id'])
                 bound=matches[0]['id']; pages=mapping[bound]
             elif f['kind']=='table':
                 matches=[t for t in tables if t['table'].startswith(f['document']+'-') and
                          (t['section_title']==f['section'] if 'section' in f else t['headers']==f['headers'])]
-                assert len(matches)==1,(f,matches)
+                if len(matches)!=1: raise RuntimeError('fixture table binding mismatch: '+f['id'])
                 bound=matches[0]['table']; pages=mapping[bound]
             elif f['kind']=='heading':
                 matches=[s for s in sections if s['document']==f['document'] and s['title']==f['title']]
-                assert len(matches)==1,(f,matches)
+                if len(matches)!=1: raise RuntimeError('fixture heading binding mismatch: '+f['id'])
                 bound=matches[0]['anchor']; pages=[position(reader,bound)[0]]
                 if f.get('include_section_end'):
                     pages=list(range(pages[0],min(view['pages'],matches[0]['end_page'])+1))
@@ -189,6 +195,10 @@ def inspect(attempt, render=True):
                 bound=f['anchor']; pages=[position(reader,bound)[0]]
             elif f['kind']=='toc':
                 bound='generated-toc'; pages=toc
+            else:
+                raise RuntimeError('unsupported fixture kind: '+f['kind'])
+            if not pages or not bound or any(p < 1 or p > view['pages'] for p in pages):
+                raise RuntimeError('empty/invalid fixture coverage: '+f['id'])
             if f.get('unbroken_token'):
                 token=f['unbroken_token']
                 # Bounded negative regression: never treat normalization that
@@ -205,7 +215,13 @@ def inspect(attempt, render=True):
                     subprocess.run(['pdftoppm','-f',str(page),'-l',str(page),'-r','120','-singlefile','-png',str(pdf),str(target/name)],check=True)
                 if render:item['renders'].append({'path':png.name,'sha256':sha(png)})
             result['fixtures'].append(item)
-    if result['issues']:result['status']='REVIEW_REQUIRED'
+    counts = {v['view']:sum(f['view']==v['view'] for f in result['fixtures']) for v in report['views']}
+    if [(f['id'],f['view']) for f in result['fixtures']]!=expected_fixtures:
+        raise RuntimeError('expected/observed fixture coverage mismatch')
+    result['coverage'] = counts
+    if not all(counts.values()): result['status']='NOT_COVERED'
+    elif result['issues']:result['status']='REVIEW_REQUIRED'
+    if verify(attempt)[3] != manifest: raise RuntimeError('preview changed during review')
     (target/'page-map.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps({'path':str(target),'status':result['status'],'fixtures':len(result['fixtures']),
                       'issues':result['issues']},ensure_ascii=False))

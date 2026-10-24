@@ -102,7 +102,7 @@ def git_context(root):
 
     def git(*args):
         return subprocess.check_output(
-            ["git", "--no-pager", "-c", "core.fsmonitor=false", "-C", str(root), *args], env=env,
+            ["git", "--no-replace-objects", "--no-pager", "-c", "core.fsmonitor=false", "-C", str(root), *args], env=env,
             stderr=subprocess.PIPE,
         )
 
@@ -280,12 +280,20 @@ def root_handle(root):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("operation", choices=("preview", "build", "check", "render", "candidate", "publish"))
+    parser.add_argument("operation", choices=("doctor", "preview", "build", "check", "render", "candidate", "publish"))
     parser.add_argument("--prepare-only", action="store_true")
-    parser.add_argument("--profile", required=True)
+    parser.add_argument("--profile")
     parser.add_argument("--view", action="append", help="Repeat to select views; default is every catalog view")
     parser.add_argument("--from-preview", help="repository-relative publication/build/preview/<id>/<attempt>; candidate only")
     args = parser.parse_args(argv)
+    if args.operation == 'doctor':
+        from environment import doctor
+        doctor(ROOT / 'publication')
+        return 0
+    if not args.profile:
+        parser.error('--profile is required for publication operations')
+    from environment import require_managed
+    require_managed(ROOT / 'publication')
     if args.operation not in ("preview", "candidate"):
         parser.error("only preview and candidate freezing are enabled; publication is disabled")
     if (args.operation == "candidate" and (not args.from_preview or args.prepare_only)) or (args.operation == "preview" and args.from_preview):

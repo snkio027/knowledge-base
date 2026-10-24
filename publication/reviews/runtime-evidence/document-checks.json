@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "documents": [
+    {
+      "path": "publication/README.md",
+      "status": "PASS",
+      "gfm_parse": true,
+      "headings": 6,
+      "local_links": 19,
+      "heading_hierarchy_and_uniqueness": true,
+      "fence_balance": true
+    },
+    {
+      "path": "publication/reviews/runtime-evidence/README.md",
+      "status": "PASS",
+      "gfm_parse": true,
+      "headings": 8,
+      "local_links": 11,
+      "heading_hierarchy_and_uniqueness": true,
+      "fence_balance": true
+    }
+  ],
+  "json_records_parsed": 10,
+  "commands": [
+    {
+      "argv": [
+        "uv",
+        "lock",
+        "--project",
+        "publication",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Resolved 3 packages in 1ms\n"
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "not_checked": [
+    "network URLs",
+    "technical content correctness"
+  ]
+}

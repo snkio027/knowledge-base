@@ -1,0 +1,208 @@
+===== test-publication-isolation.py.log =====
+test_all_legacy_entry_points_reject_before_tool_invocation (__main__.IsolationTests.test_all_legacy_entry_points_reject_before_tool_invocation) ... ok
+test_build_id_symlink_rejected (__main__.IsolationTests.test_build_id_symlink_rejected) ... ok
+test_build_symlink_to_dist_rejected (__main__.IsolationTests.test_build_symlink_to_dist_rejected) ... ok
+test_clean_filter_rejected_before_helper_executes (__main__.IsolationTests.test_clean_filter_rejected_before_helper_executes) ... ok
+test_cli_success_from_another_working_directory (__main__.IsolationTests.test_cli_success_from_another_working_directory) ... ok
+test_closed_operations_and_redirects_do_not_write (__main__.IsolationTests.test_closed_operations_and_redirects_do_not_write) ... ok
+test_committed_result_is_not_overwritten (__main__.IsolationTests.test_committed_result_is_not_overwritten) ... ok
+test_conditional_filter_configuration_rejected (__main__.IsolationTests.test_conditional_filter_configuration_rejected) ... ok
+test_duplicate_numbered_source_rejected (__main__.IsolationTests.test_duplicate_numbered_source_rejected) ... ok
+test_empty_unused_and_smudge_filters_rejected (__main__.IsolationTests.test_empty_unused_and_smudge_filters_rejected) ... ok
+test_environment_does_not_redirect_outputs (__main__.IsolationTests.test_environment_does_not_redirect_outputs) ... ok
+test_error_immediately_after_link_preserves_committed_prepared (__main__.IsolationTests.test_error_immediately_after_link_preserves_committed_prepared) ... ok
+test_external_output_symlink_target_unchanged (__main__.IsolationTests.test_external_output_symlink_target_unchanged) ... ok
+test_fifo_input_rejected_without_blocking (__main__.IsolationTests.test_fifo_input_rejected_without_blocking) ... ok
+test_file_in_place_of_output_directory_rejected (__main__.IsolationTests.test_file_in_place_of_output_directory_rejected) ... ok
+test_filter_detection_precedes_every_status_probe (__main__.IsolationTests.test_filter_detection_precedes_every_status_probe) ... ok
+test_global_xdg_filter_configuration_rejected (__main__.IsolationTests.test_global_xdg_filter_configuration_rejected) ... ok
+test_included_filter_configuration_rejected (__main__.IsolationTests.test_included_filter_configuration_rejected) ... ok
+test_input_drift_fails_without_prepared_result (__main__.IsolationTests.test_input_drift_fails_without_prepared_result) ... ok
+test_invalid_git_configuration_fails_closed (__main__.IsolationTests.test_invalid_git_configuration_fails_closed) ... ok
+test_missing_required_input_fails_before_output (__main__.IsolationTests.test_missing_required_input_fails_before_output) ... ok
+test_no_result_when_diagnostics_also_fail (__main__.IsolationTests.test_no_result_when_diagnostics_also_fail) ... ok
+test_path_escape_and_existing_file_never_written (__main__.IsolationTests.test_path_escape_and_existing_file_never_written) ... ok
+test_preview_symlink_to_dist_rejected (__main__.IsolationTests.test_preview_symlink_to_dist_rejected) ... ok
+test_process_filter_rejected_before_helper_executes (__main__.IsolationTests.test_process_filter_rejected_before_helper_executes) ... ok
+test_repeated_inputs_get_separate_attempts (__main__.IsolationTests.test_repeated_inputs_get_separate_attempts) ... ok
+test_result_link_failure_does_not_commit_prepared (__main__.IsolationTests.test_result_link_failure_does_not_commit_prepared) ... ok
+test_runtime_identity_is_part_of_build_id (__main__.IsolationTests.test_runtime_identity_is_part_of_build_id) ... ok
+test_same_commit_input_changes_change_identity (__main__.IsolationTests.test_same_commit_input_changes_change_identity) ... ok
+test_sigint_after_commit_keeps_prepared (__main__.IsolationTests.test_sigint_after_commit_keeps_prepared) ... ok
+test_sigint_is_cancelled (__main__.IsolationTests.test_sigint_is_cancelled) ... ok
+test_sigkill_after_commit_keeps_prepared (__main__.IsolationTests.test_sigkill_after_commit_keeps_prepared) ... ok
+test_sigkill_before_commit_has_no_final_result (__main__.IsolationTests.test_sigkill_before_commit_has_no_final_result) ... ok
+test_sigkill_has_no_success_result (__main__.IsolationTests.test_sigkill_has_no_success_result) ... ok
+test_sigterm_after_commit_keeps_prepared (__main__.IsolationTests.test_sigterm_after_commit_keeps_prepared) ... ok
+test_sigterm_before_commit_has_no_prepared (__main__.IsolationTests.test_sigterm_before_commit_has_no_prepared) ... ok
+test_sigterm_is_cancelled (__main__.IsolationTests.test_sigterm_is_cancelled) ... ok
+test_source_commit_not_only_identity (__main__.IsolationTests.test_source_commit_not_only_identity) ... ok
+test_submodule_gitlinks_outside_design_are_rejected (__main__.IsolationTests.test_submodule_gitlinks_outside_design_are_rejected) ... ok
+test_success_record_fsync_failure_never_commits_prepared (__main__.IsolationTests.test_success_record_fsync_failure_never_commits_prepared) ... ok
+test_success_records_exact_snapshot_and_not_run_checks (__main__.IsolationTests.test_success_records_exact_snapshot_and_not_run_checks) ... ok
+test_symlink_inputs_and_directories_rejected (__main__.IsolationTests.test_symlink_inputs_and_directories_rejected) ... ok
+test_write_failure_reports_failed (__main__.IsolationTests.test_write_failure_reports_failed) ... ok
+
+----------------------------------------------------------------------
+Ran 43 tests in 17.079s
+
+OK
+
+===== test-candidate.py.log =====
+test_cancel_during_copy_commits_cancelled_not_success (__main__.CandidateIsolationTests.test_cancel_during_copy_commits_cancelled_not_success) ... ok
+test_candidate_directory_symlink_rejected (__main__.CandidateIsolationTests.test_candidate_directory_symlink_rejected) ... ok
+test_error_after_commit_retains_same_fact (__main__.CandidateIsolationTests.test_error_after_commit_retains_same_fact) ... ok
+test_preview_directory_symlink_rejected (__main__.CandidateIsolationTests.test_preview_directory_symlink_rejected) ... ok
+test_source_drift_never_commits_success (__main__.CandidateIsolationTests.test_source_drift_never_commits_success) ... ok
+test_success_and_repeat_keep_dist_and_previous_candidate (__main__.CandidateIsolationTests.test_success_and_repeat_keep_dist_and_previous_candidate) ... ok
+test_terminal_fsync_failure_leaves_no_success (__main__.CandidateIsolationTests.test_terminal_fsync_failure_leaves_no_success) ... ok
+test_unsafe_and_absolute_preview_paths_rejected (__main__.CandidateIsolationTests.test_unsafe_and_absolute_preview_paths_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.569s
+
+OK
+
+===== test-evidence.py.log =====
+test_lock_mismatch_rejected (__main__.EnvironmentTests.test_lock_mismatch_rejected) ... ok
+test_system_or_wrong_python_rejected (__main__.EnvironmentTests.test_system_or_wrong_python_rejected) ... ok
+test_candidate_calls_binding_before_copy (__main__.EvidenceTests.test_candidate_calls_binding_before_copy) ... ok
+test_complete_manifest_passes (__main__.EvidenceTests.test_complete_manifest_passes) ... ok
+test_empty_and_duplicate_views_rejected (__main__.EvidenceTests.test_empty_and_duplicate_views_rejected) ... ok
+test_extra_or_missing_evidence_rejected (__main__.EvidenceTests.test_extra_or_missing_evidence_rejected) ... ok
+test_fast_and_legacy_results_cannot_freeze (__main__.EvidenceTests.test_fast_and_legacy_results_cannot_freeze) ... ok
+test_manifest_symlink_rejected (__main__.EvidenceTests.test_manifest_symlink_rejected) ... ok
+test_missing_planned_view_fails_before_success_commit (__main__.EvidenceTests.test_missing_planned_view_fails_before_success_commit) ... ok
+test_mutated_machine_evidence_and_png_refused (__main__.EvidenceTests.test_mutated_machine_evidence_and_png_refused) ... ok
+test_optimized_review_entrypoints_fail_closed (__main__.EvidenceTests.test_optimized_review_entrypoints_fail_closed) ... ok
+test_adapter_cannot_rewrite_oracle (__main__.FidelityTests.test_adapter_cannot_rewrite_oracle) ... ok
+test_all_frozen_profiles_meet_independent_contract (__main__.FidelityTests.test_all_frozen_profiles_meet_independent_contract) ... ok
+test_anchor_cannot_move_to_another_heading (__main__.FidelityTests.test_anchor_cannot_move_to_another_heading) ... ok
+test_code_bytes_and_language_preserved (__main__.FidelityTests.test_code_bytes_and_language_preserved) ... ok
+test_paragraph_delete_reorder_and_table_transposition_rejected (__main__.FidelityTests.test_paragraph_delete_reorder_and_table_transposition_rejected) ... ok
+test_removed_inline_spaces_rejected_even_if_printed_projection_matches (__main__.FidelityTests.test_removed_inline_spaces_rejected_even_if_printed_projection_matches) ... ok
+test_replace_ref_cannot_change_frozen_bytes (__main__.GitReplacementTests.test_replace_ref_cannot_change_frozen_bytes) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 12.191s
+
+OK
+
+===== test-products.py.log =====
+test_frozen_handbook_anchors_and_code_are_preserved (__main__.AdapterTests.test_frozen_handbook_anchors_and_code_are_preserved) ... ok
+test_product_metadata_cannot_be_confused (__main__.AdapterTests.test_product_metadata_cannot_be_confused) ... ok
+test_unknown_raw_html_is_not_silently_removed (__main__.AdapterTests.test_unknown_raw_html_is_not_silently_removed) ... ok
+test_branch_or_short_revision_is_rejected (__main__.ProductTests.test_branch_or_short_revision_is_rejected) ... ok
+test_combined_and_standalone_reference_policy (__main__.ProductTests.test_combined_and_standalone_reference_policy) ... ok
+test_different_profile_same_markdown_changes_identity (__main__.ProductTests.test_different_profile_same_markdown_changes_identity) ... ok
+test_immutable_revision_ignores_worktree_and_later_head (__main__.ProductTests.test_immutable_revision_ignores_worktree_and_later_head) ... ok
+test_nested_source_outside_profile_preserves_canonical_identity (__main__.ProductTests.test_nested_source_outside_profile_preserves_canonical_identity) ... ok
+test_profile_bytes_alone_change_identity (__main__.ProductTests.test_profile_bytes_alone_change_identity) ... ok
+test_profile_drift_after_preparation_refused (__main__.ProductTests.test_profile_drift_after_preparation_refused) ... ok
+test_profile_drift_during_prepare_refused (__main__.ProductTests.test_profile_drift_during_prepare_refused) ... ok
+test_source_path_traversal_is_rejected (__main__.ProductTests.test_source_path_traversal_is_rejected) ... ok
+test_symlink_git_source_is_rejected (__main__.ProductTests.test_symlink_git_source_is_rejected) ... ok
+test_unresolved_repository_link_rejected (__main__.ProductTests.test_unresolved_repository_link_rejected) ... ok
+test_views_select_same_source_without_duplication (__main__.ProductTests.test_views_select_same_source_without_duplication) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 3.905s
+
+OK
+
+===== test-reading.py.log =====
+test_adapter_does_not_change_experiment_bytes (__main__.ReadingTests.test_adapter_does_not_change_experiment_bytes) ... ok
+test_code_labels_have_only_reader_identity (__main__.ReadingTests.test_code_labels_have_only_reader_identity) ... ok
+test_density_comparison_does_not_alias_variants (__main__.ReadingTests.test_density_comparison_does_not_alias_variants) ... ok
+test_density_does_not_change_body_or_code_fonts (__main__.ReadingTests.test_density_does_not_change_body_or_code_fonts) ... ok
+test_empty_template_has_no_invented_data (__main__.ReadingTests.test_empty_template_has_no_invented_data) ... ok
+test_explicit_role_binding_preserves_source (__main__.ReadingTests.test_explicit_role_binding_preserves_source) ... ok
+test_gate_local_label_keeps_with_question (__main__.ReadingTests.test_gate_local_label_keeps_with_question) ... ok
+test_head_mutation_is_rejected (__main__.ReadingTests.test_head_mutation_is_rejected) ... ok
+test_lua_preserves_code_and_emits_tail_contract (__main__.ReadingTests.test_lua_preserves_code_and_emits_tail_contract) ... ok
+test_role_and_baseline_mutations_rejected (__main__.ReadingTests.test_role_and_baseline_mutations_rejected) ... ok
+test_semantic_corpus_has_no_physical_page_identity (__main__.ReadingTests.test_semantic_corpus_has_no_physical_page_identity) ... ok
+test_semantic_token_break_is_not_erased_by_normalization (__main__.ReadingTests.test_semantic_token_break_is_not_erased_by_normalization) ... ok
+test_tail_mutation_is_rejected (__main__.ReadingTests.test_tail_mutation_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.268s
+
+OK
+
+===== test-full-handbook.py.log =====
+test_alias_links_use_real_heading_labels (__main__.FullHandbookTests.test_alias_links_use_real_heading_labels) ... ok
+test_destination_cache_preserves_coordinates (__main__.FullHandbookTests.test_destination_cache_preserves_coordinates) ... ok
+test_full_source_identity_and_experiment_payload (__main__.FullHandbookTests.test_full_source_identity_and_experiment_payload) ... ok
+test_unconsumed_or_wrong_namespace_rejected (__main__.FullHandbookTests.test_unconsumed_or_wrong_namespace_rejected) ... ok
+test_unknown_namespace_rejected (__main__.FullHandbookTests.test_unknown_namespace_rejected) ... ok
+test_visual_mechanics_frozen (__main__.FullHandbookTests.test_visual_mechanics_frozen) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.201s
+
+OK
+
+===== test-release-identity.py.log =====
+test_all_source_asts_aliases_and_semantics_unchanged (__main__.IdentityTests.test_all_source_asts_aliases_and_semantics_unchanged) ... ok
+test_historical_engine_identity_patch_remains_bound (__main__.IdentityTests.test_historical_engine_identity_patch_remains_bound) ... ok
+test_profile_diff_is_identity_only (__main__.IdentityTests.test_profile_diff_is_identity_only) ... ok
+test_template_and_theme_preserve_dimensions_and_mechanics (__main__.IdentityTests.test_template_and_theme_preserve_dimensions_and_mechanics) ... ok
+test_candidate_identity_is_preparable_not_published (__main__.SafeIdentityTests.test_candidate_identity_is_preparable_not_published) ... ok
+test_casefold_collision_rejected (__main__.SafeIdentityTests.test_casefold_collision_rejected) ... ok
+test_release_channel_cannot_be_declared (__main__.SafeIdentityTests.test_release_channel_cannot_be_declared) ... ok
+test_unsafe_or_non_pdf_names_rejected (__main__.SafeIdentityTests.test_unsafe_or_non_pdf_names_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.856s
+
+OK
+
+===== test-publication-identity.py.log =====
+test_publication_identity_does_not_publish (__main__.PreparationOnlyTests.test_publication_identity_does_not_publish) ... ok
+test_all_13_adapted_sources_identical (__main__.PublicationIdentityTests.test_all_13_adapted_sources_identical) ... ok
+test_historical_engine_patch_is_one_identity_channel_only (__main__.PublicationIdentityTests.test_historical_engine_patch_is_one_identity_channel_only) ... ok
+test_profile_is_identity_only (__main__.PublicationIdentityTests.test_profile_is_identity_only) ... ok
+test_template_and_theme_only_replace_identity_text (__main__.PublicationIdentityTests.test_template_and_theme_only_replace_identity_text) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.585s
+
+OK
+
+===== test-failure-model.py.log =====
+test_declared_warning_preserves_exact_label_and_code (__main__.FailureModelTests.test_declared_warning_preserves_exact_label_and_code) ... ok
+test_exact_payload_and_anchor_positions (__main__.FailureModelTests.test_exact_payload_and_anchor_positions) ... ok
+test_existing_products_composition_unchanged (__main__.FailureModelTests.test_existing_products_composition_unchanged) ... ok
+test_lua_links_directly_to_block_not_previous_section (__main__.FailureModelTests.test_lua_links_directly_to_block_not_previous_section) ... ok
+test_real_pdf_annotation_points_at_block_and_rejects_old_link (__main__.FailureModelTests.test_real_pdf_annotation_points_at_block_and_rejects_old_link) ... ok
+test_unicode_numeric_duplicate_targets_are_block_local (__main__.FailureModelTests.test_unicode_numeric_duplicate_targets_are_block_local) ... ok
+test_unknown_html_and_unconsumed_marker_rejected (__main__.FailureModelTests.test_unknown_html_and_unconsumed_marker_rejected) ... ok
+test_gfm_parser_is_bound_to_input_identity (__main__.ParserPreparationTests.test_gfm_parser_is_bound_to_input_identity) ... ok
+test_unknown_parser_rejected (__main__.ParserPreparationTests.test_unknown_parser_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 19.172s
+
+OK
+
+===== test-preview.py.log =====
+test_duplicate_titles_are_namespaced_and_broken_references_fail (__main__.CompositionTests.test_duplicate_titles_are_namespaced_and_broken_references_fail) ... ok
+test_explicit_matrix_binding_and_drift (__main__.CompositionTests.test_explicit_matrix_binding_and_drift) ... ok
+test_inline_literals_cannot_lose_spaces (__main__.CompositionTests.test_inline_literals_cannot_lose_spaces) ... ok
+test_occurrence_scope_order_and_negative_word_regressions (__main__.CompositionTests.test_occurrence_scope_order_and_negative_word_regressions) ... ok
+test_preview_terminal_fsync_failure_leaves_no_success (__main__.CompositionTests.test_preview_terminal_fsync_failure_leaves_no_success) ... ok
+test_table_fields_values_and_empty_headers_preserved (__main__.CompositionTests.test_table_fields_values_and_empty_headers_preserved) ... ok
+test_uri_classification_full_path_and_fragment (__main__.CompositionTests.test_uri_classification_full_path_and_fragment) ... ok
+test_real_compile_failure_never_commits_ready (__main__.RealPreviewTests.test_real_compile_failure_never_commits_ready) ... ok
+test_real_compiler_int_term_and_kill (__main__.RealPreviewTests.test_real_compiler_int_term_and_kill) ... ok
+test_real_identifier_boundary_mutant_rejected (__main__.RealPreviewTests.test_real_identifier_boundary_mutant_rejected) ... ok
+test_real_pdf_missing_literal_spaces_is_rejected (__main__.RealPreviewTests.test_real_pdf_missing_literal_spaces_is_rejected) ... ok
+test_real_pdf_preface_target_on_cover_is_rejected (__main__.RealPreviewTests.test_real_pdf_preface_target_on_cover_is_rejected) ... ok
+test_real_semantic_components_and_emergency_wrap (__main__.RealPreviewTests.test_real_semantic_components_and_emergency_wrap) ... ok
+test_real_success_and_compiler_cannot_write_dist (__main__.RealPreviewTests.test_real_success_and_compiler_cannot_write_dist) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 197.502s
+
+OK

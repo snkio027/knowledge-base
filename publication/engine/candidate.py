@@ -31,6 +31,8 @@ def tree(fd, prefix, pub):
 
 
 def payload(run_fd, pub):
+    from evidence import verify_fd
+    _, _, _, _, verified, manifest = verify_fd(run_fd, pub)
     result = {name: read_at(run_fd, name, pub) for name in ('run.json', 'result.json', 'preview-result.json')}
     result['preview-audit.json'] = read_at(run_fd, 'work/preview-audit.json', pub)
     source = json.loads(result['run.json'])
@@ -53,8 +55,9 @@ def payload(run_fd, pub):
     artifacts = {a['pdf']: a['sha256'] for a in audit['views']}
     if artifacts != ready['artifacts'] or not artifacts:
         raise pub.PreparationError('candidate PDF set mismatch')
-    for name, data in tree(run_fd, 'work/output', pub).items():
-        result[name.removeprefix('work/')] = data
+    for name, data in verified.items():
+        if name.startswith('output/'):
+            result[name] = data
     if {n for n in result if n.startswith('output/pdf/')} != set(artifacts):
         raise pub.PreparationError('candidate PDF file collection mismatch')
     for name, digest in artifacts.items():
@@ -76,16 +79,15 @@ def payload(run_fd, pub):
     for name, data in result.items():
         if name.startswith('output/source/') and data != frozen.get('inputs/' + source_bindings[name.removeprefix('output/source/')]['snapshot_path']):
             raise pub.PreparationError('candidate source attachment differs from frozen source')
-    result['evidence/source-catalog.json'] = read_at(run_fd, 'work/source-catalog.json', pub)
-    result['evidence/worker.log'] = read_at(run_fd, 'work/worker.log', pub)
-    for prefix in ('work/source-ast', 'work/typeset'):
-        for name, data in tree(run_fd, prefix, pub).items():
-            if not name.endswith(('.pdf', '.png')):
-                result['evidence/' + name.removeprefix('work/')] = data
+    result['artifact-manifest.json'] = manifest
+    for name, data in verified.items():
+        if not name.startswith('output/'):
+            result['evidence/' + name] = data
     if 'reading-review.json' in os.listdir(run_fd):
         review = read_at(run_fd, 'reading-review.json', pub)
         record = json.loads(review)
-        if record['artifacts'] != artifacts or record['audit_sha256'] != ready['audit_sha256']:
+        if (record['artifacts'] != artifacts or record['audit_sha256'] != ready['audit_sha256'] or
+                record.get('artifact_manifest_sha256') != ready['artifact_manifest_sha256']):
             raise pub.PreparationError('reading review belongs to different bytes')
         result['reading-review.json'] = review
     return result, source, ready

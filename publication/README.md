@@ -1,5 +1,7 @@
 # KB Publication System v2
 
+**2026-10-24：Mac + uv 运行基线与证据闭环修订，待集中审核。** 新入口使用 uv 管理的 Python 3.14.8；成功预览必须绑定完整机器证据和全页渲染。详情与实际验证范围见[本批实施记录](reviews/runtime-evidence/README.md)。不改正文、历史 profile、视觉规则或已发布资产；不实现新布局、缓存或正式发布入口。
+
 状态：**STABLE / READING EDITION ACCEPTED / VISUAL_PROFILE_FROZEN v1.0**。用户于 2026-09-27 确认冻结最新视觉实现 `1c11c5940c05fe29c46c4500935d5efb673d46a7`；ESD 与 C++ Handbook Visual Profile 同步冻结，语义视觉回归 corpus 成为基线。通用 `publish` 命令保持关闭；已明确授权的 C++ v1.0.0 通过 GitHub Releases 发布，见下文。
 
 已接受的 12 份制品、八组组件 A/B、语义样页、接受记录与已知非阻塞限制见[阅读版定稿化审核入口](reviews/reading-finalization/README.md)。[上一轮阅读版](reviews/reading-edition/README.md)与 [v2 架构交付记录](reviews/v2-pilot/README.md)作为历史证据保持原字节。它们均不是 release 或可维护的正文源。
@@ -30,25 +32,29 @@
 
 ## 运行
 
-依赖：macOS `sandbox-exec`、Git、Python 3.9+、Pandoc、LuaLaTeX、Poppler `pdftoppm` 和 [pypdf](requirements.txt)。缺少隔离后端时失败，不回退到无沙箱编译。不提供 Linux/CI 或 PDF/UA 保证。
+依赖：macOS `sandbox-exec`、Git、uv、Pandoc、LuaLaTeX、Poppler `pdftoppm`、`kpsewhich` 和 TeX 字体。Python 及 Python 包由独立的 [uv 项目](pyproject.toml)、[锁文件](uv.lock)与 `.python-version` 固定，不使用系统 Python。原 [requirements.txt](requirements.txt)仅保留历史依赖说明，不是当前安装入口。缺少隔离后端时失败，不回退到无沙箱编译。不提供 Linux/CI 或 PDF/UA 保证。
 
-从仓库根目录执行（Python 须已安装依赖）：
+从仓库根目录执行。环境同步在沙箱外完成；worker 使用父进程的同一解释器，不自行安装依赖或联网。`--locked` 会检查声明与锁文件的一致性，不以 `--frozen` 替代：
 
 ```sh
-python3 -B publication/engine/pub.py preview --profile esd
-python3 -B publication/engine/pub.py preview --profile cpp-handbook
-python3 -B publication/engine/pub.py preview --profile cpp-handbook-full
-python3 -B publication/engine/pub.py preview --profile cpp-handbook-rc1
-python3 -B publication/engine/pub.py preview --profile cpp-handbook-v1
-python3 -B publication/engine/pub.py preview --profile cpp-failure-model
+uv sync --project publication --locked --group review
+uv run --project publication --locked --group review python -B publication/engine/pub.py doctor
+uv run --project publication --locked python -B publication/engine/pub.py preview --profile esd
+uv run --project publication --locked python -B publication/engine/pub.py preview --profile cpp-handbook
+uv run --project publication --locked python -B publication/engine/pub.py preview --profile cpp-handbook-full
+uv run --project publication --locked python -B publication/engine/pub.py preview --profile cpp-handbook-rc1
+uv run --project publication --locked python -B publication/engine/pub.py preview --profile cpp-handbook-v1
+uv run --project publication --locked python -B publication/engine/pub.py preview --profile cpp-failure-model
 
 # 仅选择一个逻辑视图；省略 --view 时构建该 profile 的全部视图。
-python3 -B publication/engine/pub.py preview --profile cpp-handbook --view G6
-python3 -B publication/engine/pub.py preview --profile cpp-handbook --view CPP-PILOT-G6-G7
+uv run --project publication --locked python -B publication/engine/pub.py preview --profile cpp-handbook --view G6
+uv run --project publication --locked python -B publication/engine/pub.py preview --profile cpp-handbook --view CPP-PILOT-G6-G7
 
 # 只准备，不编译。
-python3 -B publication/engine/pub.py preview --profile cpp-handbook --prepare-only
+uv run --project publication --locked python -B publication/engine/pub.py preview --profile cpp-handbook --prepare-only
 ```
+
+`doctor` 报告实际选中的工具路径、版本和摘要、uv Python、锁文件、字体/TeX 包解析，以及一次真实 Seatbelt 写入拒绝。构建前后比较所选环境；`.fls` 中额外发现的运行依赖仍只标为事后观察，不声称完整只读输入沙箱、原生工具链全闭包或跨机器确定性 PDF。
 
 主制品为 ESD 六份独立版与一份合订版，以及 C++ G6、G7 与 G6+G7 三份 PDF。默认构建还包含两份 Compact 对照样张：`ESD-REFERENCE-001-COMPACT` 和 `CPP-PILOT-G6-G7-COMPACT`；两个 profile 合计 12 份。Compact 只改变留白、目录和表格行距，不缩小正文或代码字号。合订版由多源 AST 组成一个逻辑视图后编译，不拼接独立 PDF。
 
@@ -74,44 +80,44 @@ python3 -B publication/engine/pub.py preview --profile cpp-handbook --prepare-on
 
 `result.json: PREPARED` 仅是输入准备；`preview-result.json: PREVIEW_READY` 才表示本次所有声明视图完成自动检查和全页渲染。两者均不是视觉批准、内容重新验收或发布批准。失败、取消、缺少终态或 `.pending` 文件不等于成功；提交点之后保留已提交事实，不生成矛盾终态。
 
+新协议在 worker 退出且日志关闭后，生成 `work/artifact-manifest.json`，绑定输出、原始/打印 AST、保真审计、引用/表格映射、TeX/日志和全页 PNG 的完整文件集合、大小与 SHA-256。每张 PNG 另绑定 PDF 摘要、页号、DPI 和渲染器。成功终态绑定清单摘要；候选与阅读工具均复核清单和准备计划中的视图集合，任何缺失、增加或改写均拒绝。快速检查或旧协议预览不能冒充 `FULL_PREVIEW`；本批没有新增快速模式。
+
+源保真在 adapter 之前保存原始 AST，adapter 只收到独立副本。引擎单独核对正文字符顺序、原有 inline code、代码字节/语言、标题、列表、表格单元格关系、链接与锚点位置。注释/锚点转换和字面量处理形成显式记录；普通正文不能由 adapter 自报“允许删除”。普通 prose 的空白/段落边界可调整，代码空白不可变；这仍不是任意语义等价或视觉正确性的形式证明。
+
+历史预览、profile 和已发布文件不回写、不补签。缺少新清单的旧尝试可通过其历史版本工具查阅，但当前冻结/阅读入口会拒绝升级资格。衍生的 `reading-regression/`、`visual-inputs/` 及人工阅读记录不混入已提交的机器证据；它们另绑定 PDF/清单身份。
+
 候选只复制已检查原字节，不重新编译：
 
 ```sh
-python3 -B publication/engine/pub.py candidate --profile cpp-handbook \
+uv run --project publication --locked python -B publication/engine/pub.py candidate --profile cpp-handbook \
   --from-preview publication/build/preview/<preparation-id>/<attempt-id>
 ```
 
 输出为 `publication/build/candidate/<candidate-id>/<attempt-id>/`；只有 `CANDIDATE_PREPARED_FOR_REVIEW` 表示本地冻结完成。生成时候选状态为 `AWAITING_INDEPENDENT_REVIEW`；后续用户接受由外置记录登记，不回写原 JSON 或 PDF 内的候选标记，也不宣称新增独立技术验证。其身份保留源 revision/path、视图集合、准备/执行身份和制品摘要，而非通过 basename 找源文件。
 
-可在预览尝试根目录附 `reading-review.json`，用 `artifacts` 与 `audit_sha256` 绑定该次终态，分别记录查看页、观察与未检查项。缺失时记为 `NOT_ATTACHED`，不推定人工检查已经执行。全部流程不写历史 `design/dist/`；本地提交协议不声称断电后的目录树持久性。
+可在预览尝试根目录附 `reading-review.json`，用 `artifacts`、`audit_sha256` 与 `artifact_manifest_sha256` 绑定该次终态，分别记录查看页、观察与未检查项。缺失时记为 `NOT_ATTACHED`，不推定人工检查已经执行。全部流程不写历史 `design/dist/`；本地提交协议不声称断电后的目录树持久性。
 
 ## 迁移与验证
 
 原 `design/scripts/pub.py preview` 只转发至 v2 的 ESD profile；旧内部 worker 不再运行。旧六个危险写入入口继续拒绝，通用发布入口仍关闭。原 `design/build/` 预览和候选不移动、不重写；v1 记录不自动升级为 v2 合格记录，新候选入口只接收 v2 路径。历史工具可在精确 Git 版本中查阅，不保留第二套可漂移的活动构建器。
 
 ```sh
-python3 -B publication/tests/test-publication-isolation.py
-python3 -B publication/tests/test-candidate.py
-python3 -B publication/tests/test-products.py
-python3 -B publication/tests/test-preview.py
-python3 -B publication/tests/test-reading.py
-python3 -B publication/tests/test-full-handbook.py
-python3 -B publication/tests/test-release-identity.py
-python3 -B publication/tests/test-publication-identity.py
+uv run --project publication --locked --group review python -B publication/tests/run.py \
+  --output publication/tmp/local-check-new
 ```
 
-前三组在一次性仓库检查隔离、终态、候选、revision/profile/adapter 契约；第四组真实编译并注入失败、错位、字面量丢失和信号，同时检查长模板／危险代码续页和软折行断点反例；第五组检查阅读组件、代码头尾、角色绑定、字段基线、Gate 分组和密度比较。旧测试命令转发至迁移后的套件。实际全量产品输出、检查命令与限制见本轮交付记录；测试夹具通过不替代真实 ESD/C++ 构建。
+输出目录必须尚不存在。执行器检查登记集合等于全部 `test-*.py`，包括 FM 套件；逐套保存命令、退出码、数量、SKIP 和完整日志。可选 `--group logic`（文件协议与反例）、`--group adapters`（Pandoc／产品／阅读组件）、`--group native`（含真实 Seatbelt、TeX、失败与取消），未运行组明确列出。人工阅读不由测试执行器代办。测试夹具通过不替代真实产品构建。
 
 自动提取采用有界的文本、顺序、行内字面量、表格关系和定位检查，不声称逐字形、代码缩进、所有视觉缺陷或可访问性认证。人工阅读必须查看实际渲染，且单独注明范围。当前视觉基线已获用户接受；既有本地执行与自查证据保留原身份。全书构建是接受登记之后单独获授权的批次，出版回归不等于重跑 C++ 技术实验，也不等于正式发布。
 
-可选视觉辅助命令为 `python3 -B publication/tools/inspect-pages.py <preview-attempt>`，另需 Pillow；它只从已绑定的渲染生成 contact sheets，不自动授予人工阅读通过状态。
+可选视觉辅助命令为 `uv run --project publication --locked --group review python -B publication/tools/inspect-pages.py <preview-attempt>`。Pillow 属于锁定的 review 组；它只从逐页摘要验证后的渲染字节生成 contact sheets，并记录衍生图片摘要，不自动授予人工阅读通过状态。
 
 阅读回归使用[语义样本目录](tools/reading-corpus.json)，不把物理页码作为样本身份：
 
 ```sh
-python3 -B publication/tools/reading-review.py <completed-preview-attempt>
-python3 -B publication/tools/reading-review.py --density-compare <page-map.json>
-python3 -B publication/tools/reading-review.py --compare <old-page-map.json> <new-page-map.json>
+uv run --project publication --locked python -B publication/tools/reading-review.py <completed-preview-attempt>
+uv run --project publication --locked python -B publication/tools/reading-review.py --density-compare <page-map.json>
+uv run --project publication --locked python -B publication/tools/reading-review.py --compare <old-page-map.json> <new-page-map.json>
 ```
 
-第一条从绑定的 PDF 生成 `work/reading-regression/`（新目录，拒绝覆盖），输出样本语义目的、目标、物理页、120 dpi PNG 和摘要。后两条只读比较相同语义目标，不把像素不同判为失败。`STRUCTURAL_PASS` 表示所定义的阅读信号未触发；实际查看图片另记 `VISUAL_REVIEWED_SELF_REVIEW_NOT_APPROVAL`。冻结不改变这些证据标签的含义。规则与冻结边界见[Visual Profile v1.0](reviews/reading-finalization/visual-profile.md)。
+第一条从绑定的 PDF 生成 `work/reading-regression/`（新目录，拒绝覆盖），输出样本语义目的、目标、物理页、120 dpi PNG 和摘要。后两条只读比较相同语义目标，不把像素不同判为失败。`STRUCTURAL_PASS` 表示所定义的阅读信号未触发；没有适用 fixture 时为 `NOT_COVERED`，不是通过。实际查看图片另记 `VISUAL_REVIEWED_SELF_REVIEW_NOT_APPROVAL`。冻结不改变这些证据标签的含义。规则与冻结边界见[Visual Profile v1.0](reviews/reading-finalization/visual-profile.md)。

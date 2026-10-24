@@ -1,0 +1,336 @@
+{
+  "date": "2026-10-24",
+  "base_commit": "9e446f62616c959c8b90b762cfe981aa00e0352c",
+  "status": "LOCAL_QUALIFICATION_COMPLETE_AWAITING_REVIEW",
+  "ci": false,
+  "tests": {
+    "status": "PASS",
+    "python": "3.14.8 (main, Oct 14 2026, 00:55:47) [Clang 23.1.3 ]",
+    "optimization": 0,
+    "results": [
+      {
+        "group": "logic",
+        "file": "test-publication-isolation.py",
+        "argv": [
+          "/Users/nekoreb/Workspace/03_Projects/kb/publication/.venv/bin/python",
+          "-B",
+          "/Users/nekoreb/Workspace/03_Projects/kb/publication/tests/test-publication-isolation.py"
+        ],
+        "exit_code": 0,
+        "seconds": 17.284,
+        "tests": 43,
+        "skips": 0,
+        "status": "PASS"
+      },
+      {
+        "group": "logic",
+        "file": "test-candidate.py",
+        "argv": [
+          "/Users/nekoreb/Workspace/03_Projects/kb/publication/.venv/bin/python",
+          "-B",
+          "/Users/nekoreb/Workspace/03_Projects/kb/publication/tests/test-candidate.py"
+        ],
+        "exit_code": 0,
+        "seconds": 0.81,
+        "tests": 8,
+        "skips": 0,
+        "status": "PASS"
+      },
+      {
+        "group": "logic",
+        "file": "test-evidence.py",
+        "argv": [
+          "/Users/nekoreb/Workspace/03_Projects/kb/publication/.venv/bin/python",
+          "-B",
+          "/Users/nekoreb/Workspace/03_Projects/kb/publication/tests/test-evidence.py"
+        ],
+        "exit_code": 0,
+        "seconds": 12.438,
+        "tests": 18,
+        "skips": 0,
+        "status": "PASS"
+      },
+      {
+        "group": "adapters",
+        "file": "test-products.py",
+        "argv": [
+          "/Users/nekoreb/Workspace/03_Projects/kb/publication/.venv/bin/python",
+          "-B",
+          "/Users/nekoreb/Workspace/03_Projects/kb/publication/tests/test-products.py"
+        ],
+        "exit_code": 0,
+        "seconds": 4.159,
+        "tests": 15,
+        "skips": 0,
+        "status": "PASS"
+      },
+      {
+        "group": "adapters",
+        "file": "test-reading.py",
+        "argv": [
+          "/Users/nekoreb/Workspace/03_Projects/kb/publication/.venv/bin/python",
+          "-B",
+          "/Users/nekoreb/Workspace/03_Projects/kb/publication/tests/test-reading.py"
+        ],
+        "exit_code": 0,
+        "seconds": 0.576,
+        "tests": 13,
+        "skips": 0,
+        "status": "PASS"
+      },
+      {
+        "group": "adapters",
+        "file": "test-full-handbook.py",
+        "argv": [
+          "/Users/nekoreb/Workspace/03_Projects/kb/publication/.venv/bin/python",
+          "-B",
+          "/Users/nekoreb/Workspace/03_Projects/kb/publication/tests/test-full-handbook.py"
+        ],
+        "exit_code": 0,
+        "seconds": 1.367,
+        "tests": 6,
+        "skips": 0,
+        "status": "PASS"
+      },
+      {
+        "group": "adapters",
+        "file": "test-release-identity.py",
+        "argv": [
+          "/Users/nekoreb/Workspace/03_Projects/kb/publication/.venv/bin/python",
+          "-B",
+          "/Users/nekoreb/Workspace/03_Projects/kb/publication/tests/test-release-identity.py"
+        ],
+        "exit_code": 0,
+        "seconds": 2.087,
+        "tests": 8,
+        "skips": 0,
+        "status": "PASS"
+      },
+      {
+        "group": "adapters",
+        "file": "test-publication-identity.py",
+        "argv": [
+          "/Users/nekoreb/Workspace/03_Projects/kb/publication/.venv/bin/python",
+          "-B",
+          "/Users/nekoreb/Workspace/03_Projects/kb/publication/tests/test-publication-identity.py"
+        ],
+        "exit_code": 0,
+        "seconds": 1.82,
+        "tests": 5,
+        "skips": 0,
+        "status": "PASS"
+      },
+      {
+        "group": "adapters",
+        "file": "test-failure-model.py",
+        "argv": [
+          "/Users/nekoreb/Workspace/03_Projects/kb/publication/.venv/bin/python",
+          "-B",
+          "/Users/nekoreb/Workspace/03_Projects/kb/publication/tests/test-failure-model.py"
+        ],
+        "exit_code": 0,
+        "seconds": 19.409,
+        "tests": 9,
+        "skips": 0,
+        "status": "PASS"
+      },
+      {
+        "group": "native",
+        "file": "test-preview.py",
+        "argv": [
+          "/Users/nekoreb/Workspace/03_Projects/kb/publication/.venv/bin/python",
+          "-B",
+          "/Users/nekoreb/Workspace/03_Projects/kb/publication/tests/test-preview.py"
+        ],
+        "exit_code": 0,
+        "seconds": 197.772,
+        "tests": 14,
+        "skips": 0,
+        "status": "PASS"
+      }
+    ],
+    "not_run": [],
+    "human_reading": "NOT_RUN_BY_TEST_RUNNER",
+    "ci": false
+  },
+  "original_test_logs": [
+    {
+      "name": "test-publication-isolation.py.log",
+      "bytes": 5339,
+      "sha256": "500fad106beb4d83cef41d9d4adbf66e2e1800ebc2e22c5d19ecb0408fb30238"
+    },
+    {
+      "name": "test-candidate.py.log",
+      "bytes": 1172,
+      "sha256": "356a8834231a475d4115ba2696c2baf4871567df90ce773b2da77b6d01f76e96"
+    },
+    {
+      "name": "test-evidence.py.log",
+      "bytes": 2252,
+      "sha256": "edabb8ab1fe28e554b1a5e09d927260b829eb119bf1c54b5dc051b631f8fa909"
+    },
+    {
+      "name": "test-products.py.log",
+      "bytes": 1954,
+      "sha256": "5668650f5f711e2358e57ce5ce39882f7f5827286e04a80256bbb4819004577a"
+    },
+    {
+      "name": "test-reading.py.log",
+      "bytes": 1646,
+      "sha256": "d3efc7465d15a9b95e1373fff6b0697f475d2868bcc07d9df1d9935bd72803e4"
+    },
+    {
+      "name": "test-full-handbook.py.log",
+      "bytes": 794,
+      "sha256": "3d72a89225d48c7b0cdaf5918ef4442cdf3863d73189a565aabc8085996b34d5"
+    },
+    {
+      "name": "test-release-identity.py.log",
+      "bytes": 1092,
+      "sha256": "d3c2138c7c2bd5aadc234724cf85366eb0b07c6dccb3b3336c219079ef263ebe"
+    },
+    {
+      "name": "test-publication-identity.py.log",
+      "bytes": 749,
+      "sha256": "5c41ade6734d519e973427b2d735bfd206c3c2cc21eed80e75aa27ab81d1169e"
+    },
+    {
+      "name": "test-failure-model.py.log",
+      "bytes": 1293,
+      "sha256": "385ccdc4f4f84eac0a5462faf9281f19f82a9f8e62ab8bf6c33d5afbc0145b58"
+    },
+    {
+      "name": "test-preview.py.log",
+      "bytes": 1953,
+      "sha256": "c776f3ebe1160226f1b243cbceb2f6e299680cbe45d9f25e4728a6a55faa7f19"
+    }
+  ],
+  "test_total": 139,
+  "skip_total": 0,
+  "optimized_negative_subcases": 24,
+  "products": [
+    {
+      "profile": "cpp-handbook",
+      "view": "G6",
+      "pages": 48,
+      "pdf_sha256": "df435236bed16a692bf40766028728e2c28e2c2e40da940564011bc4086fc73b",
+      "manifest_sha256": "7caac8d075f4ce8c9f6c0070309cf5b9156e54acd1788e870ba7eae0f41d038b",
+      "attempt": "publication/build/preview/4e80ae418082e396dd960e54f53310f3733fb2b2a5872af69bfc5677a853c0eb/5153e3a3929c49b1affa36d0dfa4e0e8",
+      "candidate_id": "ac03a679851197e977623d3220634e257fe36a6a2a5e077f63a4f1939296745f",
+      "reading_status": "STRUCTURAL_PASS",
+      "visually_sampled_pages": [
+        1,
+        40,
+        41,
+        48
+      ]
+    },
+    {
+      "profile": "esd",
+      "view": "ESD-REFERENCE-001",
+      "pages": 58,
+      "pdf_sha256": "45df7f1b8ba001e12436903bd6742e75121027e4dca106825f38d0cf76c4181d",
+      "manifest_sha256": "ce712a0f275f88de7b65a4687e6a44c3c0190890ce85a2217e84718186ce085a",
+      "attempt": "publication/build/preview/4421f9515b759671126bab7c604d16e1bc77e43a7fe96e1a7085dea224929ca8/c6455634530143c3bb4f0bb6b2363e3f",
+      "candidate_id": "1032f25ce58452f6450063de57f4fc105637c38708acd9382072b977431357e0",
+      "reading_status": "STRUCTURAL_PASS",
+      "visually_sampled_pages": [
+        3,
+        26,
+        27,
+        58
+      ]
+    },
+    {
+      "profile": "cpp-failure-model",
+      "view": "CPP-FAILURE-MODEL",
+      "pages": 158,
+      "pdf_sha256": "6f1b2c76d923f2f232e9dc9b3ff8797b45237b8f1b494bc4655ddd76abdf42c0",
+      "manifest_sha256": "26754f97a6f5862cd98c36c427df865b60d797350dba63935adcb6d1cb934c96",
+      "attempt": "publication/build/preview/d6f75828392ed72e73b09953e0e8c6060f60e6eec57d2d3b923058f52eacf525/fc83a249ee8e43029c9db75b4d34d7c0",
+      "candidate_id": "3c42406af178a5e52e52c30b22f75ed524842f092c433afd120119db47079c20",
+      "reading_status": "NOT_COVERED",
+      "visually_sampled_pages": [
+        1,
+        108,
+        109,
+        153,
+        154,
+        158
+      ]
+    }
+  ],
+  "rendered_pages": 264,
+  "visually_sampled_pages": 14,
+  "real_product_mutations": {
+    "source_attempt": "publication/build/preview/4e80ae418082e396dd960e54f53310f3733fb2b2a5872af69bfc5677a853c0eb/5153e3a3929c49b1affa36d0dfa4e0e8",
+    "baseline_payload": "ACCEPTED",
+    "isolated_copy": true,
+    "mutations": [
+      {
+        "path": "work/source-ast/G6.json",
+        "status": "REJECTED_AS_EXPECTED",
+        "diagnostic": "artifact digest changed: source-ast/G6.json"
+      },
+      {
+        "path": "work/typeset/G6/reference-map.json",
+        "status": "REJECTED_AS_EXPECTED",
+        "diagnostic": "artifact digest changed: typeset/G6/reference-map.json"
+      },
+      {
+        "path": "work/worker.log",
+        "status": "REJECTED_AS_EXPECTED",
+        "diagnostic": "artifact digest changed: worker.log"
+      },
+      {
+        "path": "work/renders/G6/page-29.png",
+        "status": "REJECTED_AS_EXPECTED",
+        "diagnostic": "artifact digest changed: renders/G6/page-29.png"
+      }
+    ]
+  },
+  "implementation_sha256": {
+    "publication/engine/candidate.py": "dd79fd65b641292f7e44cea85ef0204781000afa2f1be877a19a038dcd9702b8",
+    "publication/engine/environment.py": "056fe19c7c432a4b05dd2d68c9651f2044aba1e83c3af2d835afdcdccb769a53",
+    "publication/engine/evidence.py": "f9fefef2d8c0ab94b471820b1bee0452fbff60ef367cb8c6b6a496288806fe4e",
+    "publication/engine/fidelity.py": "dabe55051ad8b6d46c1a5fd6bdde73811ea84289b606a13d75f1b13b780c1b08",
+    "publication/engine/filters/blocks.lua": "980cb1b5cf5ef95988f705302e1fe1a286a1a4719cb0c3d785d3c9a9f79d1270",
+    "publication/engine/links.py": "682649e929cb396fca6d739e9bad05d3c0f6f3096772d5cbc49d59d576513bb0",
+    "publication/engine/preview.py": "79d27e1b5222270783ed83f930113549319a10bb9792fe099dcb3fad0bfc4e4b",
+    "publication/engine/preview_audit.py": "61582fdd43af61316eafb2fd53dc50a18b63947143e06eec76047dd22e191d86",
+    "publication/engine/pub.py": "daf4a506345f213c716455c3687e8a24b6ee6b0a28d709b8ddf4764c8fb87bab",
+    "publication/engine/source_model.py": "aa18e698856d94e472b549fc0e3354686aa8f0c00af54fe4ca644acd155b1e89",
+    "publication/tools/inspect-pages.py": "45144599ad3ad750e66b1fb5e8a069c24f410f239a1cf956e84d624be99c0098",
+    "publication/tools/reading-corpus.json": "7e1c6f42eab77d6878d370028dce80ee770f2ef38022a7d11f823928134acd3c",
+    "publication/tools/reading-review.py": "832831585c42cc505ad91d1d94cc9d582962fe9c9d636ae32c34a01ca859ac00",
+    "publication/tests/run.py": "9387c16fdeb6037982af0916745d9a235b8bdb2d212562b8013d78a0324127da",
+    "publication/tests/test-candidate.py": "84b56b102724b61b1e5f39d4d0769285fcfdcf7bfe00366a4011653e9d786b00",
+    "publication/tests/test-evidence.py": "9e3501078f0f8af4ea357188052bea8b26205ccec892ff4223887e56704e9f7e",
+    "publication/tests/test-failure-model.py": "04726e747aa63bb238d9a8ff8823f01ce5b95b9db6f9729299bd002832b44a96",
+    "publication/tests/test-full-handbook.py": "d571188532771818e1270df3503c10abd032f7df7dc61fa1c0ee2f278b4a8684",
+    "publication/tests/test-preview.py": "ce66b64d0d344bbf681a3c7318cb4e3902197d5f88c0782db5af678def3f06bb",
+    "publication/tests/test-products.py": "949aba6fcc2abb325f83f8b0ea0dbfe32cec8a7db1b908c0f4f672fd950cebbf",
+    "publication/tests/test-publication-identity.py": "f6d8beb06c84c71b8580c355662b6269306a09af8779b705754f18e1e2064077",
+    "publication/tests/test-publication-isolation.py": "a2e799061f6730f3cbf9eef810b3781f5cffc358c469ec39373f5bd0ff0cfbe9",
+    "publication/tests/test-reading.py": "44f5cfb52940e47c23eecb311c3a0b69fa2049187c03058c5a1745fca0e29c7b",
+    "publication/tests/test-release-identity.py": "a5efd5f4b3289f9c3950bc2c98876679395ada60323cd413d095ec4f0bff58c1",
+    "publication/pyproject.toml": "b4db9e1f7451067f28fcfd4472b61dd042e891124474e27df91fcedf5d118695",
+    "publication/uv.lock": "364af3f5c3312f0e1b1e3308bea7e14c4e81e99489d62bbd0908dc46eda57336",
+    "publication/.python-version": "5abd4dc1efa09469b88916c8e4e027a8c266a9b6d06f43ac9da3e30cd00b4ab5"
+  },
+  "not_run": [
+    "C++ compile/diagnostic experiments",
+    "performance experiments",
+    "TSan/concurrency experiments",
+    "407-page C++ full handbook rebuild",
+    "all ESD views",
+    "reader compatibility matrix",
+    "formal release"
+  ],
+  "notes": [
+    "Counts are unittest methods, not compiler invocations; 24 optimization subcases are nested within the 18 evidence tests.",
+    "Test groups are file registries with mixed unit/integration cases; native group is not 14 independent TeX builds.",
+    "FM reading fixture coverage is NOT_COVERED, not PASS; separate sampled visual self-review is recorded.",
+    "Final builds and tests use the implementation hashes above; prior trial failures are not silently counted as passes."
+  ]
+}
