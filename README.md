@@ -22,7 +22,9 @@
 
 ## 出版与历史资产
 
-出版实现、书籍 profile、adapter、模板、运行环境及活动回归已全部移出本仓库，由独立 [publication-engine 的 knowledge-base 产品包](https://github.com/snkio027/publication-engine/tree/9d82561f3881d467879e7d5c9676c3f6905b37d0/products/knowledge-base) 接管。显式指定内容 checkout，在仓库外准备输入、构建和冻结候选；本仓库不再提供出版命令、Python 出版环境或兼容执行入口。
+出版实现、书籍 profile、adapter、模板、运行环境及活动回归已全部移出本仓库，由独立 [publication-engine 的 knowledge-base 产品包](https://github.com/snkio027/publication-engine/tree/8552be9a80732479195f270b1d5a353690a20233/products/knowledge-base) 接管。显式指定内容 checkout，在内容、产品及活动实现输入之外的专用工作区准备、构建和冻结候选；本仓库不再提供出版命令、Python 出版环境或兼容执行入口。
+
+本仓库仍负责内容验证代码、编辑规范和书籍发布事实，不以“有可执行代码”作为迁出依据。内容、产品、通用引擎与工作区的单一职责合同见 [Repository boundaries](https://github.com/snkio027/publication-engine/blob/8552be9a80732479195f270b1d5a353690a20233/docs/repository-boundaries.md)。
 
 - [出版接管与归档说明](publication/README.md)：获取入口、版本锁定、历史路径与恢复方式。
 - [Modern C++ 工程学习手册 v1.0.0](https://github.com/snkio027/knowledge-base/releases/tag/cpp-handbook-v1.0.0)。
