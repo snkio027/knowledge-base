@@ -21,6 +21,7 @@
 | 系统设计与工程保证 | 方法论、工程手册、治理、证据与运行韧性 | [文档导航与 PDF](design/README.md) |
 | Atlas 平台架构 | 平台总体架构、GitOps 控制面与 AI Agent 控制面 | [总体架构](<atlas/Atlas Architecture Design.md>) · [GitOps](<atlas/Atlas GitOps Control Plane Design.md>) · [AI 控制面](<atlas/AI-Native Platform Control Plane Architecture Standard.md>) |
 | C++ 学习手册 | G0～G12 系统编程主线与 FM 失败模型专题 | [学习导航](c++/README.md) · [失败模型](c++/failure-model/README.md) |
+| 机器人学习与实践 | 从电子测量、单轴控制到桌面交互机器人与学习实验 | [学习导航与手册](robotics/README.md) |
 | Zig 项目架构 | 源码组织、模块边界、包生命周期与构建图 | [架构标准](<zig/Zig Project Architecture Standard.md>) |
 
 ## PDF 与目录约定
