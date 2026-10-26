@@ -1,0 +1,617 @@
+{
+  "schema_version": 1,
+  "status": "SOURCE_FIDELITY_PASS",
+  "original_ast_sha256": "2da32c13a32b8828015e85d6010731a680b56b7ade90b3b6e102c40742fe59c8",
+  "adapted_ast_sha256": "952fc01ccdcac0c05524965163146b23b2a19398cd6b71ea34979d05419abc13",
+  "projection_sha256": "fd305ea40d8e02a4908cbe9e50cefbd98a8deb0099cae533dda821e13c285ecb",
+  "checks": [
+    "characters",
+    "headers",
+    "code",
+    "links",
+    "tables",
+    "lists",
+    "inline_code",
+    "raw_dispositions",
+    "anchors"
+  ],
+  "whitespace_policy": "Prose whitespace and paragraph boundaries may change; code bytes may not.",
+  "transformations": [
+    {
+      "kind": "anchor",
+      "source_id": "sec01",
+      "destination": "sec01"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "sec02",
+      "destination": "sec02"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "sec03",
+      "destination": "sec03"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "sec04",
+      "destination": "sec04"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "sec05",
+      "destination": "sec05"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "sec06",
+      "destination": "sec06"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "sec07",
+      "destination": "sec07"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "sec08",
+      "destination": "sec08"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "sec09",
+      "destination": "sec09"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "sec10",
+      "destination": "sec10"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "sec11",
+      "destination": "sec11"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "sec12",
+      "destination": "sec12"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "sec13",
+      "destination": "sec13"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "sec14",
+      "destination": "sec14"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "sec15",
+      "destination": "sec15"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "sec16",
+      "destination": "sec16"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "sec17",
+      "destination": "sec17"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "sec18",
+      "destination": "sec18"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "sec19",
+      "destination": "sec19"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "sec20",
+      "destination": "sec20"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "sec21",
+      "destination": "sec21"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "sec22",
+      "destination": "sec22"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "sec23",
+      "destination": "sec23"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "references",
+      "destination": "references"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S01",
+      "destination": "S01"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S02",
+      "destination": "S02"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S03",
+      "destination": "S03"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S04",
+      "destination": "S04"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S05",
+      "destination": "S05"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S06",
+      "destination": "S06"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S07",
+      "destination": "S07"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S08",
+      "destination": "S08"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S09",
+      "destination": "S09"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S10",
+      "destination": "S10"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S11",
+      "destination": "S11"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S12",
+      "destination": "S12"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S13",
+      "destination": "S13"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S14",
+      "destination": "S14"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S15",
+      "destination": "S15"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S16",
+      "destination": "S16"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S17",
+      "destination": "S17"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S18",
+      "destination": "S18"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S19",
+      "destination": "S19"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S20",
+      "destination": "S20"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S21",
+      "destination": "S21"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S22",
+      "destination": "S22"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S23",
+      "destination": "S23"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S24",
+      "destination": "S24"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S25",
+      "destination": "S25"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S26",
+      "destination": "S26"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S27",
+      "destination": "S27"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S28",
+      "destination": "S28"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S29",
+      "destination": "S29"
+    },
+    {
+      "kind": "anchor",
+      "source_id": "S30",
+      "destination": "S30"
+    }
+  ],
+  "adapter_declarations": [
+    {
+      "kind": "source-target",
+      "id": "sec01",
+      "target_type": "Header",
+      "target_text": "01　定位、目标与关键决定"
+    },
+    {
+      "kind": "source-target",
+      "id": "sec02",
+      "target_type": "Header",
+      "target_text": "02　能力地图：先补什么，后深入什么"
+    },
+    {
+      "kind": "source-target",
+      "id": "sec03",
+      "target_type": "Header",
+      "target_text": "03　系统模型：物理、控制与智能各司其职"
+    },
+    {
+      "kind": "source-target",
+      "id": "sec04",
+      "target_type": "Header",
+      "target_text": "04　学习协议、投入方式与验收规则"
+    },
+    {
+      "kind": "source-target",
+      "id": "sec05",
+      "target_type": "Header",
+      "target_text": "05　硬件选择：一个 MCU 生态，一套可调试工具"
+    },
+    {
+      "kind": "source-target",
+      "id": "sec06",
+      "target_type": "Header",
+      "target_text": "06　分批采购、参考组合与兼容性检查"
+    },
+    {
+      "kind": "source-target",
+      "id": "sec07",
+      "target_type": "Header",
+      "target_text": "07　开发环境、计算平台与版本策略"
+    },
+    {
+      "kind": "source-target",
+      "id": "sec08",
+      "target_type": "Header",
+      "target_text": "08　R0：电气基础与可调试执行"
+    },
+    {
+      "kind": "source-target",
+      "id": "sec09",
+      "target_type": "Header",
+      "target_text": "09　R1：认识电机、编码器与测量误差"
+    },
+    {
+      "kind": "source-target",
+      "id": "sec10",
+      "target_type": "Header",
+      "target_text": "10　R2：从模型到闭环控制"
+    },
+    {
+      "kind": "source-target",
+      "id": "sec11",
+      "target_type": "Header",
+      "target_text": "11　R3：可靠固件与本地故障响应"
+    },
+    {
+      "kind": "source-target",
+      "id": "sec12",
+      "target_type": "Header",
+      "target_text": "12　R4：坐标、感知、时间与状态估计"
+    },
+    {
+      "kind": "source-target",
+      "id": "sec13",
+      "target_type": "Header",
+      "target_text": "13　R5：ROS 2、仿真与真实硬件集成"
+    },
+    {
+      "kind": "source-target",
+      "id": "sec14",
+      "target_type": "Header",
+      "target_text": "14　R6：桌面机器宠物原型"
+    },
+    {
+      "kind": "source-target",
+      "id": "sec15",
+      "target_type": "Header",
+      "target_text": "15　R7：数据、模仿学习与任务评测"
+    },
+    {
+      "kind": "source-target",
+      "id": "sec16",
+      "target_type": "Header",
+      "target_text": "16　前沿研究地图：跟问题，不只跟模型名"
+    },
+    {
+      "kind": "source-target",
+      "id": "sec17",
+      "target_type": "Header",
+      "target_text": "17　分支选择：不把所有机器人都做一遍"
+    },
+    {
+      "kind": "source-target",
+      "id": "sec18",
+      "target_type": "Header",
+      "target_text": "18　实验安全与故障响应边界"
+    },
+    {
+      "kind": "source-target",
+      "id": "sec19",
+      "target_type": "Header",
+      "target_text": "19　验证体系、指标与证据要求"
+    },
+    {
+      "kind": "source-target",
+      "id": "sec20",
+      "target_type": "Header",
+      "target_text": "20　代码组织与学习资产沉淀"
+    },
+    {
+      "kind": "source-target",
+      "id": "sec21",
+      "target_type": "Header",
+      "target_text": "21　推进方式与前十次学习单元"
+    },
+    {
+      "kind": "source-target",
+      "id": "sec22",
+      "target_type": "Header",
+      "target_text": "22　可复用模板：实验、采购与前沿复现"
+    },
+    {
+      "kind": "source-target",
+      "id": "sec23",
+      "target_type": "Header",
+      "target_text": "23　资料使用、维护与版本管理"
+    },
+    {
+      "kind": "source-target",
+      "id": "references",
+      "target_type": "Header",
+      "target_text": "一手参考资料"
+    },
+    {
+      "kind": "source-target",
+      "id": "S01",
+      "target_type": "Para",
+      "target_text": "[S01] STMicroelectronics · NUCLEO-G474RE"
+    },
+    {
+      "kind": "source-target",
+      "id": "S02",
+      "target_type": "Para",
+      "target_text": "[S02] STMicroelectronics · STM32G474RE"
+    },
+    {
+      "kind": "source-target",
+      "id": "S03",
+      "target_type": "Para",
+      "target_text": "[S03] Espressif · ESP32-S3 MCPWM"
+    },
+    {
+      "kind": "source-target",
+      "id": "S04",
+      "target_type": "Para",
+      "target_text": "[S04] Espressif · ESP32-S3 JTAG Debugging"
+    },
+    {
+      "kind": "source-target",
+      "id": "S05",
+      "target_type": "Para",
+      "target_text": "[S05] Espressif · C++ Support"
+    },
+    {
+      "kind": "source-target",
+      "id": "S06",
+      "target_type": "Para",
+      "target_text": "[S06] Pololu · 100:1 LP 6V Encoder Gearmotor, #5113"
+    },
+    {
+      "kind": "source-target",
+      "id": "S07",
+      "target_type": "Para",
+      "target_text": "[S07] Pololu · DRV8833 Dual Motor Driver Carrier, #2130"
+    },
+    {
+      "kind": "source-target",
+      "id": "S08",
+      "target_type": "Para",
+      "target_text": "[S08] MIT OpenCourseWare · 6.002 Circuits and Electronics"
+    },
+    {
+      "kind": "source-target",
+      "id": "S09",
+      "target_type": "Para",
+      "target_text": "[S09] Åström & Murray · Feedback Systems, Second Edition"
+    },
+    {
+      "kind": "source-target",
+      "id": "S10",
+      "target_type": "Para",
+      "target_text": "[S10] Northwestern University · Modern Robotics"
+    },
+    {
+      "kind": "source-target",
+      "id": "S11",
+      "target_type": "Para",
+      "target_text": "[S11] MIT / Russ Tedrake · Underactuated Robotics"
+    },
+    {
+      "kind": "source-target",
+      "id": "S12",
+      "target_type": "Para",
+      "target_text": "[S12] Open Robotics · ROS 2 Lyrical Luth Released"
+    },
+    {
+      "kind": "source-target",
+      "id": "S13",
+      "target_type": "Para",
+      "target_text": "[S13] ROS 2 · Jazzy Ubuntu Installation"
+    },
+    {
+      "kind": "source-target",
+      "id": "S14",
+      "target_type": "Para",
+      "target_text": "[S14] Gazebo · Installing Gazebo with ROS"
+    },
+    {
+      "kind": "source-target",
+      "id": "S15",
+      "target_type": "Para",
+      "target_text": "[S15] ros2_control · Controller Manager (Jazzy)"
+    },
+    {
+      "kind": "source-target",
+      "id": "S16",
+      "target_type": "Para",
+      "target_text": "[S16] ROS 2 rclcpp · QoS API Reference"
+    },
+    {
+      "kind": "source-target",
+      "id": "S17",
+      "target_type": "Para",
+      "target_text": "[S17] Hugging Face · Reachy Mini"
+    },
+    {
+      "kind": "source-target",
+      "id": "S18",
+      "target_type": "Para",
+      "target_text": "[S18] Reachy Mini · Simulation Setup Guide"
+    },
+    {
+      "kind": "source-target",
+      "id": "S19",
+      "target_type": "Para",
+      "target_text": "[S19] LeRobot · SO-101"
+    },
+    {
+      "kind": "source-target",
+      "id": "S20",
+      "target_type": "Para",
+      "target_text": "[S20] NVIDIA · Isaac Sim Requirements"
+    },
+    {
+      "kind": "source-target",
+      "id": "S21",
+      "target_type": "Para",
+      "target_text": "[S21] NVIDIA · Jetson Orin Nano Super Developer Kit"
+    },
+    {
+      "kind": "source-target",
+      "id": "S22",
+      "target_type": "Para",
+      "target_text": "[S22] LeRobot · ACT"
+    },
+    {
+      "kind": "source-target",
+      "id": "S23",
+      "target_type": "Para",
+      "target_text": "[S23] LeRobot · SmolVLA"
+    },
+    {
+      "kind": "source-target",
+      "id": "S24",
+      "target_type": "Para",
+      "target_text": "[S24] LeRobot · LeRobotDataset v3.0"
+    },
+    {
+      "kind": "source-target",
+      "id": "S25",
+      "target_type": "Para",
+      "target_text": "[S25] LeRobot · Real-Time Chunking"
+    },
+    {
+      "kind": "source-target",
+      "id": "S26",
+      "target_type": "Para",
+      "target_text": "[S26] LeRobot · Asynchronous Inference"
+    },
+    {
+      "kind": "source-target",
+      "id": "S27",
+      "target_type": "Para",
+      "target_text": "[S27] Hugging Face · LeRobot v0.6.0 Release"
+    },
+    {
+      "kind": "source-target",
+      "id": "S28",
+      "target_type": "Para",
+      "target_text": "[S28] Physical Intelligence · Pi API beta"
+    },
+    {
+      "kind": "source-target",
+      "id": "S29",
+      "target_type": "Para",
+      "target_text": "[S29] Tektronix · ABCs of Probes Primer"
+    },
+    {
+      "kind": "source-target",
+      "id": "S30",
+      "target_type": "Para",
+      "target_text": "[S30] Fluke · 110/113/114/115/117 Users Manual"
+    }
+  ]
+}

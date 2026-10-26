@@ -1,0 +1,710 @@
+[
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#sec01",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-36e5a24813a52c63"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#sec02",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-0fc8ffc2637728cb"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#sec03",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-bcd3466cfb422043"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#sec04",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-0e9b218295d61dc3"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#sec05",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-693c671262b32314"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#sec06",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-24181a75bb46811f"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#sec07",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-bbb681ea5a018f4c"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#sec08",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-f71a0df5adb323bf"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#sec09",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-de8815bf227c5d0a"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#sec10",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-c80da7ba7ccdf83d"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#sec11",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-7bac5de953e7b80f"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#sec12",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-f1cb1e433a589d1a"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#sec13",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-374e43fab99fed3f"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#sec14",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-fbe7db6ab00addf3"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#sec15",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-7604aeaf0d8699cc"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#sec16",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-c132520a8184a6c0"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#sec17",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-2f1d1cffb055623b"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#sec18",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-689a38f13ba6ca3f"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#sec19",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-184c0566264d4590"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#sec20",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-21574a4b30294894"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#sec21",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-b13b16d0a6b9cd06"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#sec22",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-ba9b7523d16aed75"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#sec23",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-a573a89d627da0e7"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#references",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-07a0b0962107485c"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S09",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-7e0b7c84ed21fedc"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S10",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-3d16e90141e88e72"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S11",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-4a1bcaec718f10ed"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S01",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-ac7438e86cb85ebd"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S02",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-bbe97d17449c6e00"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S03",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-217c48f2b7fdd352"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S04",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-3491f905b529783d"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S06",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-3193b0ffb09ae1f3"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S07",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-4fc42779a8a8ca27"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S06",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-3193b0ffb09ae1f3"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S07",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-4fc42779a8a8ca27"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S06",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-3193b0ffb09ae1f3"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S17",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-b59848410d5d135a"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S18",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-d625318b6fb0a410"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S12",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-d30b6fedc77faaf5"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S13",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-02cfcc7e2872c636"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S14",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-ec546f04a3d6c011"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S05",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-39a6c3d9fd987246"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S21",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-56757a56803c5213"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S20",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-7e830ff5e5fac9a7"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S08",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-33829b0e034a02f2"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S06",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-3193b0ffb09ae1f3"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S10",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-3d16e90141e88e72"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S09",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-7e0b7c84ed21fedc"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S04",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-3491f905b529783d"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S10",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-3d16e90141e88e72"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S16",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-8662203314894f22"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S15",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-dca468ba69cda665"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S17",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-b59848410d5d135a"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S18",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-d625318b6fb0a410"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S22",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-b42bb4596754322b"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S23",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-a1489528636ae9c6"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S24",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-aa82f28022e63b9f"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S19",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-d87f96c3835db619"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S22",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-b42bb4596754322b"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S23",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-a1489528636ae9c6"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S25",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-9882cc2c672fd4a9"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S26",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-a0e6cd01fb2fdc37"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S27",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-8e91c58443a732f8"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S27",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-8e91c58443a732f8"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S28",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-dda38629e9a35110"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S27",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-8e91c58443a732f8"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S28",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-dda38629e9a35110"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S10",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-3d16e90141e88e72"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S19",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-d87f96c3835db619"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S11",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-4a1bcaec718f10ed"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S30",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-8de67c4ac283ca08"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S29",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-10f579513ceb7cd4"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S06",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-3193b0ffb09ae1f3"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S01",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-ac7438e86cb85ebd"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S08",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-33829b0e034a02f2"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S06",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-3193b0ffb09ae1f3"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S07",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-4fc42779a8a8ca27"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S09",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-7e0b7c84ed21fedc"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S04",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-3491f905b529783d"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S05",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-39a6c3d9fd987246"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S10",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-3d16e90141e88e72"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S12",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-d30b6fedc77faaf5"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S16",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-8662203314894f22"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S17",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-b59848410d5d135a"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S18",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-d625318b6fb0a410"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S22",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-b42bb4596754322b"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S26",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-a0e6cd01fb2fdc37"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "#S11",
+    "kind": "SAME_VIEW_INTERNAL",
+    "target": "#ROBOTICS-HANDBOOK-4a1bcaec718f10ed"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://www.st.com/en/evaluation-tools/nucleo-g474re.html",
+    "kind": "EXTERNAL_URI",
+    "target": "https://www.st.com/en/evaluation-tools/nucleo-g474re.html"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://www.st.com/en/microcontrollers-microprocessors/stm32g474re.html",
+    "kind": "EXTERNAL_URI",
+    "target": "https://www.st.com/en/microcontrollers-microprocessors/stm32g474re.html"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-reference/peripherals/mcpwm.html",
+    "kind": "EXTERNAL_URI",
+    "target": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-reference/peripherals/mcpwm.html"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-guides/jtag-debugging/index.html",
+    "kind": "EXTERNAL_URI",
+    "target": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-guides/jtag-debugging/index.html"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-guides/cplusplus.html",
+    "kind": "EXTERNAL_URI",
+    "target": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-guides/cplusplus.html"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://www.pololu.com/product/5113",
+    "kind": "EXTERNAL_URI",
+    "target": "https://www.pololu.com/product/5113"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://www.pololu.com/product/2130",
+    "kind": "EXTERNAL_URI",
+    "target": "https://www.pololu.com/product/2130"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/",
+    "kind": "EXTERNAL_URI",
+    "target": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://www.cds.caltech.edu/~murray/FBS/Second_Edition.html",
+    "kind": "EXTERNAL_URI",
+    "target": "https://www.cds.caltech.edu/~murray/FBS/Second_Edition.html"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://modernrobotics.northwestern.edu/",
+    "kind": "EXTERNAL_URI",
+    "target": "https://modernrobotics.northwestern.edu/"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://underactuated.csail.mit.edu/index.html",
+    "kind": "EXTERNAL_URI",
+    "target": "https://underactuated.csail.mit.edu/index.html"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://discourse.openrobotics.org/t/ros-2-lyrical-luth-released/55021",
+    "kind": "EXTERNAL_URI",
+    "target": "https://discourse.openrobotics.org/t/ros-2-lyrical-luth-released/55021"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html",
+    "kind": "EXTERNAL_URI",
+    "target": "https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://gazebosim.org/docs/latest/ros_installation/",
+    "kind": "EXTERNAL_URI",
+    "target": "https://gazebosim.org/docs/latest/ros_installation/"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://control.ros.org/jazzy/doc/ros2_control/controller_manager/doc/userdoc.html",
+    "kind": "EXTERNAL_URI",
+    "target": "https://control.ros.org/jazzy/doc/ros2_control/controller_manager/doc/userdoc.html"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://docs.ros.org/en/kilted/p/rclcpp/generated/classrclcpp_1_1QoS.html",
+    "kind": "EXTERNAL_URI",
+    "target": "https://docs.ros.org/en/kilted/p/rclcpp/generated/classrclcpp_1_1QoS.html"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://huggingface.co/docs/reachy_mini/index",
+    "kind": "EXTERNAL_URI",
+    "target": "https://huggingface.co/docs/reachy_mini/index"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://huggingface.co/docs/reachy_mini/platforms/simulation/get_started",
+    "kind": "EXTERNAL_URI",
+    "target": "https://huggingface.co/docs/reachy_mini/platforms/simulation/get_started"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://huggingface.co/docs/lerobot/so101",
+    "kind": "EXTERNAL_URI",
+    "target": "https://huggingface.co/docs/lerobot/so101"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://docs.isaacsim.omniverse.nvidia.com/latest/installation/requirements.html",
+    "kind": "EXTERNAL_URI",
+    "target": "https://docs.isaacsim.omniverse.nvidia.com/latest/installation/requirements.html"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/nano-super-developer-kit/",
+    "kind": "EXTERNAL_URI",
+    "target": "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/nano-super-developer-kit/"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://huggingface.co/docs/lerobot/act",
+    "kind": "EXTERNAL_URI",
+    "target": "https://huggingface.co/docs/lerobot/act"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://huggingface.co/docs/lerobot/smolvla",
+    "kind": "EXTERNAL_URI",
+    "target": "https://huggingface.co/docs/lerobot/smolvla"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://huggingface.co/docs/lerobot/en/lerobot-dataset-v3",
+    "kind": "EXTERNAL_URI",
+    "target": "https://huggingface.co/docs/lerobot/en/lerobot-dataset-v3"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://huggingface.co/docs/lerobot/rtc",
+    "kind": "EXTERNAL_URI",
+    "target": "https://huggingface.co/docs/lerobot/rtc"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://huggingface.co/docs/lerobot/async",
+    "kind": "EXTERNAL_URI",
+    "target": "https://huggingface.co/docs/lerobot/async"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://huggingface.co/blog/lerobot-release-v060",
+    "kind": "EXTERNAL_URI",
+    "target": "https://huggingface.co/blog/lerobot-release-v060"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://www.pi.website/blog/api-beta",
+    "kind": "EXTERNAL_URI",
+    "target": "https://www.pi.website/blog/api-beta"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://www.tek.com/en/documents/whitepaper/abcs-probes-primer",
+    "kind": "EXTERNAL_URI",
+    "target": "https://www.tek.com/en/documents/whitepaper/abcs-probes-primer"
+  },
+  {
+    "from": "ROBOTICS-HANDBOOK",
+    "source": "https://media.fluke.com/5e1db354-3a6e-49cf-9edd-b10800c0e608_original%20file.pdf",
+    "kind": "EXTERNAL_URI",
+    "target": "https://media.fluke.com/5e1db354-3a6e-49cf-9edd-b10800c0e608_original%20file.pdf"
+  }
+]

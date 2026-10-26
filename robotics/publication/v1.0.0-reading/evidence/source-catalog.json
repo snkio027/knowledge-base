@@ -1,0 +1,502 @@
+[
+  {
+    "source": {
+      "bytes": 64208,
+      "commit": "2b90ad93f29800f08d1bc8f6b9083c8904dae7da",
+      "id": "ROBOTICS-HANDBOOK",
+      "matches_commit": true,
+      "path": "robotics/robotics-learning-handbook-v1.0.md",
+      "revision": "2b90ad93f29800f08d1bc8f6b9083c8904dae7da",
+      "sha256": "bb7e3b010fce93a9eb338271264467bc177c70a21cdeb3bb0123d9e5d781663b",
+      "snapshot_path": "sources/robotics/robotics-learning-handbook-v1.0.md",
+      "version": "1.0.0"
+    },
+    "metadata": {
+      "title": "机器人学习与实践手册",
+      "subtitle": "从电子与控制基础走向智能机器宠物",
+      "version": "1.0.0",
+      "status": "proposed-learning-baseline",
+      "document_id": "ROBOTICS-HANDBOOK",
+      "owner": ""
+    },
+    "anchors": {
+      "机器人学习与实践手册": "ROBOTICS-HANDBOOK-19b210781dfd7c8c",
+      "从电子与控制基础走向智能机器宠物": "ROBOTICS-HANDBOOK-f10cfb18cb8e5661",
+      "阅读导航": "ROBOTICS-HANDBOOK-25d7f676a87cb179",
+      "定位目标与关键决定": "ROBOTICS-HANDBOOK-9f2d891b4c3b952e",
+      "主线与两条并行活动": "ROBOTICS-HANDBOOK-874e5a8bc64be3a1",
+      "完成后应能独立做什么": "ROBOTICS-HANDBOOK-5a8a8cce4f55487f",
+      "能力地图先补什么后深入什么": "ROBOTICS-HANDBOOK-1f277b6b3a21c2c8",
+      "迁移现有经验也要修正旧直觉": "ROBOTICS-HANDBOOK-067885396a83225e",
+      "数学按问题接入": "ROBOTICS-HANDBOOK-e8798e6d3c8dc600",
+      "系统模型物理控制与智能各司其职": "ROBOTICS-HANDBOOK-7fe26d81469dc98b",
+      "三条流必须同时看见": "ROBOTICS-HANDBOOK-df38b869db013aca",
+      "时间是接口的一部分": "ROBOTICS-HANDBOOK-b76e27cf5c3d78a1",
+      "位置速度动作与结果不可混为一谈": "ROBOTICS-HANDBOOK-205cfbb8308d014f",
+      "学习协议投入方式与验收规则": "ROBOTICS-HANDBOOK-df9baf75d3b6f070",
+      "每次完整练习的六个动作": "ROBOTICS-HANDBOOK-9a001d3a4fd6104b",
+      "通过标准不是看完或跑过一次": "ROBOTICS-HANDBOOK-aaddd68d9a2eee9b",
+      "基础与前沿的投入比例": "ROBOTICS-HANDBOOK-6189b50611063454",
+      "阅读材料的分工": "ROBOTICS-HANDBOOK-10a95a093c836848",
+      "硬件选择一个-mcu-生态一套可调试工具": "ROBOTICS-HANDBOOK-da711a1be81f63be",
+      "默认选择nucleo-g474re": "ROBOTICS-HANDBOOK-28d0a3f68f7659f9",
+      "合理替代esp32-s3": "ROBOTICS-HANDBOOK-6bb8da74c1830ad2",
+      "不在第一轮比较的选项": "ROBOTICS-HANDBOOK-2807440d478d8ba7",
+      "分批采购参考组合与兼容性检查": "ROBOTICS-HANDBOOK-d0b83e28d15c97c3",
+      "采购按实验解锁而不是一次买齐": "ROBOTICS-HANDBOOK-e87ccb750247e350",
+      "采购与上电前的七项核查": "ROBOTICS-HANDBOOK-a54eff648cc9b958",
+      "开发环境计算平台与版本策略": "ROBOTICS-HANDBOOK-3357df5a48792e20",
+      "先使用现有-mac再由任务决定-linux-与-gpu": "ROBOTICS-HANDBOOK-a02466054cfc0697",
+      "编程语言服务于责任而不是扩大练习面": "ROBOTICS-HANDBOOK-bf3852ef85dbc4f5",
+      "raspberry-pijetson-与工作站是分支": "ROBOTICS-HANDBOOK-a0511af9f516d062",
+      "r0电气基础与可调试执行": "ROBOTICS-HANDBOOK-5adc3b3f17dc9767",
+      "基础模型与机制": "ROBOTICS-HANDBOOK-f82a4e8359c9d9f2",
+      "综合练习可测量的输入输出装置": "ROBOTICS-HANDBOOK-66bb1484a6ef8eb1",
+      "反例与停止条件": "ROBOTICS-HANDBOOK-ba99d8c0bf2b74e7",
+      "进阶接口不在本阶段堆叠": "ROBOTICS-HANDBOOK-ca815f7755ee9a80",
+      "r1认识电机编码器与测量误差": "ROBOTICS-HANDBOOK-ef6dbe8f30f2d40d",
+      "综合练习单轴开环测量台": "ROBOTICS-HANDBOOK-4da35b269a8d8cdb",
+      "两个必须自己推导的式子": "ROBOTICS-HANDBOOK-d6fb1480c06645ce",
+      "r2从模型到闭环控制": "ROBOTICS-HANDBOOK-ce86ecb9794ab03c",
+      "建立最小模型再逐步增加复杂度": "ROBOTICS-HANDBOOK-06e455763c9a6c7f",
+      "综合练习有边界的速度伺服": "ROBOTICS-HANDBOOK-714628c2193046eb",
+      "边界与反例": "ROBOTICS-HANDBOOK-57f4f3de31a75d1e",
+      "r3可靠固件与本地故障响应": "ROBOTICS-HANDBOOK-ef14ecbb65463c43",
+      "状态授权与恢复": "ROBOTICS-HANDBOOK-7d8453c44fa16100",
+      "通信契约的最低要求": "ROBOTICS-HANDBOOK-fba1b45788653518",
+      "r4坐标感知时间与状态估计": "ROBOTICS-HANDBOOK-71e94f59769a8142",
+      "基础模型": "ROBOTICS-HANDBOOK-eadf0934709d61bf",
+      "综合练习从画面目标到有限转向": "ROBOTICS-HANDBOOK-19c66a445ca0c671",
+      "观测新鲜与正确是两个维度": "ROBOTICS-HANDBOOK-f846a607ed4b12d7",
+      "暂缓范围": "ROBOTICS-HANDBOOK-5ea36fd344b56da6",
+      "r5ros-2仿真与真实硬件集成": "ROBOTICS-HANDBOOK-9371e66b738fc94d",
+      "先学接口语义再增加节点数量": "ROBOTICS-HANDBOOK-54aca8d413f38cf4",
+      "综合练习仿真真机双后端": "ROBOTICS-HANDBOOK-9565a66aea5844b8",
+      "避免双重控制与重复所有权": "ROBOTICS-HANDBOOK-bda0920dd819bae2",
+      "仿真能够证明什么": "ROBOTICS-HANDBOOK-0f30d035c5d4d63f",
+      "r6桌面机器宠物原型": "ROBOTICS-HANDBOOK-4506c21a826cb7e2",
+      "第一版限定任务": "ROBOTICS-HANDBOOK-31316ea021d501f5",
+      "技能合同优先于模型提示词": "ROBOTICS-HANDBOOK-e73fb904fb5037c7",
+      "宠物感与隐私是独立设计问题": "ROBOTICS-HANDBOOK-fe170fb4fcce65f5",
+      "r7数据模仿学习与任务评测": "ROBOTICS-HANDBOOK-12aa39d2d154e59f",
+      "从小任务与基线开始": "ROBOTICS-HANDBOOK-85ba824368093727",
+      "数据契约从第一条记录开始": "ROBOTICS-HANDBOOK-e83a18c4fad6d13c",
+      "建议的第一次复现实验": "ROBOTICS-HANDBOOK-1984f1e30cf15f6a",
+      "前沿研究地图跟问题不只跟模型名": "ROBOTICS-HANDBOOK-152f5e50c5c1c543",
+      "已核验的近期变化": "ROBOTICS-HANDBOOK-47c6f38cc44dbf7b",
+      "每篇前沿资料只回答六个问题": "ROBOTICS-HANDBOOK-2cdcbf455cfcf553",
+      "分支选择不把所有机器人都做一遍": "ROBOTICS-HANDBOOK-18bab856f297f405",
+      "自主移动不是给头部装两个轮子": "ROBOTICS-HANDBOOK-d7915aeefa5a49d2",
+      "机械臂不是机器宠物的必修硬件": "ROBOTICS-HANDBOOK-536339438d7e9b65",
+      "四足是长期形态选项不是入门凭证": "ROBOTICS-HANDBOOK-553bca8618333694",
+      "进入更复杂硬件前的条件": "ROBOTICS-HANDBOOK-52483da26a9443ab",
+      "实验安全与故障响应边界": "ROBOTICS-HANDBOOK-dac2baf318502f25",
+      "电气与机械的基本约束": "ROBOTICS-HANDBOOK-860202a9fe9a175c",
+      "停止不是一个万能动作": "ROBOTICS-HANDBOOK-29047f5a63b54669",
+      "安全的测试顺序": "ROBOTICS-HANDBOOK-8b458a26387e9800",
+      "验证体系指标与证据要求": "ROBOTICS-HANDBOOK-88773109d77536a0",
+      "指标必须带条件口径和样本": "ROBOTICS-HANDBOOK-6129c96026a37d49",
+      "最低故障矩阵": "ROBOTICS-HANDBOOK-5873ae8719c082db",
+      "每份证据包至少包含": "ROBOTICS-HANDBOOK-bdebbbeb9a936d13",
+      "代码组织与学习资产沉淀": "ROBOTICS-HANDBOOK-3fb550a695b96f01",
+      "c-核心与设备边界": "ROBOTICS-HANDBOOK-255f79369a7ea183",
+      "三种文档不能混成一份": "ROBOTICS-HANDBOOK-402c08730e0b8f9f",
+      "数据与版本": "ROBOTICS-HANDBOOK-968490e63590d018",
+      "推进方式与前十次学习单元": "ROBOTICS-HANDBOOK-be0617871e51600d",
+      "阶段依赖": "ROBOTICS-HANDBOOK-47b6050192569678",
+      "每轮复盘只作三个决定": "ROBOTICS-HANDBOOK-dd56f3772aff91ad",
+      "可复用模板实验采购与前沿复现": "ROBOTICS-HANDBOOK-5f468f567eb0eac5",
+      "实验记录模板": "ROBOTICS-HANDBOOK-0f3e256bb404e8d6",
+      "采购决策模板": "ROBOTICS-HANDBOOK-81fc8698be9c64d8",
+      "前沿复现卡模板": "ROBOTICS-HANDBOOK-06a3d806d8f306be",
+      "资料使用维护与版本管理": "ROBOTICS-HANDBOOK-270a3d15d9c6ade5",
+      "每个阶段只设一个主资料入口": "ROBOTICS-HANDBOOK-dc12f7bc3049e08b",
+      "稳定内容与动态快照分开维护": "ROBOTICS-HANDBOOK-f9cc97ffec05c70e",
+      "文档变更规则": "ROBOTICS-HANDBOOK-08a555443e37a785",
+      "资料核验说明": "ROBOTICS-HANDBOOK-696dd9a14950a6b1",
+      "一手参考资料": "ROBOTICS-HANDBOOK-8f44fc3ead3c05a2",
+      "sec01": "ROBOTICS-HANDBOOK-36e5a24813a52c63",
+      "sec02": "ROBOTICS-HANDBOOK-0fc8ffc2637728cb",
+      "sec03": "ROBOTICS-HANDBOOK-bcd3466cfb422043",
+      "sec04": "ROBOTICS-HANDBOOK-0e9b218295d61dc3",
+      "sec05": "ROBOTICS-HANDBOOK-693c671262b32314",
+      "sec06": "ROBOTICS-HANDBOOK-24181a75bb46811f",
+      "sec07": "ROBOTICS-HANDBOOK-bbb681ea5a018f4c",
+      "sec08": "ROBOTICS-HANDBOOK-f71a0df5adb323bf",
+      "sec09": "ROBOTICS-HANDBOOK-de8815bf227c5d0a",
+      "sec10": "ROBOTICS-HANDBOOK-c80da7ba7ccdf83d",
+      "sec11": "ROBOTICS-HANDBOOK-7bac5de953e7b80f",
+      "sec12": "ROBOTICS-HANDBOOK-f1cb1e433a589d1a",
+      "sec13": "ROBOTICS-HANDBOOK-374e43fab99fed3f",
+      "sec14": "ROBOTICS-HANDBOOK-fbe7db6ab00addf3",
+      "sec15": "ROBOTICS-HANDBOOK-7604aeaf0d8699cc",
+      "sec16": "ROBOTICS-HANDBOOK-c132520a8184a6c0",
+      "sec17": "ROBOTICS-HANDBOOK-2f1d1cffb055623b",
+      "sec18": "ROBOTICS-HANDBOOK-689a38f13ba6ca3f",
+      "sec19": "ROBOTICS-HANDBOOK-184c0566264d4590",
+      "sec20": "ROBOTICS-HANDBOOK-21574a4b30294894",
+      "sec21": "ROBOTICS-HANDBOOK-b13b16d0a6b9cd06",
+      "sec22": "ROBOTICS-HANDBOOK-ba9b7523d16aed75",
+      "sec23": "ROBOTICS-HANDBOOK-a573a89d627da0e7",
+      "references": "ROBOTICS-HANDBOOK-07a0b0962107485c",
+      "S01": "ROBOTICS-HANDBOOK-ac7438e86cb85ebd",
+      "S02": "ROBOTICS-HANDBOOK-bbe97d17449c6e00",
+      "S03": "ROBOTICS-HANDBOOK-217c48f2b7fdd352",
+      "S04": "ROBOTICS-HANDBOOK-3491f905b529783d",
+      "S05": "ROBOTICS-HANDBOOK-39a6c3d9fd987246",
+      "S06": "ROBOTICS-HANDBOOK-3193b0ffb09ae1f3",
+      "S07": "ROBOTICS-HANDBOOK-4fc42779a8a8ca27",
+      "S08": "ROBOTICS-HANDBOOK-33829b0e034a02f2",
+      "S09": "ROBOTICS-HANDBOOK-7e0b7c84ed21fedc",
+      "S10": "ROBOTICS-HANDBOOK-3d16e90141e88e72",
+      "S11": "ROBOTICS-HANDBOOK-4a1bcaec718f10ed",
+      "S12": "ROBOTICS-HANDBOOK-d30b6fedc77faaf5",
+      "S13": "ROBOTICS-HANDBOOK-02cfcc7e2872c636",
+      "S14": "ROBOTICS-HANDBOOK-ec546f04a3d6c011",
+      "S15": "ROBOTICS-HANDBOOK-dca468ba69cda665",
+      "S16": "ROBOTICS-HANDBOOK-8662203314894f22",
+      "S17": "ROBOTICS-HANDBOOK-b59848410d5d135a",
+      "S18": "ROBOTICS-HANDBOOK-d625318b6fb0a410",
+      "S19": "ROBOTICS-HANDBOOK-d87f96c3835db619",
+      "S20": "ROBOTICS-HANDBOOK-7e830ff5e5fac9a7",
+      "S21": "ROBOTICS-HANDBOOK-56757a56803c5213",
+      "S22": "ROBOTICS-HANDBOOK-b42bb4596754322b",
+      "S23": "ROBOTICS-HANDBOOK-a1489528636ae9c6",
+      "S24": "ROBOTICS-HANDBOOK-aa82f28022e63b9f",
+      "S25": "ROBOTICS-HANDBOOK-9882cc2c672fd4a9",
+      "S26": "ROBOTICS-HANDBOOK-a0e6cd01fb2fdc37",
+      "S27": "ROBOTICS-HANDBOOK-8e91c58443a732f8",
+      "S28": "ROBOTICS-HANDBOOK-dda38629e9a35110",
+      "S29": "ROBOTICS-HANDBOOK-10f579513ceb7cd4",
+      "S30": "ROBOTICS-HANDBOOK-8de67c4ac283ca08"
+    },
+    "aliases": {},
+    "semantic": [
+      {
+        "kind": "source-target",
+        "id": "sec01",
+        "target_type": "Header",
+        "target_text": "01　定位、目标与关键决定"
+      },
+      {
+        "kind": "source-target",
+        "id": "sec02",
+        "target_type": "Header",
+        "target_text": "02　能力地图：先补什么，后深入什么"
+      },
+      {
+        "kind": "source-target",
+        "id": "sec03",
+        "target_type": "Header",
+        "target_text": "03　系统模型：物理、控制与智能各司其职"
+      },
+      {
+        "kind": "source-target",
+        "id": "sec04",
+        "target_type": "Header",
+        "target_text": "04　学习协议、投入方式与验收规则"
+      },
+      {
+        "kind": "source-target",
+        "id": "sec05",
+        "target_type": "Header",
+        "target_text": "05　硬件选择：一个 MCU 生态，一套可调试工具"
+      },
+      {
+        "kind": "source-target",
+        "id": "sec06",
+        "target_type": "Header",
+        "target_text": "06　分批采购、参考组合与兼容性检查"
+      },
+      {
+        "kind": "source-target",
+        "id": "sec07",
+        "target_type": "Header",
+        "target_text": "07　开发环境、计算平台与版本策略"
+      },
+      {
+        "kind": "source-target",
+        "id": "sec08",
+        "target_type": "Header",
+        "target_text": "08　R0：电气基础与可调试执行"
+      },
+      {
+        "kind": "source-target",
+        "id": "sec09",
+        "target_type": "Header",
+        "target_text": "09　R1：认识电机、编码器与测量误差"
+      },
+      {
+        "kind": "source-target",
+        "id": "sec10",
+        "target_type": "Header",
+        "target_text": "10　R2：从模型到闭环控制"
+      },
+      {
+        "kind": "source-target",
+        "id": "sec11",
+        "target_type": "Header",
+        "target_text": "11　R3：可靠固件与本地故障响应"
+      },
+      {
+        "kind": "source-target",
+        "id": "sec12",
+        "target_type": "Header",
+        "target_text": "12　R4：坐标、感知、时间与状态估计"
+      },
+      {
+        "kind": "source-target",
+        "id": "sec13",
+        "target_type": "Header",
+        "target_text": "13　R5：ROS 2、仿真与真实硬件集成"
+      },
+      {
+        "kind": "source-target",
+        "id": "sec14",
+        "target_type": "Header",
+        "target_text": "14　R6：桌面机器宠物原型"
+      },
+      {
+        "kind": "source-target",
+        "id": "sec15",
+        "target_type": "Header",
+        "target_text": "15　R7：数据、模仿学习与任务评测"
+      },
+      {
+        "kind": "source-target",
+        "id": "sec16",
+        "target_type": "Header",
+        "target_text": "16　前沿研究地图：跟问题，不只跟模型名"
+      },
+      {
+        "kind": "source-target",
+        "id": "sec17",
+        "target_type": "Header",
+        "target_text": "17　分支选择：不把所有机器人都做一遍"
+      },
+      {
+        "kind": "source-target",
+        "id": "sec18",
+        "target_type": "Header",
+        "target_text": "18　实验安全与故障响应边界"
+      },
+      {
+        "kind": "source-target",
+        "id": "sec19",
+        "target_type": "Header",
+        "target_text": "19　验证体系、指标与证据要求"
+      },
+      {
+        "kind": "source-target",
+        "id": "sec20",
+        "target_type": "Header",
+        "target_text": "20　代码组织与学习资产沉淀"
+      },
+      {
+        "kind": "source-target",
+        "id": "sec21",
+        "target_type": "Header",
+        "target_text": "21　推进方式与前十次学习单元"
+      },
+      {
+        "kind": "source-target",
+        "id": "sec22",
+        "target_type": "Header",
+        "target_text": "22　可复用模板：实验、采购与前沿复现"
+      },
+      {
+        "kind": "source-target",
+        "id": "sec23",
+        "target_type": "Header",
+        "target_text": "23　资料使用、维护与版本管理"
+      },
+      {
+        "kind": "source-target",
+        "id": "references",
+        "target_type": "Header",
+        "target_text": "一手参考资料"
+      },
+      {
+        "kind": "source-target",
+        "id": "S01",
+        "target_type": "Para",
+        "target_text": "[S01] STMicroelectronics · NUCLEO-G474RE"
+      },
+      {
+        "kind": "source-target",
+        "id": "S02",
+        "target_type": "Para",
+        "target_text": "[S02] STMicroelectronics · STM32G474RE"
+      },
+      {
+        "kind": "source-target",
+        "id": "S03",
+        "target_type": "Para",
+        "target_text": "[S03] Espressif · ESP32-S3 MCPWM"
+      },
+      {
+        "kind": "source-target",
+        "id": "S04",
+        "target_type": "Para",
+        "target_text": "[S04] Espressif · ESP32-S3 JTAG Debugging"
+      },
+      {
+        "kind": "source-target",
+        "id": "S05",
+        "target_type": "Para",
+        "target_text": "[S05] Espressif · C++ Support"
+      },
+      {
+        "kind": "source-target",
+        "id": "S06",
+        "target_type": "Para",
+        "target_text": "[S06] Pololu · 100:1 LP 6V Encoder Gearmotor, #5113"
+      },
+      {
+        "kind": "source-target",
+        "id": "S07",
+        "target_type": "Para",
+        "target_text": "[S07] Pololu · DRV8833 Dual Motor Driver Carrier, #2130"
+      },
+      {
+        "kind": "source-target",
+        "id": "S08",
+        "target_type": "Para",
+        "target_text": "[S08] MIT OpenCourseWare · 6.002 Circuits and Electronics"
+      },
+      {
+        "kind": "source-target",
+        "id": "S09",
+        "target_type": "Para",
+        "target_text": "[S09] Åström & Murray · Feedback Systems, Second Edition"
+      },
+      {
+        "kind": "source-target",
+        "id": "S10",
+        "target_type": "Para",
+        "target_text": "[S10] Northwestern University · Modern Robotics"
+      },
+      {
+        "kind": "source-target",
+        "id": "S11",
+        "target_type": "Para",
+        "target_text": "[S11] MIT / Russ Tedrake · Underactuated Robotics"
+      },
+      {
+        "kind": "source-target",
+        "id": "S12",
+        "target_type": "Para",
+        "target_text": "[S12] Open Robotics · ROS 2 Lyrical Luth Released"
+      },
+      {
+        "kind": "source-target",
+        "id": "S13",
+        "target_type": "Para",
+        "target_text": "[S13] ROS 2 · Jazzy Ubuntu Installation"
+      },
+      {
+        "kind": "source-target",
+        "id": "S14",
+        "target_type": "Para",
+        "target_text": "[S14] Gazebo · Installing Gazebo with ROS"
+      },
+      {
+        "kind": "source-target",
+        "id": "S15",
+        "target_type": "Para",
+        "target_text": "[S15] ros2_control · Controller Manager (Jazzy)"
+      },
+      {
+        "kind": "source-target",
+        "id": "S16",
+        "target_type": "Para",
+        "target_text": "[S16] ROS 2 rclcpp · QoS API Reference"
+      },
+      {
+        "kind": "source-target",
+        "id": "S17",
+        "target_type": "Para",
+        "target_text": "[S17] Hugging Face · Reachy Mini"
+      },
+      {
+        "kind": "source-target",
+        "id": "S18",
+        "target_type": "Para",
+        "target_text": "[S18] Reachy Mini · Simulation Setup Guide"
+      },
+      {
+        "kind": "source-target",
+        "id": "S19",
+        "target_type": "Para",
+        "target_text": "[S19] LeRobot · SO-101"
+      },
+      {
+        "kind": "source-target",
+        "id": "S20",
+        "target_type": "Para",
+        "target_text": "[S20] NVIDIA · Isaac Sim Requirements"
+      },
+      {
+        "kind": "source-target",
+        "id": "S21",
+        "target_type": "Para",
+        "target_text": "[S21] NVIDIA · Jetson Orin Nano Super Developer Kit"
+      },
+      {
+        "kind": "source-target",
+        "id": "S22",
+        "target_type": "Para",
+        "target_text": "[S22] LeRobot · ACT"
+      },
+      {
+        "kind": "source-target",
+        "id": "S23",
+        "target_type": "Para",
+        "target_text": "[S23] LeRobot · SmolVLA"
+      },
+      {
+        "kind": "source-target",
+        "id": "S24",
+        "target_type": "Para",
+        "target_text": "[S24] LeRobot · LeRobotDataset v3.0"
+      },
+      {
+        "kind": "source-target",
+        "id": "S25",
+        "target_type": "Para",
+        "target_text": "[S25] LeRobot · Real-Time Chunking"
+      },
+      {
+        "kind": "source-target",
+        "id": "S26",
+        "target_type": "Para",
+        "target_text": "[S26] LeRobot · Asynchronous Inference"
+      },
+      {
+        "kind": "source-target",
+        "id": "S27",
+        "target_type": "Para",
+        "target_text": "[S27] Hugging Face · LeRobot v0.6.0 Release"
+      },
+      {
+        "kind": "source-target",
+        "id": "S28",
+        "target_type": "Para",
+        "target_text": "[S28] Physical Intelligence · Pi API beta"
+      },
+      {
+        "kind": "source-target",
+        "id": "S29",
+        "target_type": "Para",
+        "target_text": "[S29] Tektronix · ABCs of Probes Primer"
+      },
+      {
+        "kind": "source-target",
+        "id": "S30",
+        "target_type": "Para",
+        "target_text": "[S30] Fluke · 110/113/114/115/117 Users Manual"
+      }
+    ],
+    "source_href": "https://github.com/snkio027/kb/blob/2b90ad93f29800f08d1bc8f6b9083c8904dae7da/robotics/robotics-learning-handbook-v1.0.md"
+  }
+]

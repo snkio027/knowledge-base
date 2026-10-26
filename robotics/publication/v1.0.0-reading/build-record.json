@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "artifact_role": "learning-reading-preview",
+  "built_on": "2026-10-26",
+  "saved_on": "2026-10-27",
+  "formal_release": false,
+  "content_approval": false,
+  "source": {
+    "repository": "https://github.com/snkio027/knowledge-base",
+    "commit": "2b90ad93f29800f08d1bc8f6b9083c8904dae7da",
+    "path": "robotics/robotics-learning-handbook-v1.0.md",
+    "bytes": 64208,
+    "sha256": "bb7e3b010fce93a9eb338271264467bc177c70a21cdeb3bb0123d9e5d781663b",
+    "status": "proposed-learning-baseline"
+  },
+  "product": {
+    "repository": "https://github.com/snkio027/publication-engine",
+    "delivery_commit": "21958dbf9ccb375c8058986cf4ab4db61b01db57",
+    "id": "knowledge-base",
+    "version": "1.2.0",
+    "profile": "robotics-handbook",
+    "engine_pin": "f809e51d15dc7b5937aac02aee4dcbba31f40098",
+    "manifest_sha256": "d79aacc4da99194c0e59a1926376181e5062662f0a22a23b218f2636886345d6",
+    "input_set_sha256": "a4919186cff4c1a9e5c81e8290d462522f54ac1dfbcd764d17bc15e114c291e3"
+  },
+  "build_id": "1b6ab947594afef39c802515dd8bf14d7be07b6cd0cfca732105a7f54b225967",
+  "attempt": "1f21117508454571a3ebf9ddab8dedad",
+  "execution_id": "8c220484533b9352fe4897cf3f05350e3d65ba2b6b2e4babe18df0e5b82d3f0b",
+  "candidate_id": "8e149eedd3995083794dfa3198770fe8444572da37052c129635755e4210b8d7",
+  "checks": {
+    "pages_rendered": 28,
+    "explicit_source_targets": 54,
+    "body_internal_annotations": 88,
+    "external_urls_with_annotations": 30,
+    "source_title_regions": 95,
+    "ordered_units": 491,
+    "inline_literals": 10,
+    "table_row_relations": 130,
+    "semantic_fixtures": 9,
+    "detailed_visual_pages": [
+      1,
+      2,
+      3,
+      4,
+      10,
+      13,
+      21,
+      23,
+      24,
+      25,
+      27,
+      28
+    ],
+    "interactive_reader_smoke": "NOT_RUN",
+    "hardware_experiments": "NOT_RUN",
+    "external_url_revalidation": "NOT_RUN"
+  },
+  "evidence_scope": "Selected immutable evidence, not the complete executable candidate snapshot; file list excludes this record and authored README/checksum index.",
+  "files": [
+    {
+      "path": "evidence/artifact-manifest.json",
+      "bytes": 22238,
+      "sha256": "4359b6991bdc54e057158b73a144d7ef2b0a1ef37190547def7b1b86a59642ac"
+    },
+    {
+      "path": "evidence/candidate-manifest.json",
+      "bytes": 16451,
+      "sha256": "7bd5c74862dbb12e5130c3fdbbd2837ab2a3ccabd0523c4497946c83c3b3736d"
+    },
+    {
+      "path": "evidence/candidate-result.json",
+      "bytes": 501,
+      "sha256": "25ed42c46f5e8eed4cbea554332798ae0c13334117b4469cbd714ec229d2cec9"
+    },
+    {
+      "path": "evidence/contact-sheets.json",
+      "bytes": 2477,
+      "sha256": "ee25f527b6b82a32e7403264121ea2cd1fd5d97d5e7464cd055af1f07ae7a3c9"
+    },
+    {
+      "path": "evidence/navigation-check.json",
+      "bytes": 32305,
+      "sha256": "d504b639e105cddf0da1660f2287bfdc4bf374e9865306c742c43785b6ad6325"
+    },
+    {
+      "path": "evidence/page-map.json",
+      "bytes": 11864,
+      "sha256": "0260de02d158049bd9c97347e4c7f0a2c4ff6c8de6eff59b96fa67f8e7a7abfc"
+    },
+    {
+      "path": "evidence/pages-01-20.png",
+      "bytes": 559628,
+      "sha256": "235b83b1905949f7c8d6bfe09555d8a52baa008f03ddf81bedb2bfc10adde5dd"
+    },
+    {
+      "path": "evidence/pages-21-28.png",
+      "bytes": 220521,
+      "sha256": "e421c0f6644370d735dc944c7486e9f6e4cc75d6da183d9abdb6a833f359a053"
+    },
+    {
+      "path": "evidence/preview-audit.json",
+      "bytes": 78127,
+      "sha256": "c07a207440193ae1be5b4147285a247d03eaadb8cb04a5ec21964aee91e673a1"
+    },
+    {
+      "path": "evidence/reference-map.json",
+      "bytes": 20058,
+      "sha256": "92c52d7e2dbaa369b249ef31e102bf8fc9e8ad88a84ecb7c94316895fde6b960"
+    },
+    {
+      "path": "evidence/run.json",
+      "bytes": 7939,
+      "sha256": "db85b68859e3fbbe267dffb9bf9a303af2233fedd1ab90c46398b1e60411783b"
+    },
+    {
+      "path": "evidence/section-audit.json",
+      "bytes": 36614,
+      "sha256": "3cf613bd75f73a47ccb68a99ce3c1f0ca2c003ef03d351e3fb61387a4148cb06"
+    },
+    {
+      "path": "evidence/source-catalog.json",
+      "bytes": 20658,
+      "sha256": "ffc6c37c2deba670ba33cf0b7d2683bad8f6354e52fe9f058ae803d5f09c38d9"
+    },
+    {
+      "path": "evidence/source-fidelity.json",
+      "bytes": 14297,
+      "sha256": "a0f0fecce6907d9163c11c76a9190fd5de2146dd259963d8f17d19448945a001"
+    },
+    {
+      "path": "output/pdf/Robotics-Learning-Handbook-v1.0.0-reading.pdf",
+      "bytes": 872798,
+      "sha256": "af995ba9a2ab09e4c8e126c20458cf1222bde4e6486793f07b826b371628e876"
+    }
+  ]
+}

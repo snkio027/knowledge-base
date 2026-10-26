@@ -1,0 +1,372 @@
+{
+  "status": "STRUCTURAL_PASS",
+  "visual_status": "NOT_REVIEWED",
+  "scope": "Reading-quality signals, not a visual or technical proof",
+  "attempt": "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/robotics-v1-reading-20261026/output/preview/1b6ab947594afef39c802515dd8bf14d7be07b6cd0cfca732105a7f54b225967/1f21117508454571a3ebf9ddab8dedad",
+  "audit_sha256": "c07a207440193ae1be5b4147285a247d03eaadb8cb04a5ec21964aee91e673a1",
+  "artifact_manifest_sha256": "4359b6991bdc54e057158b73a144d7ef2b0a1ef37190547def7b1b86a59642ac",
+  "corpus_sha256": "04d5a404c57b3a7fee616dfff3daf8a311f538e682907f4f2f86cfb735373346",
+  "views": [
+    {
+      "view": "ROBOTICS-HANDBOOK",
+      "pdf": "output/pdf/Robotics-Learning-Handbook-v1.0.0-reading.pdf",
+      "sha256": "af995ba9a2ab09e4c8e126c20458cf1222bde4e6486793f07b826b371628e876",
+      "pages": 28,
+      "components": {
+        "ROBOTICS-HANDBOOK-T01": [
+          5
+        ],
+        "ROBOTICS-HANDBOOK-T02": [
+          6
+        ],
+        "ROBOTICS-HANDBOOK-T03": [
+          7
+        ],
+        "ROBOTICS-HANDBOOK-T04": [
+          8
+        ],
+        "ROBOTICS-HANDBOOK-T05": [
+          9
+        ],
+        "ROBOTICS-HANDBOOK-T06": [
+          9
+        ],
+        "ROBOTICS-HANDBOOK-T07": [
+          10
+        ],
+        "ROBOTICS-HANDBOOK-T08": [
+          11
+        ],
+        "ROBOTICS-HANDBOOK-T09": [
+          12
+        ],
+        "ROBOTICS-HANDBOOK-C01": [
+          13
+        ],
+        "ROBOTICS-HANDBOOK-T10": [
+          13
+        ],
+        "ROBOTICS-HANDBOOK-C02": [
+          13
+        ],
+        "ROBOTICS-HANDBOOK-T11": [
+          14
+        ],
+        "ROBOTICS-HANDBOOK-T12": [
+          15
+        ],
+        "ROBOTICS-HANDBOOK-T13": [
+          15
+        ],
+        "ROBOTICS-HANDBOOK-T14": [
+          16
+        ],
+        "ROBOTICS-HANDBOOK-T15": [
+          17
+        ],
+        "ROBOTICS-HANDBOOK-T16": [
+          18
+        ],
+        "ROBOTICS-HANDBOOK-T17": [
+          19
+        ],
+        "ROBOTICS-HANDBOOK-T18": [
+          20
+        ],
+        "ROBOTICS-HANDBOOK-T19": [
+          21
+        ],
+        "ROBOTICS-HANDBOOK-T20": [
+          22
+        ],
+        "ROBOTICS-HANDBOOK-C03": [
+          23
+        ],
+        "ROBOTICS-HANDBOOK-T21": [
+          24
+        ],
+        "ROBOTICS-HANDBOOK-C04": [
+          25
+        ],
+        "ROBOTICS-HANDBOOK-T22": [
+          26
+        ]
+      },
+      "line_position_checks": 38,
+      "wrap_observations": [],
+      "issues": []
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "robotics-toc",
+      "purpose": "chapter-navigation",
+      "view": "ROBOTICS-HANDBOOK",
+      "object": "generated-toc",
+      "pages": [
+        3
+      ],
+      "pdf_sha256": "af995ba9a2ab09e4c8e126c20458cf1222bde4e6486793f07b826b371628e876",
+      "sources": [
+        {
+          "bytes": 64208,
+          "commit": "2b90ad93f29800f08d1bc8f6b9083c8904dae7da",
+          "id": "ROBOTICS-HANDBOOK",
+          "matches_commit": true,
+          "path": "robotics/robotics-learning-handbook-v1.0.md",
+          "revision": "2b90ad93f29800f08d1bc8f6b9083c8904dae7da",
+          "sha256": "bb7e3b010fce93a9eb338271264467bc177c70a21cdeb3bb0123d9e5d781663b",
+          "snapshot_path": "sources/robotics/robotics-learning-handbook-v1.0.md",
+          "version": "1.0.0"
+        }
+      ],
+      "renders": [
+        {
+          "path": "ROBOTICS-HANDBOOK-003.png",
+          "sha256": "3c88d880dd04e4bff66186c94d1bd8f25db52e128e41d741ad2ff3839c99e4e8"
+        }
+      ]
+    },
+    {
+      "id": "robotics-opening",
+      "purpose": "source-status",
+      "view": "ROBOTICS-HANDBOOK",
+      "object": "ROBOTICS-HANDBOOK-19b210781dfd7c8c",
+      "pages": [
+        4
+      ],
+      "pdf_sha256": "af995ba9a2ab09e4c8e126c20458cf1222bde4e6486793f07b826b371628e876",
+      "sources": [
+        {
+          "bytes": 64208,
+          "commit": "2b90ad93f29800f08d1bc8f6b9083c8904dae7da",
+          "id": "ROBOTICS-HANDBOOK",
+          "matches_commit": true,
+          "path": "robotics/robotics-learning-handbook-v1.0.md",
+          "revision": "2b90ad93f29800f08d1bc8f6b9083c8904dae7da",
+          "sha256": "bb7e3b010fce93a9eb338271264467bc177c70a21cdeb3bb0123d9e5d781663b",
+          "snapshot_path": "sources/robotics/robotics-learning-handbook-v1.0.md",
+          "version": "1.0.0"
+        }
+      ],
+      "renders": [
+        {
+          "path": "ROBOTICS-HANDBOOK-004.png",
+          "sha256": "e360e6cac63f7bfdf2043f3b06ddc9c9e56cd2b24565abc5c96f15652f08a22a"
+        }
+      ]
+    },
+    {
+      "id": "robotics-encoder-formula",
+      "purpose": "formula-and-units",
+      "view": "ROBOTICS-HANDBOOK",
+      "object": "ROBOTICS-HANDBOOK-C01",
+      "pages": [
+        13
+      ],
+      "pdf_sha256": "af995ba9a2ab09e4c8e126c20458cf1222bde4e6486793f07b826b371628e876",
+      "sources": [
+        {
+          "bytes": 64208,
+          "commit": "2b90ad93f29800f08d1bc8f6b9083c8904dae7da",
+          "id": "ROBOTICS-HANDBOOK",
+          "matches_commit": true,
+          "path": "robotics/robotics-learning-handbook-v1.0.md",
+          "revision": "2b90ad93f29800f08d1bc8f6b9083c8904dae7da",
+          "sha256": "bb7e3b010fce93a9eb338271264467bc177c70a21cdeb3bb0123d9e5d781663b",
+          "snapshot_path": "sources/robotics/robotics-learning-handbook-v1.0.md",
+          "version": "1.0.0"
+        }
+      ],
+      "renders": [
+        {
+          "path": "ROBOTICS-HANDBOOK-013.png",
+          "sha256": "88102a90c20713b42f0b6d60fac9d190b2828e535926db941913d79e63be3f9d"
+        }
+      ]
+    },
+    {
+      "id": "robotics-control-skeleton",
+      "purpose": "non-executable-algorithm",
+      "view": "ROBOTICS-HANDBOOK",
+      "object": "ROBOTICS-HANDBOOK-C02",
+      "pages": [
+        13
+      ],
+      "pdf_sha256": "af995ba9a2ab09e4c8e126c20458cf1222bde4e6486793f07b826b371628e876",
+      "sources": [
+        {
+          "bytes": 64208,
+          "commit": "2b90ad93f29800f08d1bc8f6b9083c8904dae7da",
+          "id": "ROBOTICS-HANDBOOK",
+          "matches_commit": true,
+          "path": "robotics/robotics-learning-handbook-v1.0.md",
+          "revision": "2b90ad93f29800f08d1bc8f6b9083c8904dae7da",
+          "sha256": "bb7e3b010fce93a9eb338271264467bc177c70a21cdeb3bb0123d9e5d781663b",
+          "snapshot_path": "sources/robotics/robotics-learning-handbook-v1.0.md",
+          "version": "1.0.0"
+        }
+      ],
+      "renders": [
+        {
+          "path": "ROBOTICS-HANDBOOK-013.png",
+          "sha256": "88102a90c20713b42f0b6d60fac9d190b2828e535926db941913d79e63be3f9d"
+        }
+      ]
+    },
+    {
+      "id": "robotics-hardware-checks",
+      "purpose": "comparison-matrix",
+      "view": "ROBOTICS-HANDBOOK",
+      "object": "ROBOTICS-HANDBOOK-T07",
+      "pages": [
+        10
+      ],
+      "pdf_sha256": "af995ba9a2ab09e4c8e126c20458cf1222bde4e6486793f07b826b371628e876",
+      "sources": [
+        {
+          "bytes": 64208,
+          "commit": "2b90ad93f29800f08d1bc8f6b9083c8904dae7da",
+          "id": "ROBOTICS-HANDBOOK",
+          "matches_commit": true,
+          "path": "robotics/robotics-learning-handbook-v1.0.md",
+          "revision": "2b90ad93f29800f08d1bc8f6b9083c8904dae7da",
+          "sha256": "bb7e3b010fce93a9eb338271264467bc177c70a21cdeb3bb0123d9e5d781663b",
+          "snapshot_path": "sources/robotics/robotics-learning-handbook-v1.0.md",
+          "version": "1.0.0"
+        }
+      ],
+      "renders": [
+        {
+          "path": "ROBOTICS-HANDBOOK-010.png",
+          "sha256": "8fd7ea8ab60cb204e3761481f0962238d432e93450c4804fd809fb329594f579"
+        }
+      ]
+    },
+    {
+      "id": "robotics-safety",
+      "purpose": "safety-boundaries",
+      "view": "ROBOTICS-HANDBOOK",
+      "object": "ROBOTICS-HANDBOOK-T19",
+      "pages": [
+        21
+      ],
+      "pdf_sha256": "af995ba9a2ab09e4c8e126c20458cf1222bde4e6486793f07b826b371628e876",
+      "sources": [
+        {
+          "bytes": 64208,
+          "commit": "2b90ad93f29800f08d1bc8f6b9083c8904dae7da",
+          "id": "ROBOTICS-HANDBOOK",
+          "matches_commit": true,
+          "path": "robotics/robotics-learning-handbook-v1.0.md",
+          "revision": "2b90ad93f29800f08d1bc8f6b9083c8904dae7da",
+          "sha256": "bb7e3b010fce93a9eb338271264467bc177c70a21cdeb3bb0123d9e5d781663b",
+          "snapshot_path": "sources/robotics/robotics-learning-handbook-v1.0.md",
+          "version": "1.0.0"
+        }
+      ],
+      "renders": [
+        {
+          "path": "ROBOTICS-HANDBOOK-021.png",
+          "sha256": "a022738478cd84809a1a70fab3abdb589b2db845d731799d2955df6ec9d1a20f"
+        }
+      ]
+    },
+    {
+      "id": "robotics-project-tree",
+      "purpose": "literal-project-tree",
+      "view": "ROBOTICS-HANDBOOK",
+      "object": "ROBOTICS-HANDBOOK-C03",
+      "pages": [
+        23
+      ],
+      "pdf_sha256": "af995ba9a2ab09e4c8e126c20458cf1222bde4e6486793f07b826b371628e876",
+      "sources": [
+        {
+          "bytes": 64208,
+          "commit": "2b90ad93f29800f08d1bc8f6b9083c8904dae7da",
+          "id": "ROBOTICS-HANDBOOK",
+          "matches_commit": true,
+          "path": "robotics/robotics-learning-handbook-v1.0.md",
+          "revision": "2b90ad93f29800f08d1bc8f6b9083c8904dae7da",
+          "sha256": "bb7e3b010fce93a9eb338271264467bc177c70a21cdeb3bb0123d9e5d781663b",
+          "snapshot_path": "sources/robotics/robotics-learning-handbook-v1.0.md",
+          "version": "1.0.0"
+        }
+      ],
+      "renders": [
+        {
+          "path": "ROBOTICS-HANDBOOK-023.png",
+          "sha256": "498559aafd190dc9d5cc33c3c4ef1ce17b40d1802b736ba8bee0d3505e9af8ac"
+        }
+      ]
+    },
+    {
+      "id": "robotics-experiment-template",
+      "purpose": "not-run-template",
+      "view": "ROBOTICS-HANDBOOK",
+      "object": "ROBOTICS-HANDBOOK-C04",
+      "pages": [
+        25
+      ],
+      "pdf_sha256": "af995ba9a2ab09e4c8e126c20458cf1222bde4e6486793f07b826b371628e876",
+      "sources": [
+        {
+          "bytes": 64208,
+          "commit": "2b90ad93f29800f08d1bc8f6b9083c8904dae7da",
+          "id": "ROBOTICS-HANDBOOK",
+          "matches_commit": true,
+          "path": "robotics/robotics-learning-handbook-v1.0.md",
+          "revision": "2b90ad93f29800f08d1bc8f6b9083c8904dae7da",
+          "sha256": "bb7e3b010fce93a9eb338271264467bc177c70a21cdeb3bb0123d9e5d781663b",
+          "snapshot_path": "sources/robotics/robotics-learning-handbook-v1.0.md",
+          "version": "1.0.0"
+        }
+      ],
+      "renders": [
+        {
+          "path": "ROBOTICS-HANDBOOK-025.png",
+          "sha256": "29726e0297210157615f5ce9247b19883d304b7ae93471c44348de593b264e9a"
+        }
+      ]
+    },
+    {
+      "id": "robotics-references",
+      "purpose": "reference-navigation",
+      "view": "ROBOTICS-HANDBOOK",
+      "object": "ROBOTICS-HANDBOOK-8f44fc3ead3c05a2",
+      "pages": [
+        27,
+        28
+      ],
+      "pdf_sha256": "af995ba9a2ab09e4c8e126c20458cf1222bde4e6486793f07b826b371628e876",
+      "sources": [
+        {
+          "bytes": 64208,
+          "commit": "2b90ad93f29800f08d1bc8f6b9083c8904dae7da",
+          "id": "ROBOTICS-HANDBOOK",
+          "matches_commit": true,
+          "path": "robotics/robotics-learning-handbook-v1.0.md",
+          "revision": "2b90ad93f29800f08d1bc8f6b9083c8904dae7da",
+          "sha256": "bb7e3b010fce93a9eb338271264467bc177c70a21cdeb3bb0123d9e5d781663b",
+          "snapshot_path": "sources/robotics/robotics-learning-handbook-v1.0.md",
+          "version": "1.0.0"
+        }
+      ],
+      "renders": [
+        {
+          "path": "ROBOTICS-HANDBOOK-027.png",
+          "sha256": "2446d7df202ef3db7657104918d990643c3eda5cdf2719d6d736484dc684d524"
+        },
+        {
+          "path": "ROBOTICS-HANDBOOK-028.png",
+          "sha256": "2313d83ba5bf7ca9710d72c9563976256c8cca91c0618588a37137668888fcd7"
+        }
+      ]
+    }
+  ],
+  "issues": [],
+  "coverage": {
+    "ROBOTICS-HANDBOOK": 9
+  }
+}
