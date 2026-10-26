@@ -73,11 +73,13 @@
 
 | 资产 | 接收及核对结果 | 使用限制 / 后续事项 |
 | --- | --- | --- |
-| [to-pdf.md](../to-pdf.md)、[publication/](../publication/) | 已定位既有设计、LaTeX 模板、主题、过滤器及图表 | 本期保留，不以新计划重做版式；未重跑视觉验证 |
-| [build.sh](../scripts/build.sh) | 已只读核对：按旧文件名读取正文，并将 PDF 复制至历史 dist 路径 | 存在草案覆盖历史制品风险；WP-02 隔离前不作为普通预览入口 |
-| [write-manifest.py](../scripts/write-manifest.py) | 已只读核对：记录工具与部分出版源摘要，Markdown 源及锁文件仍只列名称 | 源内容、配置、锁文件、输出和批准范围的完整绑定待补齐；本轮不执行 |
-| [preflight.sh](../scripts/preflight.sh)、[render-verify.sh](../scripts/render-verify.sh) | 已定位，当前围绕 dist 与 build/tmp 进行检查或渲染 | 不是当前草案的独立结构检查入口；本轮不执行，WP-02 一并审查路径边界 |
+| [to-pdf.md](../to-pdf.md)、[publication/](https://github.com/snkio027/knowledge-base/tree/6ad0ade8a18f6f65e5ca3a787f273b1563571d77/design/publication) | 已定位既有设计、LaTeX 模板、主题、过滤器及图表 | 本期保留，不以新计划重做版式；未重跑视觉验证 |
+| [build.sh](https://github.com/snkio027/knowledge-base/blob/6ad0ade8a18f6f65e5ca3a787f273b1563571d77/design/scripts/build.sh) | 已只读核对：按旧文件名读取正文，并将 PDF 复制至历史 dist 路径 | 存在草案覆盖历史制品风险；WP-02 隔离前不作为普通预览入口 |
+| [write-manifest.py](https://github.com/snkio027/knowledge-base/blob/6ad0ade8a18f6f65e5ca3a787f273b1563571d77/design/scripts/write-manifest.py) | 已只读核对：记录工具与部分出版源摘要，Markdown 源及锁文件仍只列名称 | 源内容、配置、锁文件、输出和批准范围的完整绑定待补齐；本轮不执行 |
+| [preflight.sh](https://github.com/snkio027/knowledge-base/blob/6ad0ade8a18f6f65e5ca3a787f273b1563571d77/design/scripts/preflight.sh)、[render-verify.sh](https://github.com/snkio027/knowledge-base/blob/6ad0ade8a18f6f65e5ca3a787f273b1563571d77/design/scripts/render-verify.sh) | 已定位，当前围绕 dist 与 build/tmp 进行检查或渲染 | 不是当前草案的独立结构检查入口；本轮不执行，WP-02 一并审查路径边界 |
 | [历史发布目录](../dist/) | 两份 v1.1.0 PDF、manifest 及校验和存在；本次只读摘要核对与已记录 PDF 摘要一致 | 内容、无障碍质量、历史批准和可复现构建未在本轮重新验证 |
+
+2026-10-26 路径维护注记：出版代码已迁出，以上五处实现链接改指本登记所引用的历史提交 `6ad0ade`；核对结论及其时间口径不变，不表示重新执行。当前接管关系见[出版归档说明](../../publication/README.md)。
 
 历史制品保护快照如下；摘要一致仅说明文件字节一致，不证明内容适配新草案或已获发布批准。
 

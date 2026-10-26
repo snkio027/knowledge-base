@@ -1,6 +1,6 @@
 # 系统设计与工程保证
 
-本目录收录《优秀系统设计与工程保证标准》及其 PDF 出版工具。Markdown 是权威内容来源；文档关系以 [00 文档体系与规范关系](00-优秀系统设计与工程保证标准-文档体系与规范关系-v1.0.0.md) 为准。
+本目录收录《优秀系统设计与工程保证标准》及历史出版资料；活动出版工具已迁至独立项目。Markdown 是权威内容来源；文档关系以 [00 文档体系与规范关系](00-优秀系统设计与工程保证标准-文档体系与规范关系-v1.0.0.md) 为准。
 
 ## 文档导航
 
@@ -44,54 +44,24 @@
 
 以上 PDF 保留 v1.1.0 历史内容，未被本批改写，不是当前 Markdown 草案的同步视图。新版草案预览位于隔离的本地构建目录；后续正式发布需另行授权与验证。
 
-历史发布 PDF 保存在 `dist/`；预览不得写入该目录。两类制品均不声明 PDF/UA 合规；历史字体替代记录见 [fonts.lock](fonts.lock)，新预览记录实际使用的字体与 TeX 输入摘要。
+历史发布 PDF 保存在 `dist/`；预览不得写入该目录。两类制品均不声明 PDF/UA 合规；历史字体替代记录见 [历史 fonts.lock](https://github.com/snkio027/knowledge-base/blob/a022de309c0ce5c3af0d306e57691f036d869698/design/fonts.lock)，新预览记录实际使用的字体与 TeX 输入摘要。
 
 ## 目录与当前构建入口
 
-出版实现已迁移到仓库级 [KB Publication System v2](../publication/README.md)，本轮为 **IMPLEMENTED / REVIEW CANDIDATE**。六篇 Markdown 和历史 `dist/` 不变；ESD 是共享引擎的一种 profile，不再充当整个仓库的隐式出版根。
+活动出版系统已全部迁入独立 [publication-engine / knowledge-base 产品包](https://github.com/snkio027/publication-engine/tree/9d82561f3881d467879e7d5c9676c3f6905b37d0/products/knowledge-base)。本目录不再保留 `scripts/`、`publication/` 或出版环境锁文件；也不保留兼容转发脚本。六篇规范、项目记录和历史制品不变。
 
 | 路径 | 当前作用 |
 | --- | --- |
 | `00-…md` 至 `05-…md` | ESD 权威内容，未改业务语义 |
 | [project/](project/) / [reviews/](reviews/) / [examples/](examples/) | 既有项目、复审和试点记录 |
 | [dist/](dist/) | 不可覆盖的历史发布制品 |
-| [../publication/engine/](../publication/engine/) | v2 准备、编译、审计、渲染与候选 |
-| [../publication/profiles/esd/](../publication/profiles/esd/) | 当前 ESD catalog、适配、模板和主题 |
-| [publication/](publication/) | v1 出版资产保留；不再作为活动配置入口 |
-| [scripts/](scripts/) | 公共命令兼容转发、旧只读工具及关闭的危险入口 |
-| `build/` | 原 v1 本地运行记录，原样保留，不自动转换 |
-| `../publication/build/` | 当前 v2 预览和候选尝试，Git 忽略 |
+| [to-pdf.md](to-pdf.md) | 原出版设计文档，保留知识与历史身份，不是当前构建入口 |
+| 本地忽略的 `build/` | 原 v1 历史运行记录，不接管、不迁写 |
 
 ## 构建与检查
 
-依赖、输入与执行身份、输出、候选及限制统一以 [v2 使用说明](../publication/README.md)为准。macOS `sandbox-exec` 仍是必需隔离后端，没有无沙箱回退。一次命令生成六份独立预览和一份合订版：
+从独立项目运行命令，显式指定本内容 checkout 与外部工作区。macOS + uv、受限编译、版本锁定、检查和候选管理统一由独立项目承担；内容仓库不再安装出版环境，也不产生新的本地构建目录。
 
-```sh
-python3 -B publication/engine/pub.py preview --profile esd
-```
+接管关系、历史路径与发布资产见[出版归档说明](../publication/README.md)。旧实现可从[迁移前提交](https://github.com/snkio027/knowledge-base/tree/a022de309c0ce5c3af0d306e57691f036d869698/design)恢复；历史文档中的命令和本地源码链接应在原提交语境解释，不能当作当前使用说明。
 
-兼容命令 `python3 -B design/scripts/pub.py preview` 转发到同一引擎，不保留第二套实现。新增 ESD 源和产品配置在 [ESD profile](../publication/profiles/esd/profile.json)维护；标题、版本和内容状态仍由 Front Matter 校验。正式 publish 及旧六个危险写入入口继续关闭。
-
-新运行位于 `publication/build/preview/<preparation-id>/<attempt-id>/`，PDF 在 `work/output/pdf/`，完整原文在 `work/output/source/design/`，全页 PNG 在 `work/renders/`。输入和 profile 均冻结，`PREVIEW_READY` 不等于视觉、规范或发布批准。
-
-候选从已检查的新预览复制原字节，使用仓库相对路径：
-
-```sh
-python3 -B publication/engine/pub.py candidate --profile esd \
-  --from-preview publication/build/preview/<preparation-id>/<attempt-id>
-```
-
-旧 `design/build/` 的预览与候选不重写、不迁移，也不被当前入口冒充 v2 验收记录。v1 的历史执行方法见 Git 中的旧版本和[历史实施记录](project/publication-preview.md)；本轮不追写这些历史记录。
-
-旧测试命令仍可使用，实际执行迁移后的 v2 套件：
-
-```sh
-python3 -B design/scripts/test-publication-isolation.py
-python3 -B design/scripts/test-candidate.py
-python3 -B design/scripts/test-preview.py
-python3 -B publication/tests/test-products.py
-```
-
-历史 `content-audit.py`、`pdf-structure-audit.py` 仅供旧输出诊断，不授予当前资格。核对历史校验和可在 `design/` 内运行 `shasum -a 256 -c dist/sha256sums.txt`，无需重建。
-
-本轮不开放正式发布、不替换历史 PDF，也不宣称 PDF/UA、跨平台或完整视觉定稿。内容接受状态、预览自动检查和人工阅读记录分别保留。
+核对历史校验和仍可在 `design/` 内运行 `shasum -a 256 -c dist/sha256sums.txt`，无需构建或调用出版系统。新的预览、候选和正式发布授权互不等价；本轮不重新发布或替换历史 PDF。
